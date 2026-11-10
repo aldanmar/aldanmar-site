@@ -1,0 +1,103 @@
+{
+  "siteTitle": "Apex Engineering",
+  "ownerName": "Alexander Vance",
+  "role": "Full-Stack Systems Engineer & Product Architect",
+  "heroHeadline": "Building resilient digital systems and high-throughput web applications",
+  "heroDescription": "Architecting scalable web platforms, cloud infrastructure, and distributed interfaces designed for clarity, sub-second latency, and verified impact.",
+  "primaryCtaText": "Explore Projects",
+  "secondaryCtaText": "Publish to GitHub",
+  "email": "knetaus@gmail.com",
+  "location": "San Francisco, CA",
+  "availability": "Available for technical leadership & select contracts",
+  "githubUsername": "knetaus",
+  "accentColor": "cobalt",
+  "capabilities": [
+    {
+      "id": "cap-1",
+      "number": "01",
+      "title": "Distributed Web & Systems Architecture",
+      "description": "Designing end-to-end full-stack architectures with React, Node.js, and TypeScript capable of processing high-volume traffic with deterministic zero-latency pipelines.",
+      "deliverables": [
+        "Event-driven microservices",
+        "Type-safe API contracts",
+        "Resilient database schemas"
+      ]
+    },
+    {
+      "id": "cap-2",
+      "number": "02",
+      "title": "High-Performance Frontend Systems",
+      "description": "Crafting responsive user interfaces adhering to strict typographic math, WCAG AA accessibility, and rapid interaction budgets under 150ms.",
+      "deliverables": [
+        "Design token architectures",
+        "Sub-millisecond state management",
+        "Zero-pill editorial ergonomics"
+      ]
+    },
+    {
+      "id": "cap-3",
+      "number": "03",
+      "title": "Automated CI/CD & GitHub Workflows",
+      "description": "Engineering zero-downtime automated deployment pipelines with GitHub Actions, containerization, and automated test orchestration.",
+      "deliverables": [
+        "GitHub Pages & Cloud Run workflows",
+        "Hermetic artifact builds",
+        "Branch protection & audit rules"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "id": "proj-1",
+      "title": "Zenith Real-Time Analytics Platform",
+      "category": "Enterprise SaaS & Data Engine",
+      "description": "High-throughput financial monitoring console tracking $3.2M+ in assets under management with sub-100ms streaming telemetry.",
+      "metric": "$3.2M+",
+      "metricLabel": "Asset volume handled with 99.99% uptime",
+      "image": "/src/assets/images/project_analytics_app_1794305034997.jpg",
+      "tags": [
+        "TypeScript",
+        "React",
+        "Tailwind CSS",
+        "Vite",
+        "WebSockets"
+      ],
+      "githubUrl": "https://github.com/knetaus/zenith-analytics",
+      "liveUrl": "https://zenith-analytics.demo"
+    },
+    {
+      "id": "proj-2",
+      "title": "Aura Mobile Finance Ecosystem",
+      "category": "Fintech & Mobile Client",
+      "description": "Native-feel web application featuring biometric-ready security tokens, real-time transaction ledger, and instant peer settlements.",
+      "metric": "+142%",
+      "metricLabel": "Quarterly transaction retention growth",
+      "image": "/src/assets/images/project_mobile_fintech_1794305035043.jpg",
+      "tags": [
+        "React 19",
+        "Tailwind v4",
+        "Motion",
+        "PWA"
+      ],
+      "githubUrl": "https://github.com/knetaus/aura-finance",
+      "liveUrl": "https://aura-finance.demo"
+    },
+    {
+      "id": "proj-3",
+      "title": "Format Studio Publishing Engine",
+      "category": "Design Systems & Editorial",
+      "description": "Content publication platform with typography-first grid system, dynamic responsive typesetting, and static site generation.",
+      "metric": "0.4s",
+      "metricLabel": "Mean first contentful paint across global CDNs",
+      "image": "/src/assets/images/project_creative_brand_1794305034731.jpg",
+      "tags": [
+        "Design Systems",
+        "TypeScript",
+        "Responsive CSS",
+        "SEO Engine"
+      ],
+      "githubUrl": "https://github.com/knetaus/format-engine",
+      "liveUrl": "https://format-engine.demo"
+    }
+  ]
+}
