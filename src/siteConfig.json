@@ -1,103 +1,131 @@
 {
-  "siteTitle": "Apex Engineering",
-  "ownerName": "Alexander Vance",
-  "role": "Full-Stack Systems Engineer & Product Architect",
-  "heroHeadline": "Building resilient digital systems and high-throughput web applications",
-  "heroDescription": "Architecting scalable web platforms, cloud infrastructure, and distributed interfaces designed for clarity, sub-second latency, and verified impact.",
-  "primaryCtaText": "Explore Projects",
-  "secondaryCtaText": "Publish to GitHub",
-  "email": "knetaus@gmail.com",
-  "location": "San Francisco, CA",
-  "availability": "Available for technical leadership & select contracts",
-  "githubUsername": "knetaus",
-  "accentColor": "cobalt",
-  "capabilities": [
+  "propertyName": "Aldanmar Apartments",
+  "akaName": "Casa Santana",
+  "propertyType": "Beachfront Multi-Unit Triplex Villa",
+  "listingStatus": "Property For Sale — Turnkey Investment",
+  "priceNote": "Direct Owner Sale · Inquire for Investment Prospectus & Title Details",
+  "address": "164 Dulangan Road",
+  "barangay": "Dulangan",
+  "municipality": "Puerto Galera",
+  "province": "Oriental Mindoro",
+  "country": "Philippines",
+  "heroHeadline": "Direct Beachfront Triplex Property for Sale in Puerto Galera",
+  "heroDescription": "A rare coastal real estate opportunity featuring three fully furnished, self-contained apartments (Red, Green, and Blue) directly on Dulangan Beach. Turnkey rental revenue, separate private entrances, panoramic ocean views, and direct road access along 164 Dulangan Road.",
+  "ownerEmail": "knetaus@gmail.com",
+  "ownerPhone": "+63 917 000 0000",
+  "githubUsername": "aldanmar",
+  "githubRepo": "aldanmar-site",
+  "apartments": [
     {
-      "id": "cap-1",
+      "id": "blue",
+      "name": "The Blue Apartment",
+      "tagline": "Premier Oceanfront Suite with Panoramic Veranda",
+      "themeColor": "#0284c7",
+      "badgeBg": "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800",
+      "badgeText": "text-sky-800 dark:text-sky-300",
+      "image": "/src/assets/images/apartment_blue_interior_1794313031478.jpg",
+      "floorLevel": "Upper Coastal Floor",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "capacity": "2 - 4 Guests",
+      "view": "Unobstructed Panoramic Ocean View & Dulangan Bay Horizon",
+      "description": "The flagship oceanfront residence boasting expansive floor-to-ceiling glass doors opening directly onto a private sea-facing veranda. Styled in coastal azure, crisp white linens, and polished tropical hardwood floors with continuous sea breezes.",
+      "keyFeatures": [
+        "Expansive private covered veranda overlooking turquoise waters",
+        "Fully equipped kitchen with dining area & refrigeration",
+        "Spacious living lounge with handcrafted rattan & hardwood furnishings",
+        "En-suite modern bathroom with hot water shower",
+        "Independent private entry and dedicated electrical metering"
+      ],
+      "historicalHighlights": "A perennial guest favorite featured across historical travel archives and Wayback Machine rental records for romantic retreats and long-term ocean lovers."
+    },
+    {
+      "id": "red",
+      "name": "The Red Apartment",
+      "tagline": "Warm Terracotta Tropical Suite with Sunset Balcony",
+      "themeColor": "#dc2626",
+      "badgeBg": "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800",
+      "badgeText": "text-rose-800 dark:text-rose-300",
+      "image": "/src/assets/images/apartment_red_interior_1794313031442.jpg",
+      "floorLevel": "Middle Panoramic Level",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "capacity": "2 - 4 Guests",
+      "view": "Beachfront Water View & Golden Sunset Panorama",
+      "description": "A warm, character-filled tropical apartment featuring rich terracotta flooring, mahogany finishes, and an open-concept living area. The sun-drenched private balcony provides prime front-row views of Puerto Galera sunsets.",
+      "keyFeatures": [
+        "Private sunset balcony with outdoor relaxation seating",
+        "Open-concept kitchen, prep counter, and dining table",
+        "Generous living room with authentic Filipino rattan craft pieces",
+        "Airy cross-ventilation designed to capture coastal sea winds",
+        "Full bathroom with contemporary plumbing and hot shower"
+      ],
+      "historicalHighlights": "Celebrated for its warm ambiance and sunset orientation, historically favored by diving enthusiasts visiting Puerto Galera marine sanctuaries."
+    },
+    {
+      "id": "green",
+      "name": "The Green Apartment",
+      "tagline": "Tranquil Tropical Garden & Canopy Coastal Retreat",
+      "themeColor": "#16a34a",
+      "badgeBg": "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800",
+      "badgeText": "text-emerald-800 dark:text-emerald-300",
+      "image": "/src/assets/images/apartment_green_interior_1794313032054.jpg",
+      "floorLevel": "Garden / Coastal Ground Level",
+      "bedrooms": 1,
+      "bathrooms": 1,
+      "capacity": "2 - 3 Guests",
+      "view": "Lush Tropical Garden, Coconut Palms & Ocean Glimpse",
+      "description": "Embraced by tropical flora, coconut palms, and sea breezes, the Green Apartment offers a serene, grounded atmosphere. Natural timber finishes, soft sage and emerald accents, and an open breakfast bar overlooking the gardens.",
+      "keyFeatures": [
+        "Direct garden walkout with seamless access toward the beach",
+        "Custom wooden dining counter and fully functional kitchen",
+        "Natural stone and timber detailing reflecting the Mindoro landscape",
+        "Cooler microclimate shaded by mature coconut palms",
+        "Independent entrance with private terrace patio"
+      ],
+      "historicalHighlights": "Preferred by writers, remote workers, and guests seeking peaceful extended stays surrounded by lush greenery and the sound of waves."
+    }
+  ],
+  "propertyFeatures": [
+    {
+      "id": "feat-1",
       "number": "01",
-      "title": "Distributed Web & Systems Architecture",
-      "description": "Designing end-to-end full-stack architectures with React, Node.js, and TypeScript capable of processing high-volume traffic with deterministic zero-latency pipelines.",
-      "deliverables": [
-        "Event-driven microservices",
-        "Type-safe API contracts",
-        "Resilient database schemas"
+      "title": "Triplex Multi-Unit Architecture",
+      "description": "Engineered as a substantial multi-level coastal villa containing three distinct, self-contained residential units (Red, Green, and Blue). Live in one unit while generating passive rental revenue from the other two, or operate the entire estate as a boutique beachfront hospitality retreat.",
+      "highlights": [
+        "Three fully independent apartments with private access",
+        "Individual kitchens, bathrooms, and outdoor verandas",
+        "Flexible configuration: private residence or holiday rental triplex"
       ]
     },
     {
-      "id": "cap-2",
+      "id": "feat-2",
       "number": "02",
-      "title": "High-Performance Frontend Systems",
-      "description": "Crafting responsive user interfaces adhering to strict typographic math, WCAG AA accessibility, and rapid interaction budgets under 150ms.",
-      "deliverables": [
-        "Design token architectures",
-        "Sub-millisecond state management",
-        "Zero-pill editorial ergonomics"
+      "title": "Direct Dulangan Beach Frontage",
+      "description": "Positioned directly along Dulangan Beach in a peaceful coastal bay away from heavy commercial noise, yet only minutes from Puerto Galera town, Sabang diving hubs, and White Beach entertainment.",
+      "highlights": [
+        "Immediate footsteps onto sand and swimmable calm waters",
+        "Coral reef snorkeling and kayak launch right off the shore",
+        "Protected bay with dramatic mountain backdrop of Oriental Mindoro"
       ]
     },
     {
-      "id": "cap-3",
+      "id": "feat-3",
       "number": "03",
-      "title": "Automated CI/CD & GitHub Workflows",
-      "description": "Engineering zero-downtime automated deployment pipelines with GitHub Actions, containerization, and automated test orchestration.",
-      "deliverables": [
-        "GitHub Pages & Cloud Run workflows",
-        "Hermetic artifact builds",
-        "Branch protection & audit rules"
+      "title": "Road Access & Established Infrastructure",
+      "description": "Situated along 164 Dulangan Road (Sitio Centro) with direct road connectivity, utility infrastructure, reliable electrical connection, dedicated water storage, and fiber internet accessibility.",
+      "highlights": [
+        "Direct vehicle access on Dulangan Road",
+        "Dedicated water tanks & pressure systems installed",
+        "Fiber optic internet ready for remote work and digital nomads"
       ]
     }
   ],
-  "projects": [
-    {
-      "id": "proj-1",
-      "title": "Zenith Real-Time Analytics Platform",
-      "category": "Enterprise SaaS & Data Engine",
-      "description": "High-throughput financial monitoring console tracking $3.2M+ in assets under management with sub-100ms streaming telemetry.",
-      "metric": "$3.2M+",
-      "metricLabel": "Asset volume handled with 99.99% uptime",
-      "image": "/src/assets/images/project_analytics_app_1794305034997.jpg",
-      "tags": [
-        "TypeScript",
-        "React",
-        "Tailwind CSS",
-        "Vite",
-        "WebSockets"
-      ],
-      "githubUrl": "https://github.com/knetaus/zenith-analytics",
-      "liveUrl": "https://zenith-analytics.demo"
-    },
-    {
-      "id": "proj-2",
-      "title": "Aura Mobile Finance Ecosystem",
-      "category": "Fintech & Mobile Client",
-      "description": "Native-feel web application featuring biometric-ready security tokens, real-time transaction ledger, and instant peer settlements.",
-      "metric": "+142%",
-      "metricLabel": "Quarterly transaction retention growth",
-      "image": "/src/assets/images/project_mobile_fintech_1794305035043.jpg",
-      "tags": [
-        "React 19",
-        "Tailwind v4",
-        "Motion",
-        "PWA"
-      ],
-      "githubUrl": "https://github.com/knetaus/aura-finance",
-      "liveUrl": "https://aura-finance.demo"
-    },
-    {
-      "id": "proj-3",
-      "title": "Format Studio Publishing Engine",
-      "category": "Design Systems & Editorial",
-      "description": "Content publication platform with typography-first grid system, dynamic responsive typesetting, and static site generation.",
-      "metric": "0.4s",
-      "metricLabel": "Mean first contentful paint across global CDNs",
-      "image": "/src/assets/images/project_creative_brand_1794305034731.jpg",
-      "tags": [
-        "Design Systems",
-        "TypeScript",
-        "Responsive CSS",
-        "SEO Engine"
-      ],
-      "githubUrl": "https://github.com/knetaus/format-engine",
-      "liveUrl": "https://format-engine.demo"
-    }
-  ]
+  "externalMedia": {
+    "googleDriveUrl": "https://drive.google.com/drive/folders/aldanmar-apartments-property-documents",
+    "googlePhotosUrl": "https://photos.google.com/share/aldanmar-apartments-casa-santana-photos",
+    "googleMapsUrl": "https://maps.google.com/?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines",
+    "waybackMachineUrl": "https://web.archive.org/web/*/aldanmar-apartments.com",
+    "coordinates": "13.5042° N, 120.9856° E"
+  }
 }
