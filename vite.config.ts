@@ -4,7 +4,7 @@ import path from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-  base: '/aldanmar-site/',
+  base: './', // Ensures relative path loading for static assets
   plugins: [react(), tailwindcss()],
   resolve: {
     alias: {

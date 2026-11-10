@@ -34,10 +34,11 @@ export default function App() {
     }
   };
 
+  const apartmentsList = siteData?.apartments || [];
   const filteredApartments =
     activeTab === 'all'
-      ? siteData.apartments
-      : siteData.apartments.filter((apt: any) => apt.id === activeTab);
+      ? apartmentsList
+      : apartmentsList.filter((apt: any) => apt.id === activeTab);
 
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 antialiased selection:bg-blue-600 selection:text-white dark:bg-neutral-950 dark:text-neutral-100">
@@ -321,7 +322,7 @@ export default function App() {
           </div>
 
           <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {siteData.propertyFeatures.map((feat: any) => (
+            {(siteData.propertyFeatures || []).map((feat: any) => (
               <div
                 key={feat.id}
                 className="rounded-2xl border border-neutral-200 bg-neutral-50/50 p-6 dark:border-neutral-800 dark:bg-neutral-900/50"
