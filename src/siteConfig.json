@@ -2,8 +2,13 @@
   "propertyName": "Aldanmar Apartments",
   "akaName": "Casa Santana",
   "propertyType": "Beachfront Multi-Unit Triplex Villa",
-  "listingStatus": "Property For Sale — Turnkey Investment",
-  "priceNote": "Direct Owner Sale · Inquire for Investment Prospectus & Title Details",
+  "listingStatus": "Direct Owner Sale — Titled Property",
+  "pricePhp": "₱15,000,000 PHP",
+  "priceUsd": "~$268,000 USD",
+  "priceNote": "₱15,000,000 PHP (~$268,000 USD) · Titled Property · Direct Owner Sale",
+  "parkingNote": "Enclosed garage accommodates 1 medium car + off-road parking for 5 motorcycles",
+  "titleAndLegalNote": "Clean Titled Property · Real estate taxes paid up to date · Original building permits available · Occupancy permit available upon request",
+  "occupancyOverview": "The Red and Green apartments are currently rented out (generating immediate rental income); the Blue apartment is inhabited by the owners.",
   "address": "164 Dulangan Road",
   "barangay": "Dulangan",
   "municipality": "Puerto Galera",
@@ -18,31 +23,38 @@
   "viewsLocalPath": "G:\\My Drive\\Aldanmar Views",
   "externalViews": [
     {
+      "id": "view-hero",
+      "title": "Aldanmar Apartments / Casa Santana — For Sale by Owner & Builder",
+      "category": "exterior",
+      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+      "caption": "Direct beachfront triplex property at 164 Dulangan Road, Puerto Galera. Solid coastal construction with separate private verandas overlooking the beach."
+    },
+    {
       "id": "view-1",
       "title": "Casa Santana Coastal Triplex Facade",
       "category": "exterior",
-      "image": "/src/assets/images/aldanmar_facade_exterior_1794469347602.jpg",
+      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
       "caption": "Direct beachfront multi-unit villa architecture on Dulangan Beach with individual sea-facing verandas and balconies."
     },
     {
       "id": "view-2",
       "title": "Golden Sunset over Dulangan Bay",
       "category": "sunset",
-      "image": "/src/assets/images/aldanmar_sunset_views_1794469369847.jpg",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
       "caption": "Spectacular sunset illumination over the calm waters of Dulangan Beach, viewed directly from the property frontage."
     },
     {
       "id": "view-3",
-      "title": "Beachfront Villa Profile & Sand Walkout",
+      "title": "Beachfront Walkout & Calm Waters",
       "category": "beach",
-      "image": "/src/assets/images/aldanmar_triplex_hero_1794313030220.jpg",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
       "caption": "Footsteps onto swimmable turquoise waters, coral reef snorkeling, and calm protected waters of Puerto Galera."
     },
     {
       "id": "view-4",
       "title": "Veranda Ocean Horizons",
       "category": "exterior",
-      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
       "caption": "Continuous coastal breezes and unhindered ocean views across the UNESCO biosphere reserve waters."
     },
     {
@@ -51,157 +63,171 @@
       "category": "grounds",
       "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
       "caption": "Mature coconut palms and native tropical flora framing the private boundary along 164 Dulangan Road."
-    },
-    {
-      "id": "view-6",
-      "title": "Dulangan Beachfront Waterline",
-      "category": "beach",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-      "caption": "Peaceful, uncrowded beachfront setting ideal for morning swims, kayaking, and relaxation."
     }
   ],
   "apartments": [
     {
       "id": "blue",
       "name": "The Blue Apartment",
-      "tagline": "Premier Oceanfront Suite with Panoramic Veranda",
+      "tagline": "Owner’s 2-Bedroom Coastal Suite with 6KW Solar & Dual Inverter ACs",
       "themeColor": "#0284c7",
       "badgeBg": "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800",
       "badgeText": "text-sky-800 dark:text-sky-300",
       "localDrivePath": "G:\\My Drive\\Aldanmar Blue",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-blue",
-      "image": "/src/assets/images/apartment_blue_interior_1794313031478.jpg",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link",
+      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
       "galleryImages": [
-        "/src/assets/images/apartment_blue_interior_1794313031478.jpg",
+        "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
         "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
       ],
-      "floorLevel": "Upper Coastal Floor",
-      "bedrooms": 1,
+      "floorLevel": "Upper Coastal Level (Private Veranda)",
+      "bedrooms": 2,
       "bathrooms": 1,
-      "capacity": "2 - 4 Guests",
+      "capacity": "Owner Suite (2 - 4 Occupants)",
       "view": "Unobstructed Panoramic Ocean View & Dulangan Bay Horizon",
-      "description": "The flagship oceanfront residence boasting expansive floor-to-ceiling glass doors opening directly onto a private sea-facing veranda. Styled in coastal azure, crisp white linens, and polished tropical hardwood floors with continuous sea breezes.",
+      "occupancyStatus": "Inhabited by Owners",
+      "solarSystem": "6KW Off-Grid Solar System Installed",
+      "acEquipment": "2.5HP Split Inverter (Living Room) + 1HP Split Inverter (Main Bedroom)",
+      "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
+      "description": "The premier 2-bedroom residence currently inhabited by the owners. It is equipped with a high-capacity 6KW off-grid solar power system providing exceptional energy independence and low utility overhead. Climate control includes a heavy-duty 2.5HP split inverter air conditioner in the open living room and a dedicated 1HP split inverter in the master bedroom. Expansive doors open to a panoramic private veranda overlooking the bay.",
       "keyFeatures": [
-        "Expansive private covered veranda overlooking turquoise waters",
-        "Fully equipped kitchen with dining area & refrigeration",
-        "Spacious living lounge with handcrafted rattan & hardwood furnishings",
-        "En-suite modern bathroom with hot water shower",
-        "Independent private entry and dedicated electrical metering"
+        "6KW off-grid solar energy system with battery bank",
+        "2 Bedrooms with ample built-in wardrobe storage",
+        "2.5HP split inverter AC in living area + 1HP split inverter AC in main bedroom",
+        "Spacious private veranda with direct panoramic beach and ocean vistas",
+        "Full kitchen with dining counter, cookware, and full refrigeration",
+        "Separate electric meter and shared filtered water supply",
+        "Direct road access and footsteps to the beachfront sand"
       ],
-      "historicalHighlights": "A perennial guest favorite featured across historical travel archives and Wayback Machine rental records for romantic retreats and long-term ocean lovers."
+      "historicalHighlights": "Continuously maintained to the highest standards as the owners’ personal residence; featured extensively across historical archives (aldanmar.dulangan.com)."
     },
     {
       "id": "red",
       "name": "The Red Apartment",
-      "tagline": "Warm Terracotta Tropical Suite with Sunset Balcony",
+      "tagline": "Self-Contained Sunset Residence with Private Entrance & Inverter AC",
       "themeColor": "#dc2626",
       "badgeBg": "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800",
       "badgeText": "text-rose-800 dark:text-rose-300",
       "localDrivePath": "G:\\My Drive\\Aldanmar Red",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-red",
-      "image": "/src/assets/images/apartment_red_interior_1794313031442.jpg",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPUXMwQkJQQXFQTG8?resourcekey=0-ClaaJVm2UcryNMhC5aGZ9A&usp=drive_link",
+      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
       "galleryImages": [
-        "/src/assets/images/apartment_red_interior_1794313031442.jpg",
+        "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
         "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80"
       ],
-      "floorLevel": "Middle Panoramic Level",
+      "floorLevel": "Middle Level (Private Veranda)",
       "bedrooms": 1,
       "bathrooms": 1,
-      "capacity": "2 - 4 Guests",
+      "capacity": "2 - 3 Guests",
       "view": "Beachfront Water View & Golden Sunset Panorama",
-      "description": "A warm, character-filled tropical apartment featuring rich terracotta flooring, mahogany finishes, and an open-concept living area. The sun-drenched private balcony provides prime front-row views of Puerto Galera sunsets.",
+      "occupancyStatus": "Currently Rented Out (Turnkey Revenue)",
+      "acEquipment": "Split-Type Inverter Air Conditioner Installed",
+      "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
+      "description": "A fully self-contained apartment currently rented out and producing immediate rental revenue. Features a completely private entrance, private ocean-view balcony, split-type inverter air conditioning, fully equipped kitchen, independent electric metering, and connection to the shared filtered water supply.",
       "keyFeatures": [
-        "Private sunset balcony with outdoor relaxation seating",
-        "Open-concept kitchen, prep counter, and dining table",
-        "Generous living room with authentic Filipino rattan craft pieces",
-        "Airy cross-ventilation designed to capture coastal sea winds",
-        "Full bathroom with contemporary plumbing and hot shower"
+        "Currently rented out — immediate cash-flow from day one",
+        "Private independent entrance from the exterior walkway",
+        "Split-type inverter air conditioner for whisper-quiet energy efficiency",
+        "Private balcony with direct sunset views over Dulangan Beach",
+        "Fully self-contained kitchen, dining setup, and full en-suite bathroom",
+        "Dedicated independent electric meter for easy tenant utility accounting",
+        "Connected to the shared filtered water system"
       ],
-      "historicalHighlights": "Celebrated for its warm ambiance and sunset orientation, historically favored by diving enthusiasts visiting Puerto Galera marine sanctuaries."
+      "historicalHighlights": "Popular long-term and vacation rental unit recorded in the Wayback Machine archives at aldanmar.dulangan.com with outstanding guest loyalty."
     },
     {
       "id": "green",
       "name": "The Green Apartment",
-      "tagline": "Tranquil Tropical Garden & Canopy Coastal Retreat",
+      "tagline": "Garden & Coastal Suite with Private Entrance & Inverter AC",
       "themeColor": "#16a34a",
       "badgeBg": "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800",
       "badgeText": "text-emerald-800 dark:text-emerald-300",
       "localDrivePath": "G:\\My Drive\\Aldanmar Green",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-green",
-      "image": "/src/assets/images/apartment_green_interior_1794313032054.jpg",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPR1pLM1VkdDJ0Z2s?resourcekey=0-x2w87HENInMXLR5QIBpdWA&usp=drive_link",
+      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
       "galleryImages": [
-        "/src/assets/images/apartment_green_interior_1794313032054.jpg",
+        "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
         "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1200&q=80"
       ],
-      "floorLevel": "Garden / Coastal Ground Level",
+      "floorLevel": "Ground / Garden Walkout Level",
       "bedrooms": 1,
       "bathrooms": 1,
       "capacity": "2 - 3 Guests",
-      "view": "Lush Tropical Garden, Coconut Palms & Ocean Glimpse",
-      "description": "Embraced by tropical flora, coconut palms, and sea breezes, the Green Apartment offers a serene, grounded atmosphere. Natural timber finishes, soft sage and emerald accents, and an open breakfast bar overlooking the gardens.",
+      "view": "Tropical Gardens, Mature Palms & Beach Access",
+      "occupancyStatus": "Currently Rented Out (Turnkey Revenue)",
+      "acEquipment": "Split-Type Inverter Air Conditioner Installed",
+      "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
+      "description": "A serene ground-level residence currently rented out and generating reliable rental income. Features a separate private entrance, peaceful patio surrounded by tropical flora, split-type inverter air conditioning, independent electric metering, and direct access to Dulangan Beach.",
       "keyFeatures": [
-        "Direct garden walkout with seamless access toward the beach",
-        "Custom wooden dining counter and fully functional kitchen",
-        "Natural stone and timber detailing reflecting the Mindoro landscape",
-        "Cooler microclimate shaded by mature coconut palms",
-        "Independent entrance with private terrace patio"
+        "Currently rented out — turnkey passive rental income stream",
+        "Private separate exterior entrance with patio sitting area",
+        "Split-type inverter air conditioning unit installed",
+        "Separate electric meter for transparent tenant utility billing",
+        "Full self-contained kitchenette, living area, and en-suite bath",
+        "Connected to the shared filtered water supply system",
+        "Direct level walkout toward the beach and motorcycle parking area"
       ],
-      "historicalHighlights": "Preferred by writers, remote workers, and guests seeking peaceful extended stays surrounded by lush greenery and the sound of waves."
+      "historicalHighlights": "Consistently occupied by guests seeking serene tropical surroundings; archived on aldanmar.dulangan.com."
     }
   ],
   "propertyFeatures": [
     {
       "id": "feat-1",
       "number": "01",
-      "title": "Triplex Multi-Unit Architecture",
-      "description": "Engineered as a substantial multi-level coastal villa containing three distinct, self-contained residential units (Red, Green, and Blue). Live in one unit while generating passive rental revenue from the other two, or operate the entire estate as a boutique beachfront hospitality retreat.",
+      "title": "Triplex Multi-Unit Architecture & Turnkey Revenue",
+      "description": "Substantial coastal multi-level villa containing three distinct self-contained apartments. The Red and Green apartments are rented out generating steady rental revenue, while the Blue apartment is inhabited by the owners. Live on the beach while your tenants pay the upkeep, or lease all three for maximum yield.",
       "highlights": [
-        "Three fully independent apartments with private access",
-        "Individual kitchens, bathrooms, and outdoor verandas",
-        "Flexible configuration: private residence or holiday rental triplex"
+        "Red & Green units currently rented out (immediate cash flow)",
+        "Blue unit inhabited by owners (spacious 2-bedroom residence)",
+        "3 separate private entrances for complete tenant privacy",
+        "Direct beachfront frontage on calm, swimmable Dulangan Beach"
       ]
     },
     {
       "id": "feat-2",
       "number": "02",
-      "title": "Direct Dulangan Beach Frontage",
-      "description": "Positioned directly along Dulangan Beach in a peaceful coastal bay away from heavy commercial noise, yet only minutes from Puerto Galera town, Sabang diving hubs, and White Beach entertainment.",
+      "title": "6KW Solar System, Split Inverters & Independent Meters",
+      "description": "Engineered for energy efficiency and tropical resilience. The Blue apartment features a 6KW off-grid solar system with battery storage. All apartments are outfitted with split-type inverter air conditioners (2.5HP + 1HP in Blue, split inverters in Red & Green). Each apartment has its own dedicated electric meter and connects to a shared filtered water supply.",
       "highlights": [
-        "Immediate footsteps onto sand and swimmable calm waters",
-        "Coral reef snorkeling and kayak launch right off the shore",
-        "Protected bay with dramatic mountain backdrop of Oriental Mindoro"
+        "6KW off-grid solar power system installed on Blue apartment",
+        "Split-type inverter ACs across all three apartments",
+        "Separate electric meters for each apartment unit",
+        "Shared filtered water supply system serving all units"
       ]
     },
     {
       "id": "feat-3",
       "number": "03",
-      "title": "Road Access & Established Infrastructure",
-      "description": "Situated along 164 Dulangan Road (Sitio Centro) with direct road connectivity, utility infrastructure, reliable electrical connection, dedicated water storage, and fiber internet accessibility.",
+      "title": "Garage, Motorcycle Parking & Clean Titled Legal Status",
+      "description": "The property is clean titled with real estate taxes paid up to date. Original building permits are on hand, and occupancy permit is available upon request. Vehicle parking includes an enclosed garage capable of housing 1 medium car, plus off-road parking space for 5 motorcycles.",
       "highlights": [
-        "Direct vehicle access on Dulangan Road",
-        "Dedicated water tanks & pressure systems installed",
-        "Fiber optic internet ready for remote work and digital nomads"
+        "Clean Titled Property with real estate taxes paid up to date",
+        "Original building permits available; occupancy permit upon request",
+        "Enclosed garage for 1 medium vehicle",
+        "Off-road parking spaces for 5 motorcycles",
+        "Direct road access along 164 Dulangan Road (Sitio Centro)"
       ]
     }
   ],
   "externalMedia": {
-    "googleDriveUrl": "https://drive.google.com/drive/folders/aldanmar-apartments-property-documents",
-    "googlePhotosUrl": "https://photos.google.com/share/aldanmar-apartments-casa-santana-photos",
+    "googleDriveUrl": "https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link",
+    "googlePhotosUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link",
     "googleMapsUrl": "https://maps.google.com/?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines",
-    "waybackMachineUrl": "https://web.archive.org/web/*/aldanmar-apartments.com",
+    "waybackMachineUrl": "https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com",
     "coordinates": "13.5042° N, 120.9856° E",
-    "viewsDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-views",
-    "blueDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-blue",
-    "redDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-red",
-    "greenDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-green"
+    "viewsDriveFolderUrl": "https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link",
+    "blueDriveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link",
+    "redDriveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPUXMwQkJQQXFQTG8?resourcekey=0-ClaaJVm2UcryNMhC5aGZ9A&usp=drive_link",
+    "greenDriveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPR1pLM1VkdDJ0Z2s?resourcekey=0-x2w87HENInMXLR5QIBpdWA&usp=drive_link",
+    "floorPlansDriveUrl": "https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link"
   }
 }

@@ -14,10 +14,10 @@
 - **Infrastructure:** Reliable electrical connection, dedicated water storage, fiber optic internet readiness, direct vehicle access on 164 Dulangan Road.
 
 ## 📁 Property Documents & External Archives
-- **Google Photos Album:** [View High-Res Images](https://photos.google.com/share/aldanmar-apartments-casa-santana-photos)
-- **Google Drive Dossier:** [View Title & Floor Plans](https://drive.google.com/drive/folders/aldanmar-apartments-property-documents)
+- **Google Photos Album:** [View High-Res Images](https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link)
+- **Google Drive Dossier:** [View Title & Floor Plans](https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link)
 - **Google Maps Pin:** [View 164 Dulangan Road on Map](https://maps.google.com/?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines)
-- **Wayback Machine Archives:** [Historical Rental Records](https://web.archive.org/web/*/aldanmar-apartments.com)
+- **Wayback Machine Archives:** [Historical Rental Records](https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com)
 
 ## 🚀 Live Website
 - **GitHub Pages:** [https://aldanmar.github.io/aldanmar-site/](https://aldanmar.github.io/aldanmar-site/)

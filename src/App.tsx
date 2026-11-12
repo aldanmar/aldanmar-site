@@ -152,9 +152,14 @@ export default function App() {
               <div className="mx-auto max-w-6xl px-6">
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 items-center">
                   <div className="lg:col-span-7">
-                    <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/80 px-3 py-1 text-[11px] font-bold text-blue-800 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300">
-                      <span className="h-2 w-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                      <span>{siteData.listingStatus}</span>
+                    <div className="flex flex-wrap items-center gap-2 mb-3">
+                      <div className="inline-flex items-center gap-2 rounded-full border border-red-200 bg-red-50/90 px-3 py-1 text-[11px] font-bold text-red-800 dark:border-red-900/60 dark:bg-red-950/40 dark:text-red-300">
+                        <span>FOR SALE BY OWNER &amp; BUILDER</span>
+                      </div>
+                      <div className="inline-flex items-center gap-1.5 rounded-full border border-emerald-300 bg-emerald-50 px-3 py-1 text-[11px] font-black text-emerald-800 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-300">
+                        <span>{siteData.pricePhp || '₱15,000,000 PHP'}</span>
+                        <span className="text-emerald-600 font-semibold">({siteData.priceUsd || '~$268,000 USD'})</span>
+                      </div>
                     </div>
 
                     <h1 className="mt-4 text-3xl font-extrabold tracking-tight sm:text-5xl text-neutral-900 dark:text-white leading-[1.15]">
@@ -169,6 +174,10 @@ export default function App() {
                     <p className="mt-5 text-base leading-relaxed text-neutral-600 dark:text-neutral-300">
                       {siteData.heroDescription}
                     </p>
+
+                    <div className="mt-4 rounded-xl border border-blue-200 bg-blue-50/70 p-3.5 text-xs text-neutral-700 dark:border-blue-900/60 dark:bg-blue-950/30 dark:text-neutral-300">
+                      <strong>Occupancy &amp; Revenue:</strong> Red and Green apartments are rented out generating passive rental revenue. The Blue apartment (2-bedroom with 6KW off-grid solar) is inhabited by the owners.
+                    </div>
 
                     <div className="mt-8 flex flex-wrap items-center gap-3">
                       <a
@@ -381,19 +390,63 @@ export default function App() {
             <section id="media" className="border-b border-neutral-200 bg-neutral-50/70 py-20 dark:border-neutral-800 dark:bg-neutral-900/40">
               <div className="mx-auto max-w-6xl px-6 text-center">
                 <h2 className="text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">Official Media Vault & Drive Dossiers</h2>
-                <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
-                  <a href={siteData.externalMedia?.googleDriveUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-neutral-200 bg-white px-5 py-3 text-xs font-bold text-neutral-800 hover:border-blue-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
-                    <FolderOpen className="h-4 w-4 text-blue-600" />
-                    <span>Google Drive Documents</span>
+                <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+                  <a href={siteData.externalMedia?.floorPlansDriveUrl || 'https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-indigo-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-indigo-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+                    <FolderOpen className="h-4 w-4 text-indigo-600" />
+                    <span>Floor Plans &amp; 3D Images</span>
                   </a>
-                  <a href={siteData.externalMedia?.googlePhotosUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-neutral-200 bg-white px-5 py-3 text-xs font-bold text-neutral-800 hover:border-blue-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
-                    <Camera className="h-4 w-4 text-amber-600" />
-                    <span>Google Photos Albums</span>
+                  <a href={siteData.externalMedia?.blueDriveFolderUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-sky-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-sky-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+                    <FolderOpen className="h-4 w-4 text-sky-600" />
+                    <span>Blue Apt Drive</span>
                   </a>
-                  <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-neutral-200 bg-white px-5 py-3 text-xs font-bold text-neutral-800 hover:border-blue-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+                  <a href={siteData.externalMedia?.redDriveFolderUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-rose-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-rose-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+                    <FolderOpen className="h-4 w-4 text-rose-600" />
+                    <span>Red Apt Drive</span>
+                  </a>
+                  <a href={siteData.externalMedia?.greenDriveFolderUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-emerald-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-emerald-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+                    <FolderOpen className="h-4 w-4 text-emerald-600" />
+                    <span>Green Apt Drive</span>
+                  </a>
+                  <a href={siteData.externalMedia?.waybackMachineUrl || 'https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-purple-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-purple-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
+                    <History className="h-4 w-4 text-purple-600" />
+                    <span>Wayback Archive</span>
+                  </a>
+                  <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-neutral-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-blue-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <MapPin className="h-4 w-4 text-emerald-600" />
-                    <span>Google Maps GPS Pin</span>
+                    <span>Google Maps Pin</span>
                   </a>
+                </div>
+              </div>
+            </section>
+
+            {/* Google Maps Location Section */}
+            <section id="location" className="border-b border-neutral-200 bg-white py-16 dark:border-neutral-800 dark:bg-neutral-950">
+              <div className="mx-auto max-w-6xl px-6">
+                <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 items-center">
+                  <div className="lg:col-span-5 space-y-4">
+                    <span className="text-xs font-bold uppercase tracking-wider text-blue-600">Location &amp; Coordinates</span>
+                    <h2 className="text-2xl font-extrabold text-neutral-900 dark:text-white sm:text-3xl">Dulangan Beach, Puerto Galera</h2>
+                    <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                      164 Dulangan Road, Sitio Centro, Dulangan, Puerto Galera, Oriental Mindoro 5203, Philippines. Direct road access, enclosed garage for 1 medium car and off-road space for 5 motorcycles.
+                    </p>
+                    <div className="pt-2">
+                      <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-bold text-white hover:bg-blue-700">
+                        <MapPin className="h-3.5 w-3.5" />
+                        <span>Open Exact Pin in Google Maps</span>
+                        <ExternalLink className="h-3 w-3" />
+                      </a>
+                    </div>
+                  </div>
+                  <div className="lg:col-span-7 aspect-16/9 rounded-2xl overflow-hidden border border-neutral-200 shadow-sm dark:border-neutral-800">
+                    <iframe
+                      title="Google Maps Location - 164 Dulangan Road"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      loading="lazy"
+                      src="https://maps.google.com/maps?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                    />
+                  </div>
                 </div>
               </div>
             </section>
