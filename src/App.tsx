@@ -35,13 +35,55 @@ export default function App() {
   const [formState, setFormState] = useState({ name: '', email: '', phone: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
+  const updateMetaTags = (page: string) => {
+    let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera';
+    let pageDesc = siteData.heroDescription || '';
+    let ogImg = (siteData.externalViews && siteData.externalViews[0]?.image) || './assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg';
+
+    if (page !== 'home') {
+      const apt = (siteData.apartments || []).find((a: any) => a.id === page);
+      if (apt) {
+        if (apt.seoMeta && apt.seoMeta.title) pageTitle = apt.seoMeta.title;
+        else pageTitle = apt.name + ' — ' + apt.tagline + ' | ' + (siteData.propertyName || 'Aldanmar Apartments');
+        if (apt.seoMeta && apt.seoMeta.description) pageDesc = apt.seoMeta.description;
+        else pageDesc = apt.description;
+        if (apt.seoMeta && apt.seoMeta.ogImage) ogImg = apt.seoMeta.ogImage;
+        else if (apt.image) ogImg = apt.image;
+      }
+    } else if (siteData.homeSeoMeta && siteData.homeSeoMeta.title) {
+      pageTitle = siteData.homeSeoMeta.title;
+      if (siteData.homeSeoMeta.description) pageDesc = siteData.homeSeoMeta.description;
+      if (siteData.homeSeoMeta.ogImage) ogImg = siteData.homeSeoMeta.ogImage;
+    }
+
+    document.title = pageTitle;
+    const setMeta = (attr: string, key: string, val: string) => {
+      let el = document.querySelector('meta[' + attr + '="' + key + '"]');
+      if (!el) {
+        el = document.createElement('meta');
+        el.setAttribute(attr, key);
+        document.head.appendChild(el);
+      }
+      el.setAttribute('content', val);
+    };
+    setMeta('name', 'description', pageDesc);
+    setMeta('property', 'og:title', pageTitle);
+    setMeta('property', 'og:description', pageDesc);
+    setMeta('property', 'og:image', ogImg);
+    setMeta('name', 'twitter:title', pageTitle);
+    setMeta('name', 'twitter:description', pageDesc);
+    setMeta('name', 'twitter:image', ogImg);
+  };
+
   useEffect(() => {
     const handleHash = () => {
       const h = window.location.hash.toLowerCase().replace(/^#\/?/, '');
-      if (h === 'blue') setCurrentPage('blue');
-      else if (h === 'red') setCurrentPage('red');
-      else if (h === 'green') setCurrentPage('green');
-      else setCurrentPage('home');
+      let target = 'home';
+      if (h === 'blue') target = 'blue';
+      else if (h === 'red') target = 'red';
+      else if (h === 'green') target = 'green';
+      setCurrentPage(target as any);
+      updateMetaTags(target);
     };
     handleHash();
     window.addEventListener('hashchange', handleHash);
@@ -50,6 +92,7 @@ export default function App() {
 
   const navigateTo = (page: 'home' | 'blue' | 'red' | 'green') => {
     setCurrentPage(page);
+    updateMetaTags(page);
     window.location.hash = page === 'home' ? '#/' : '#/' + page;
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

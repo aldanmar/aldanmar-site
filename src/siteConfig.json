@@ -16,6 +16,14 @@
   "country": "Philippines",
   "heroHeadline": "Direct Beachfront Triplex Property for Sale in Puerto Galera",
   "heroDescription": "A rare coastal real estate opportunity featuring three fully furnished, self-contained apartments (Red, Green, and Blue) directly on Dulangan Beach. Turnkey rental revenue, separate private entrances, panoramic ocean views, and direct road access along 164 Dulangan Road.",
+  "homeSeoMeta": {
+    "title": "Aldanmar Apartments (Casa Santana) — Direct Beachfront Triplex for Sale, Puerto Galera",
+    "description": "Direct beachfront triplex property for sale at 164 Dulangan Road, Puerto Galera. 3 self-contained apartments (Red, Green, Blue), 6KW solar, titled with taxes current. Asking ₱15,000,000 PHP (~$268,000 USD).",
+    "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+    "ogType": "website",
+    "twitterCard": "summary_large_image",
+    "keywords": "Puerto Galera real estate, beachfront apartments for sale, Dulangan Beach property, Casa Santana, triplex villa Philippines"
+  },
   "ownerEmail": "knetaus@gmail.com",
   "ownerPhone": "+63 917 000 0000",
   "githubUsername": "aldanmar",
@@ -102,7 +110,15 @@
         "Separate electric meter and shared filtered water supply",
         "Direct road access and footsteps to the beachfront sand"
       ],
-      "historicalHighlights": "Continuously maintained to the highest standards as the owners’ personal residence; featured extensively across historical archives (aldanmar.dulangan.com)."
+      "historicalHighlights": "Continuously maintained to the highest standards as the owners’ personal residence; featured extensively across historical archives (aldanmar.dulangan.com).",
+      "seoMeta": {
+        "title": "The Blue Apartment — 2-Bedroom Owner Suite with 6KW Solar | Aldanmar Apartments",
+        "description": "Owner’s residence featuring 2 bedrooms, 6KW off-grid solar system, 2.5HP living room split inverter AC, 1HP bedroom AC, and private oceanfront veranda on Dulangan Beach.",
+        "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+        "ogType": "website",
+        "twitterCard": "summary_large_image",
+        "keywords": "The Blue Apartment, Aldanmar Apartments, 6KW solar Puerto Galera, beachfront 2 bedroom Dulangan"
+      }
     },
     {
       "id": "red",
@@ -139,7 +155,15 @@
         "Dedicated independent electric meter for easy tenant utility accounting",
         "Connected to the shared filtered water system"
       ],
-      "historicalHighlights": "Popular long-term and vacation rental unit recorded in the Wayback Machine archives at aldanmar.dulangan.com with outstanding guest loyalty."
+      "historicalHighlights": "Popular long-term and vacation rental unit recorded in the Wayback Machine archives at aldanmar.dulangan.com with outstanding guest loyalty.",
+      "seoMeta": {
+        "title": "The Red Apartment — Sunset Balcony Suite with Inverter AC | Aldanmar Apartments",
+        "description": "Turnkey rental revenue suite on Dulangan Beach. Features private exterior entrance, sunset balcony, split-type inverter AC, dedicated electric meter, and shared filtered water.",
+        "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+        "ogType": "website",
+        "twitterCard": "summary_large_image",
+        "keywords": "The Red Apartment, rental income Puerto Galera, beachfront suite Dulangan Beach, turn-key apartment Philippines"
+      }
     },
     {
       "id": "green",
@@ -176,7 +200,15 @@
         "Connected to the shared filtered water supply system",
         "Direct level walkout toward the beach and motorcycle parking area"
       ],
-      "historicalHighlights": "Consistently occupied by guests seeking serene tropical surroundings; archived on aldanmar.dulangan.com."
+      "historicalHighlights": "Consistently occupied by guests seeking serene tropical surroundings; archived on aldanmar.dulangan.com.",
+      "seoMeta": {
+        "title": "The Green Apartment — Garden Coastal Suite with Private Entrance | Aldanmar Apartments",
+        "description": "Tranquil ground-level apartment with private patio, split-type inverter AC, independent electric meter, and direct sandy beach walkout on Dulangan Beach. Currently rented out.",
+        "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+        "ogType": "website",
+        "twitterCard": "summary_large_image",
+        "keywords": "The Green Apartment, garden suite Puerto Galera, Dulangan Beach apartment rental, Casa Santana Mindoro"
+      }
     }
   ],
   "propertyFeatures": [
