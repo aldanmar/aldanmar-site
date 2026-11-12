@@ -15,6 +15,51 @@
   "ownerPhone": "+63 917 000 0000",
   "githubUsername": "aldanmar",
   "githubRepo": "aldanmar-site",
+  "viewsLocalPath": "G:\\My Drive\\Aldanmar Views",
+  "externalViews": [
+    {
+      "id": "view-1",
+      "title": "Casa Santana Coastal Triplex Facade",
+      "category": "exterior",
+      "image": "/src/assets/images/aldanmar_facade_exterior_1794469347602.jpg",
+      "caption": "Direct beachfront multi-unit villa architecture on Dulangan Beach with individual sea-facing verandas and balconies."
+    },
+    {
+      "id": "view-2",
+      "title": "Golden Sunset over Dulangan Bay",
+      "category": "sunset",
+      "image": "/src/assets/images/aldanmar_sunset_views_1794469369847.jpg",
+      "caption": "Spectacular sunset illumination over the calm waters of Dulangan Beach, viewed directly from the property frontage."
+    },
+    {
+      "id": "view-3",
+      "title": "Beachfront Villa Profile & Sand Walkout",
+      "category": "beach",
+      "image": "/src/assets/images/aldanmar_triplex_hero_1794313030220.jpg",
+      "caption": "Footsteps onto swimmable turquoise waters, coral reef snorkeling, and calm protected waters of Puerto Galera."
+    },
+    {
+      "id": "view-4",
+      "title": "Veranda Ocean Horizons",
+      "category": "exterior",
+      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
+      "caption": "Continuous coastal breezes and unhindered ocean views across the UNESCO biosphere reserve waters."
+    },
+    {
+      "id": "view-5",
+      "title": "Lush Tropical Grounds & Coconut Canopy",
+      "category": "grounds",
+      "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
+      "caption": "Mature coconut palms and native tropical flora framing the private boundary along 164 Dulangan Road."
+    },
+    {
+      "id": "view-6",
+      "title": "Dulangan Beachfront Waterline",
+      "category": "beach",
+      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
+      "caption": "Peaceful, uncrowded beachfront setting ideal for morning swims, kayaking, and relaxation."
+    }
+  ],
   "apartments": [
     {
       "id": "blue",
@@ -23,7 +68,16 @@
       "themeColor": "#0284c7",
       "badgeBg": "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800",
       "badgeText": "text-sky-800 dark:text-sky-300",
+      "localDrivePath": "G:\\My Drive\\Aldanmar Blue",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-blue",
       "image": "/src/assets/images/apartment_blue_interior_1794313031478.jpg",
+      "galleryImages": [
+        "/src/assets/images/apartment_blue_interior_1794313031478.jpg",
+        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
+      ],
       "floorLevel": "Upper Coastal Floor",
       "bedrooms": 1,
       "bathrooms": 1,
@@ -46,7 +100,16 @@
       "themeColor": "#dc2626",
       "badgeBg": "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800",
       "badgeText": "text-rose-800 dark:text-rose-300",
+      "localDrivePath": "G:\\My Drive\\Aldanmar Red",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-red",
       "image": "/src/assets/images/apartment_red_interior_1794313031442.jpg",
+      "galleryImages": [
+        "/src/assets/images/apartment_red_interior_1794313031442.jpg",
+        "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80"
+      ],
       "floorLevel": "Middle Panoramic Level",
       "bedrooms": 1,
       "bathrooms": 1,
@@ -69,7 +132,16 @@
       "themeColor": "#16a34a",
       "badgeBg": "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800",
       "badgeText": "text-emerald-800 dark:text-emerald-300",
+      "localDrivePath": "G:\\My Drive\\Aldanmar Green",
+      "driveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-green",
       "image": "/src/assets/images/apartment_green_interior_1794313032054.jpg",
+      "galleryImages": [
+        "/src/assets/images/apartment_green_interior_1794313032054.jpg",
+        "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
+        "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1200&q=80"
+      ],
       "floorLevel": "Garden / Coastal Ground Level",
       "bedrooms": 1,
       "bathrooms": 1,
@@ -126,6 +198,10 @@
     "googlePhotosUrl": "https://photos.google.com/share/aldanmar-apartments-casa-santana-photos",
     "googleMapsUrl": "https://maps.google.com/?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines",
     "waybackMachineUrl": "https://web.archive.org/web/*/aldanmar-apartments.com",
-    "coordinates": "13.5042° N, 120.9856° E"
+    "coordinates": "13.5042° N, 120.9856° E",
+    "viewsDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-views",
+    "blueDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-blue",
+    "redDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-red",
+    "greenDriveFolderUrl": "https://drive.google.com/drive/folders/aldanmar-green"
   }
 }
