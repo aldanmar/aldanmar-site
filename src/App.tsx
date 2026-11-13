@@ -32,10 +32,12 @@ export default function App() {
   const [submittedInfo, setSubmittedInfo] = useState<{ relayed: boolean; mailto: string } | null>(null);
   const [copiedShareUrl, setCopiedShareUrl] = useState(false);
 
+  const CANONICAL_SHARE_IMAGE = 'https://deanwestbury.com/assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg';
+
   const updateMetaTags = (page: string) => {
     let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera, Philippines';
     let pageDesc = siteData.heroDescription || '';
-    let ogImg = (siteData.externalViews && siteData.externalViews[0]?.image) || './assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg';
+    let ogImg = CANONICAL_SHARE_IMAGE;
 
     if (page !== 'home') {
       const apt = (siteData.apartments || []).find((a: any) => a.id === page);
@@ -44,13 +46,16 @@ export default function App() {
         else pageTitle = apt.name + ' — ' + apt.tagline + ' | ' + (siteData.propertyName || 'Aldanmar Apartments');
         if (apt.seoMeta && apt.seoMeta.description) pageDesc = apt.seoMeta.description;
         else pageDesc = apt.description;
-        if (apt.seoMeta && apt.seoMeta.ogImage) ogImg = apt.seoMeta.ogImage;
-        else if (apt.image) ogImg = apt.image;
+        if (apt.seoMeta && apt.seoMeta.ogImage && !apt.seoMeta.ogImage.includes('ForSaleByOwnerIcon')) {
+          ogImg = apt.seoMeta.ogImage.startsWith('http') ? apt.seoMeta.ogImage : ('https://deanwestbury.com/' + apt.seoMeta.ogImage.replace(/^\.\//, ''));
+        }
       }
     } else if (siteData.homeSeoMeta && siteData.homeSeoMeta.title) {
       pageTitle = siteData.homeSeoMeta.title;
       if (siteData.homeSeoMeta.description) pageDesc = siteData.homeSeoMeta.description;
-      if (siteData.homeSeoMeta.ogImage) ogImg = siteData.homeSeoMeta.ogImage;
+      if (siteData.homeSeoMeta.ogImage && !siteData.homeSeoMeta.ogImage.includes('ForSaleByOwnerIcon')) {
+        ogImg = siteData.homeSeoMeta.ogImage.startsWith('http') ? siteData.homeSeoMeta.ogImage : ('https://deanwestbury.com/' + siteData.homeSeoMeta.ogImage.replace(/^\.\//, ''));
+      }
     }
 
     document.title = pageTitle;
@@ -67,9 +72,13 @@ export default function App() {
     setMeta('property', 'og:title', pageTitle);
     setMeta('property', 'og:description', pageDesc);
     setMeta('property', 'og:image', ogImg);
+    setMeta('property', 'og:image:secure_url', ogImg);
+    setMeta('property', 'og:image:type', 'image/jpeg');
+    setMeta('property', 'og:image:alt', pageTitle);
     setMeta('name', 'twitter:title', pageTitle);
     setMeta('name', 'twitter:description', pageDesc);
     setMeta('name', 'twitter:image', ogImg);
+    setMeta('name', 'twitter:image:alt', pageTitle);
   };
 
   useEffect(() => {
@@ -168,12 +177,13 @@ export default function App() {
     ? (siteData.homeSeoMeta?.description || siteData.heroDescription || '')
     : (activeApartment?.seoMeta?.description || activeApartment?.description || '');
   const activeShareUrl = typeof window !== 'undefined'
-    ? (window.location.origin + window.location.pathname + '#/' + (currentPage === 'home' ? '' : currentPage))
+    ? (window.location.origin + window.location.pathname + (currentPage === 'home' ? '' : ('#/' + currentPage)))
     : '';
 
   const renderShareBar = (label: string, alignBetween?: boolean) => {
     const u = encodeURIComponent(activeShareUrl);
     const t = encodeURIComponent(activeShareTitle);
+    const img = encodeURIComponent(CANONICAL_SHARE_IMAGE);
     const summary = encodeURIComponent(activeShareDesc ? (activeShareTitle + ' — ' + activeShareDesc) : activeShareTitle);
     const mailBody = encodeURIComponent(activeShareTitle + '\n\n' + (activeShareDesc ? activeShareDesc + '\n\n' : '') + 'View listing: ' + activeShareUrl);
     return (
@@ -188,6 +198,7 @@ export default function App() {
           <a href={'https://api.whatsapp.com/send?text=' + summary + '%20' + u} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-emerald-500 hover:text-emerald-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">WhatsApp</a>
           <a href={'https://www.linkedin.com/sharing/share-offsite/?url=' + u} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-sky-600 hover:text-sky-700 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">LinkedIn</a>
           <a href={'https://t.me/share/url?url=' + u + '&text=' + t} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">Telegram</a>
+          <a href={'https://pinterest.com/pin/create/button/?url=' + u + '&media=' + img + '&description=' + t} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-red-500 hover:text-red-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">Pinterest</a>
           <a href={'mailto:?subject=' + t + '&body=' + mailBody} className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-blue-500 hover:text-blue-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">
             <Mail className="h-3.5 w-3.5" />
             <span>Email</span>
