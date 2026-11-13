@@ -39,4 +39,4 @@
    ```
 
 ---
-Inquiries: **knetaus@gmail.com** · Direct Owner Sale
+Inquiries: **aldanmar@deanwestbury.com** · Direct Owner Sale

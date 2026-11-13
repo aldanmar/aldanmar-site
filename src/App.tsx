@@ -26,7 +26,8 @@ export default function App() {
   const [aptCategory, setAptCategory] = useState<string>('All');
   const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string; subtitle?: string; meta?: string } | null>(null);
   const [formState, setFormState] = useState({ name: '', email: '', phone: '', message: '' });
-  const [submitted, setSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [submittedInfo, setSubmittedInfo] = useState<{ relayed: boolean; mailto: string } | null>(null);
 
   const updateMetaTags = (page: string) => {
     let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera';
@@ -92,11 +93,39 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (formState.name && formState.email) {
-      setSubmitted(true);
+    if (!formState.name || !formState.email || isSending) return;
+    const recipient = siteData.ownerEmail || 'aldanmar@deanwestbury.com';
+    const subjectText = currentPage !== 'home' ? ('Inquiry on ' + (activeApartment?.name || currentPage)) : 'Property Inquiry';
+    const mailto = 'mailto:' + encodeURIComponent(recipient)
+      + '?subject=' + encodeURIComponent('[Aldanmar Apartments] ' + subjectText)
+      + '&body=' + encodeURIComponent('From: ' + formState.name + '\nEmail: ' + formState.email + (formState.phone ? '\nPhone: ' + formState.phone : '') + '\n\n' + formState.message);
+    setIsSending(true);
+    let relayed = false;
+    try {
+      const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(recipient), {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({
+          name: formState.name,
+          email: formState.email,
+          _replyto: formState.email,
+          phone: formState.phone || 'Not provided',
+          unit: currentPage,
+          message: formState.message,
+          _subject: '[Aldanmar Apartments] ' + subjectText + ' — from ' + formState.name,
+          _template: 'table',
+          _captcha: 'false',
+        }),
+      });
+      const json = await res.json().catch(() => ({}));
+      relayed = res.ok && (json?.success === 'true' || json?.success === true);
+    } catch {
+      relayed = false;
     }
+    setIsSending(false);
+    setSubmittedInfo({ relayed, mailto });
   };
 
   const apartmentsList = siteData?.apartments || [];
@@ -695,16 +724,37 @@ export default function App() {
                 Inquire on Aldanmar Apartments
               </h2>
               <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-400">
-                Direct inquiry to owner at <span className="font-bold">{siteData.ownerEmail}</span>
+                Direct inquiry to owner at{' '}
+                <a href={'mailto:' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com')} className="font-mono font-bold text-blue-600 hover:underline">
+                  {siteData.ownerEmail || 'aldanmar@deanwestbury.com'}
+                </a>
+                {siteData.ownerPhone ? (' · ' + siteData.ownerPhone) : ''}
+              </p>
+              <p className="mt-1 text-[11px] text-neutral-500">
+                {siteData.address}, Sitio Centro, {siteData.barangay}, {siteData.municipality}, {siteData.province} 5203
               </p>
             </div>
 
             <div className="mt-8 rounded-2xl border border-neutral-200 bg-white p-6 shadow-lg dark:border-neutral-800 dark:bg-neutral-900">
-              {submitted ? (
-                <div className="py-8 text-center">
+              {submittedInfo ? (
+                <div className="py-8 text-center space-y-3">
                   <CheckCircle2 className="mx-auto h-12 w-12 text-emerald-600" />
-                  <h3 className="mt-3 text-lg font-bold">Inquiry Received</h3>
-                  <p className="mt-2 text-xs text-neutral-600 dark:text-neutral-400">Thank you! Your inquiry has been logged. We will reply to {formState.email} promptly.</p>
+                  <h3 className="text-lg font-bold">
+                    {submittedInfo.relayed ? ('Inquiry Sent to ' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com')) : 'Inquiry Ready — Open Email App'}
+                  </h3>
+                  <p className="text-xs text-neutral-600 dark:text-neutral-400">
+                    {submittedInfo.relayed
+                      ? ('Thank you! Your message has been dispatched to ' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com') + '. Reply-to: ' + formState.email)
+                      : ('Click below to send directly via your email client to ' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com'))}
+                  </p>
+                  <div className="flex flex-wrap items-center justify-center gap-2 pt-2">
+                    <a href={submittedInfo.mailto} className="inline-flex items-center gap-1.5 rounded-lg bg-blue-600 px-4 py-2 text-xs font-bold text-white hover:bg-blue-700">
+                      Open Email Client
+                    </a>
+                    <button type="button" onClick={() => setSubmittedInfo(null)} className="rounded-lg border border-neutral-300 px-3 py-2 text-xs font-semibold">
+                      Send Another
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 text-xs">
@@ -753,9 +803,9 @@ export default function App() {
                       className="mt-1 w-full rounded-xl border border-neutral-300 bg-white p-3.5 text-sm text-neutral-900 focus:outline-hidden dark:border-neutral-700 dark:bg-neutral-800 dark:text-white"
                     />
                   </div>
-                  <button type="submit" className="w-full rounded-xl bg-blue-600 py-3 text-sm font-bold text-white shadow-md hover:bg-blue-700 transition-colors flex items-center justify-center gap-2">
+                  <button type="submit" disabled={isSending} className="w-full rounded-xl bg-blue-600 py-3 text-sm font-bold text-white shadow-md hover:bg-blue-700 transition-colors flex items-center justify-center gap-2 disabled:opacity-60">
                     <Send className="h-4 w-4" />
-                    <span>Send Inquiry to Owner</span>
+                    <span>{isSending ? 'Sending...' : ('Send Enquiry to ' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com'))}</span>
                   </button>
                 </form>
               )}
@@ -787,8 +837,10 @@ export default function App() {
           <div className="font-extrabold text-sm text-neutral-900 dark:text-white">
             {siteData.propertyName} ({siteData.akaName})
           </div>
-          <p>{siteData.address}, {siteData.barangay}, {siteData.municipality}, {siteData.province}, {siteData.country}</p>
+          <p>{siteData.address}, Sitio Centro, {siteData.barangay}, {siteData.municipality}, {siteData.province}, {siteData.country}</p>
           <div className="flex flex-wrap items-center justify-center gap-6 pt-2 text-xs font-semibold text-neutral-600 dark:text-neutral-400">
+            <a href={'mailto:' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com')} className="font-mono text-blue-600 hover:underline">{siteData.ownerEmail || 'aldanmar@deanwestbury.com'}</a>
+            {siteData.ownerPhone && <span>{siteData.ownerPhone}</span>}
             <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Google Maps</a>
             <a href={siteData.externalMedia?.waybackMachineUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Wayback Machine</a>
           </div>
