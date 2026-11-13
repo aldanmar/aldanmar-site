@@ -1,18 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import {
   MapPin,
-  Compass,
   CheckCircle2,
   ExternalLink,
-  Mail,
-  Phone,
   ArrowRight,
   ArrowLeft,
-  Building2,
-  Waves,
-  Sun,
   Camera,
-  FolderOpen,
   History,
   Send,
   Bed,
@@ -21,17 +14,17 @@ import {
   Check,
   Maximize2,
   X,
-  ChevronLeft,
-  ChevronRight,
   Home,
-  HardDrive,
+  FileImage,
+  Layers,
 } from 'lucide-react';
 import siteData from './siteConfig.json';
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'blue' | 'red' | 'green'>('home');
   const [viewsCategory, setViewsCategory] = useState<'all' | 'exterior' | 'sunset' | 'beach' | 'grounds'>('all');
-  const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string; subtitle?: string } | null>(null);
+  const [aptCategory, setAptCategory] = useState<string>('All');
+  const [lightboxImg, setLightboxImg] = useState<{ src: string; title: string; subtitle?: string; meta?: string } | null>(null);
   const [formState, setFormState] = useState({ name: '', email: '', phone: '', message: '' });
   const [submitted, setSubmitted] = useState(false);
 
@@ -83,6 +76,7 @@ export default function App() {
       else if (h === 'red') target = 'red';
       else if (h === 'green') target = 'green';
       setCurrentPage(target as any);
+      setAptCategory('All');
       updateMetaTags(target);
     };
     handleHash();
@@ -92,6 +86,7 @@ export default function App() {
 
   const navigateTo = (page: 'home' | 'blue' | 'red' | 'green') => {
     setCurrentPage(page);
+    setAptCategory('All');
     updateMetaTags(page);
     window.location.hash = page === 'home' ? '#/' : '#/' + page;
     window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -107,9 +102,29 @@ export default function App() {
   const apartmentsList = siteData?.apartments || [];
   const activeApartment = apartmentsList.find((a: any) => a.id === currentPage) || apartmentsList[0];
   const externalViews = siteData?.externalViews || [];
+  const floorPlansList = siteData?.floorPlans || [];
   const filteredViews = viewsCategory === 'all'
     ? externalViews
     : externalViews.filter((v: any) => v.category === viewsCategory);
+
+  const activeItems = (activeApartment?.galleryItems && activeApartment.galleryItems.length > 0)
+    ? activeApartment.galleryItems
+    : (activeApartment?.galleryImages || [activeApartment?.image]).map((src: string, idx: number) => ({
+        id: 'item-' + idx,
+        src,
+        fileName: (src || '').split('/').pop() || 'photo.jpg',
+        title: (activeApartment?.name || 'Apartment') + ' Photo ' + (idx + 1),
+        category: 'Details',
+        size: '—',
+        modified: '—',
+      }));
+
+  const aptCategories = ['All', 'Living & Kitchen', 'Bedrooms', 'Terrace & Beach', 'Exterior & Access', 'Details', 'Floor Plans & 3D']
+    .filter((cat) => cat === 'All' || activeItems.some((it: any) => it.category === cat));
+
+  const filteredAptItems = aptCategory === 'All'
+    ? activeItems
+    : activeItems.filter((it: any) => it.category === aptCategory);
 
   const prevApartment = apartmentsList[(apartmentsList.findIndex((a: any) => a.id === currentPage) - 1 + apartmentsList.length) % apartmentsList.length];
   const nextApartment = apartmentsList[(apartmentsList.findIndex((a: any) => a.id === currentPage) + 1) % apartmentsList.length];
@@ -168,8 +183,8 @@ export default function App() {
 
             {currentPage === 'home' && (
               <>
+                <a href="#floor-plans" className="rounded-lg px-2.5 py-1.5 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white">Floor Plans</a>
                 <a href="#specs" className="rounded-lg px-2.5 py-1.5 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white">Specs</a>
-                <a href="#media" className="rounded-lg px-2.5 py-1.5 text-neutral-600 hover:text-neutral-900 dark:text-neutral-400 dark:hover:text-white">Media</a>
               </>
             )}
 
@@ -240,9 +255,17 @@ export default function App() {
 
                   <div className="lg:col-span-5">
                     <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-xl dark:border-neutral-800 dark:bg-neutral-900">
-                      <div className="relative aspect-4/3 w-full bg-neutral-800 cursor-pointer" onClick={() => setLightboxImg({ src: externalViews[0]?.image || 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80', title: 'Aldanmar Apartments (Casa Santana)', subtitle: 'Dulangan Beachfront Triplex' })}>
+                      <div
+                        className="relative aspect-square w-full bg-neutral-800 cursor-pointer"
+                        onClick={() => setLightboxImg({
+                          src: externalViews[0]?.image || './assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg',
+                          title: 'Aldanmar Apartments (Casa Santana)',
+                          subtitle: 'Dulangan Beachfront Triplex',
+                          meta: externalViews[0]?.fileName || 'ForSaleByOwnerIcon_3ec8a888.jpg',
+                        })}
+                      >
                         <img
-                          src={externalViews[0]?.image || 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80'}
+                          src={externalViews[0]?.image || './assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg'}
                           alt={siteData.propertyName}
                           className="h-full w-full object-cover"
                         />
@@ -264,36 +287,27 @@ export default function App() {
             {/* General External Images Gallery: Aldanmar Views */}
             <section id="views-gallery" className="border-b border-neutral-200 bg-white py-20 dark:border-neutral-800 dark:bg-neutral-950">
               <div className="mx-auto max-w-6xl px-6">
-                <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
-                  <div>
-                    <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/70 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300">
-                      <Camera className="h-3.5 w-3.5" />
-                      <span>General External Building Views</span>
-                    </div>
-                    <h2 className="mt-2 text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">
-                      Aldanmar Views: Facade, Beach & Grounds
-                    </h2>
-                    <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
-                      Explore building exteriors, beach waterline access on Dulangan Beach, sunset panoramas, and tropical grounds along 164 Dulangan Road.
-                    </p>
+                <div>
+                  <div className="inline-flex items-center gap-2 rounded-full border border-blue-200 bg-blue-50/70 px-3 py-1 text-xs font-semibold text-blue-700 dark:border-blue-900/60 dark:bg-blue-950/40 dark:text-blue-300">
+                    <Camera className="h-3.5 w-3.5" />
+                    <span>General External Building Views</span>
                   </div>
-
-                  <div className="flex items-center gap-2">
-                    <span className="flex items-center gap-1.5 rounded-lg bg-neutral-100 px-3 py-1.5 font-mono text-xs text-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 border border-neutral-200 dark:border-neutral-800">
-                      <HardDrive className="h-3.5 w-3.5 text-blue-600" />
-                      <span>{siteData.viewsLocalPath || 'G:\\My Drive\\Aldanmar Views'}</span>
-                    </span>
-                  </div>
+                  <h2 className="mt-2 text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">
+                    Aldanmar Views: Facade, Beach &amp; Grounds
+                  </h2>
+                  <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
+                    Explore building exteriors, beach waterline access on Dulangan Beach, bay panoramas, garage/motorcycle parking, and road frontage along 164 Dulangan Road.
+                  </p>
                 </div>
 
                 {/* Filter Pills */}
                 <div className="mt-8 flex flex-wrap gap-2 border-b border-neutral-200 pb-4 dark:border-neutral-800">
                   {[
                     { id: 'all', label: 'All Building Views' },
-                    { id: 'exterior', label: 'Villa Facade & Verandas' },
-                    { id: 'sunset', label: 'Sunset Panorama' },
+                    { id: 'exterior', label: 'Villa Facade & Frontage' },
+                    { id: 'sunset', label: 'Bay & Veranda Views' },
                     { id: 'beach', label: 'Beachfront & Sand' },
-                    { id: 'grounds', label: 'Tropical Grounds & Palms' },
+                    { id: 'grounds', label: 'Parking, Road & Grounds' },
                   ].map((cat: any) => (
                     <button
                       key={cat.id}
@@ -308,26 +322,95 @@ export default function App() {
                 {/* Grid */}
                 <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                   {filteredViews.map((item: any, idx: number) => (
-                    <div
+                    <figure
                       key={item.id || idx}
-                      onClick={() => setLightboxImg({ src: item.image, title: item.title, subtitle: item.caption })}
-                      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-xs transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
+                      onClick={() => setLightboxImg({
+                        src: item.image,
+                        title: item.title,
+                        subtitle: item.caption,
+                        meta: [item.fileName, item.size, item.modified].filter(Boolean).join(' · '),
+                      })}
+                      className="group flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xs transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
                     >
-                      <div className="aspect-16/10 w-full overflow-hidden bg-neutral-800">
+                      <div className="relative aspect-16/10 w-full overflow-hidden bg-neutral-800">
                         <img src={item.image} alt={item.title} className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+                        <div className="absolute top-3 left-3 rounded bg-blue-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider text-white">{item.category}</div>
+                        <div className="absolute top-3 right-3 rounded-full bg-black/60 p-1.5 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                          <Maximize2 className="h-4 w-4" />
+                        </div>
                       </div>
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-85 group-hover:opacity-95 transition-opacity"></div>
-                      <div className="absolute top-3 right-3 rounded-full bg-black/60 p-1.5 text-white opacity-0 transition-opacity group-hover:opacity-100">
-                        <Maximize2 className="h-4 w-4" />
-                      </div>
-                      <div className="absolute bottom-3 left-4 right-4 text-white">
-                        <span className="rounded bg-blue-600/90 px-2 py-0.5 text-[10px] font-bold uppercase tracking-wider">{item.category}</span>
-                        <h3 className="mt-1.5 text-sm font-bold text-white leading-tight">{item.title}</h3>
-                        <p className="mt-1 line-clamp-2 text-xs text-neutral-300">{item.caption}</p>
-                      </div>
-                    </div>
+                      <figcaption className="flex flex-1 flex-col justify-between gap-2 p-4">
+                        <div>
+                          <h3 className="text-sm font-bold text-neutral-900 dark:text-white leading-tight">{item.title}</h3>
+                          <p className="mt-1 line-clamp-2 text-xs text-neutral-600 dark:text-neutral-400">{item.caption}</p>
+                        </div>
+                        <div className="flex items-center justify-between border-t border-neutral-100 pt-2 text-[11px] text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
+                          <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-2 py-0.5 font-mono font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+                            <FileImage className="h-3 w-3 text-blue-600" />
+                            <span>{item.fileName || 'photo.jpg'}</span>
+                          </span>
+                          {(item.size || item.modified) && (
+                            <span className="font-mono">{[item.size, item.modified].filter(Boolean).join(' · ')}</span>
+                          )}
+                        </div>
+                      </figcaption>
+                    </figure>
                   ))}
                 </div>
+              </div>
+            </section>
+
+            {/* Floor Plans & 3D Architectural Renders */}
+            <section id="floor-plans" className="border-b border-neutral-200 bg-neutral-50/70 py-16 dark:border-neutral-800 dark:bg-neutral-900/20">
+              <div className="mx-auto max-w-6xl px-6">
+                <div className="inline-flex items-center gap-2 rounded-full border border-indigo-200 bg-indigo-50/80 px-3 py-1 text-xs font-semibold text-indigo-700 dark:border-indigo-900/60 dark:bg-indigo-950/40 dark:text-indigo-300">
+                  <Layers className="h-3.5 w-3.5" />
+                  <span>Architectural Documentation</span>
+                </div>
+                <h2 className="mt-2 text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">
+                  Floor Plans &amp; 3D Images
+                </h2>
+
+                {floorPlansList.length > 0 ? (
+                  <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                    {floorPlansList.map((fp: any, idx: number) => (
+                      <figure
+                        key={fp.id || idx}
+                        onClick={() => setLightboxImg({
+                          src: fp.src,
+                          title: fp.title,
+                          subtitle: fp.caption,
+                          meta: [fp.fileName, fp.size, fp.modified].filter(Boolean).join(' · '),
+                        })}
+                        className="group flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xs transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
+                      >
+                        <div className="relative aspect-4/3 w-full overflow-hidden bg-white p-2 dark:bg-neutral-950">
+                          <img src={fp.src} alt={fp.title} className="h-full w-full object-contain transition-transform duration-500 group-hover:scale-103" />
+                          <div className="absolute top-3 right-3 rounded-full bg-black/60 p-1.5 text-white opacity-0 transition-opacity group-hover:opacity-100">
+                            <Maximize2 className="h-4 w-4" />
+                          </div>
+                        </div>
+                        <figcaption className="flex flex-1 flex-col justify-between gap-2 border-t border-neutral-100 p-4 dark:border-neutral-800">
+                          <div>
+                            <h3 className="text-sm font-bold text-neutral-900 dark:text-white leading-snug">{fp.title}</h3>
+                            {fp.caption && <p className="mt-1 line-clamp-2 text-xs text-neutral-500 dark:text-neutral-400">{fp.caption}</p>}
+                          </div>
+                          <div className="flex items-center justify-between border-t border-neutral-100 pt-2 text-[11px] text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
+                            <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-2 py-0.5 font-mono font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+                              <FileImage className="h-3 w-3 text-indigo-600" />
+                              <span>{fp.fileName}</span>
+                            </span>
+                            <span className="font-mono">{[fp.size, fp.modified].filter(Boolean).join(' · ')}</span>
+                          </div>
+                        </figcaption>
+                      </figure>
+                    ))}
+                  </div>
+                ) : (
+                  <p className="mt-3 text-sm text-neutral-600 dark:text-neutral-400 max-w-3xl">
+                    Multi-level triplex layout spanning Blue Apartment (upper road-level 2-bedroom suite with 6KW solar &amp; garage), Red Apartment (middle split-level unit), and Green Apartment (lower garden unit with direct beach gate). Detailed architectural floor plans and 3D CAD views available upon direct owner inquiry.
+                  </p>
+                )}
               </div>
             </section>
 
@@ -337,7 +420,7 @@ export default function App() {
                 <div>
                   <span className="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Accommodation Breakdown</span>
                   <h2 className="mt-1 text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">
-                    The 3 Apartments: Red, Green & Blue
+                    The 3 Apartments: Red, Green &amp; Blue
                   </h2>
                   <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400 max-w-2xl">
                     Each apartment is fully furnished with its own private entrance, kitchen, bathroom, and dedicated gallery page.
@@ -359,7 +442,7 @@ export default function App() {
                             </span>
                           </div>
                           <div className="absolute bottom-2 right-2 rounded bg-black/70 px-2 py-0.5 text-[10px] font-mono text-white">
-                            {apt.floorLevel}
+                            {(apt.galleryItems || apt.galleryImages || []).length} Photos
                           </div>
                         </div>
 
@@ -385,10 +468,6 @@ export default function App() {
                           <p className="mt-4 text-xs leading-relaxed text-neutral-600 dark:text-neutral-300">
                             {apt.description}
                           </p>
-
-                          <div className="mt-4 text-[11px] text-neutral-500 font-mono">
-                            Folder: {apt.localDrivePath || ('G:\\My Drive\\Aldanmar ' + (apt.id.charAt(0).toUpperCase() + apt.id.slice(1)))}
-                          </div>
                         </div>
                       </div>
 
@@ -397,7 +476,7 @@ export default function App() {
                           onClick={() => navigateTo(apt.id)}
                           className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-2.5 text-xs font-bold text-white shadow-xs hover:bg-blue-700 transition-colors"
                         >
-                          <span>Open Dedicated {apt.name} Page</span>
+                          <span>Open {apt.name} Gallery</span>
                           <ArrowRight className="h-3.5 w-3.5" />
                         </button>
                       </div>
@@ -411,9 +490,9 @@ export default function App() {
             <section id="specs" className="border-b border-neutral-200 bg-white py-20 dark:border-neutral-800 dark:bg-neutral-950">
               <div className="mx-auto max-w-6xl px-6">
                 <div className="text-center max-w-2xl mx-auto">
-                  <span className="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Technical & Investment Summary</span>
+                  <span className="text-xs font-bold tracking-widest uppercase text-blue-600 dark:text-blue-400">Technical &amp; Investment Summary</span>
                   <h2 className="mt-1 text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">
-                    Property Specifications & Asset Highlights
+                    Property Specifications &amp; Asset Highlights
                   </h2>
                 </div>
 
@@ -429,30 +508,14 @@ export default function App() {
               </div>
             </section>
 
-            {/* Media Vault */}
-            <section id="media" className="border-b border-neutral-200 bg-neutral-50/70 py-20 dark:border-neutral-800 dark:bg-neutral-900/40">
+            {/* Historical & Location References */}
+            <section id="media" className="border-b border-neutral-200 bg-neutral-50/70 py-16 dark:border-neutral-800 dark:bg-neutral-900/40">
               <div className="mx-auto max-w-6xl px-6 text-center">
-                <h2 className="text-2xl font-extrabold sm:text-4xl text-neutral-900 dark:text-white">Official Media Vault & Drive Dossiers</h2>
-                <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
-                  <a href={siteData.externalMedia?.floorPlansDriveUrl || 'https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-indigo-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-indigo-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
-                    <FolderOpen className="h-4 w-4 text-indigo-600" />
-                    <span>Floor Plans &amp; 3D Images</span>
-                  </a>
-                  <a href={siteData.externalMedia?.blueDriveFolderUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-sky-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-sky-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
-                    <FolderOpen className="h-4 w-4 text-sky-600" />
-                    <span>Blue Apt Drive</span>
-                  </a>
-                  <a href={siteData.externalMedia?.redDriveFolderUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-rose-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-rose-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
-                    <FolderOpen className="h-4 w-4 text-rose-600" />
-                    <span>Red Apt Drive</span>
-                  </a>
-                  <a href={siteData.externalMedia?.greenDriveFolderUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-emerald-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-emerald-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
-                    <FolderOpen className="h-4 w-4 text-emerald-600" />
-                    <span>Green Apt Drive</span>
-                  </a>
+                <h2 className="text-2xl font-extrabold sm:text-3xl text-neutral-900 dark:text-white">Map Coordinates &amp; Historical Archives</h2>
+                <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
                   <a href={siteData.externalMedia?.waybackMachineUrl || 'https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-purple-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-purple-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <History className="h-4 w-4 text-purple-600" />
-                    <span>Wayback Archive</span>
+                    <span>Wayback Archive (aldanmar.dulangan.com)</span>
                   </a>
                   <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-neutral-200 bg-white px-4 py-2.5 text-xs font-bold text-neutral-800 hover:border-blue-500 shadow-xs flex items-center gap-2 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200">
                     <MapPin className="h-4 w-4 text-emerald-600" />
@@ -519,22 +582,16 @@ export default function App() {
               </div>
 
               {/* Apartment Header */}
-              <div className="mt-8 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                <div>
-                  <div className="flex items-center gap-2">
-                    <span className={'rounded-md border px-3 py-1 text-xs font-bold ' + (activeApartment.id === 'blue' ? 'bg-sky-50 text-sky-800 border-sky-300' : activeApartment.id === 'red' ? 'bg-rose-50 text-rose-800 border-rose-300' : 'bg-emerald-50 text-emerald-800 border-emerald-300')}>
-                      {activeApartment.name}
-                    </span>
-                    <span className="rounded-md bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">{activeApartment.floorLevel}</span>
-                  </div>
-                  <h1 className="mt-3 text-3xl font-extrabold sm:text-5xl text-neutral-900 dark:text-white">{activeApartment.name}</h1>
-                  <p className="mt-2 text-base text-neutral-600 dark:text-neutral-300">{activeApartment.tagline}</p>
+              <div className="mt-8">
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className={'rounded-md border px-3 py-1 text-xs font-bold ' + (activeApartment.id === 'blue' ? 'bg-sky-50 text-sky-800 border-sky-300' : activeApartment.id === 'red' ? 'bg-rose-50 text-rose-800 border-rose-300' : 'bg-emerald-50 text-emerald-800 border-emerald-300')}>
+                    {activeApartment.name}
+                  </span>
+                  <span className="rounded-md bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">{activeApartment.floorLevel}</span>
+                  <span className="rounded-md bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-800">{activeApartment.occupancyStatus}</span>
                 </div>
-
-                <div className="flex items-center gap-2 text-xs font-mono text-neutral-500 bg-neutral-100 px-3 py-2 rounded-xl border border-neutral-200 dark:bg-neutral-900 dark:border-neutral-800">
-                  <HardDrive className="h-4 w-4 text-blue-600" />
-                  <span>Folder: {activeApartment.localDrivePath || ('G:\\My Drive\\Aldanmar ' + (activeApartment.id.charAt(0).toUpperCase() + activeApartment.id.slice(1)))}</span>
-                </div>
+                <h1 className="mt-3 text-3xl font-extrabold sm:text-5xl text-neutral-900 dark:text-white">{activeApartment.name}</h1>
+                <p className="mt-2 text-base text-neutral-600 dark:text-neutral-300">{activeApartment.tagline}</p>
               </div>
 
               {/* Specs Pills */}
@@ -557,30 +614,61 @@ export default function App() {
                 </div>
               </div>
 
-              {/* Photo Gallery Grid */}
+              {/* Photo Gallery Grid with Categories & Metadata */}
               <div className="mt-12">
-                <h2 className="text-xl font-bold text-neutral-900 dark:text-white">{activeApartment.name} Photo Gallery</h2>
-                <div className="mt-6 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3">
-                  {(activeApartment.galleryImages || [activeApartment.image]).map((img: string, idx: number) => (
-                    <div
-                      key={idx}
-                      onClick={() => setLightboxImg({ src: img, title: activeApartment.name + ' - Photo ' + (idx + 1) })}
-                      className="group relative cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-xs dark:border-neutral-800 dark:bg-neutral-900"
+                <h2 className="text-xl font-bold text-neutral-900 dark:text-white">
+                  {activeApartment.name} Photo Gallery ({filteredAptItems.length} of {activeItems.length})
+                </h2>
+
+                <div className="mt-4 flex flex-wrap gap-2 border-b border-neutral-200 pb-4 dark:border-neutral-800">
+                  {aptCategories.map((cat: string) => (
+                    <button
+                      key={cat}
+                      onClick={() => setAptCategory(cat)}
+                      className={'rounded-lg px-3 py-1.5 text-xs font-semibold transition-all ' + (aptCategory === cat ? 'bg-neutral-900 text-white dark:bg-white dark:text-neutral-900' : 'bg-neutral-100 text-neutral-600 hover:bg-neutral-200 dark:bg-neutral-900 dark:text-neutral-400')}
                     >
-                      <div className="aspect-16/10 w-full overflow-hidden bg-neutral-800">
-                        <img src={img} alt="" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" />
+                      {cat}
+                    </button>
+                  ))}
+                </div>
+
+                <div className="mt-6 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                  {filteredAptItems.map((item: any, idx: number) => (
+                    <figure
+                      key={item.id || idx}
+                      onClick={() => setLightboxImg({
+                        src: item.src,
+                        title: item.title,
+                        subtitle: item.caption,
+                        meta: [item.category, item.fileName, item.size, item.modified].filter(Boolean).join(' · '),
+                      })}
+                      className="group flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xs dark:border-neutral-800 dark:bg-neutral-900"
+                    >
+                      <div className={'relative aspect-4/3 w-full overflow-hidden ' + (item.category === 'Floor Plans & 3D' ? 'bg-white dark:bg-neutral-950 p-2' : 'bg-neutral-800')}>
+                        <img src={item.src} alt={item.title} loading="lazy" className={'h-full w-full transition-transform duration-500 group-hover:scale-105 ' + (item.category === 'Floor Plans & 3D' ? 'object-contain' : 'object-cover')} />
+                        <div className="absolute top-2.5 left-2.5 rounded bg-black/65 px-2 py-0.5 text-[10px] font-bold uppercase text-white">{item.category}</div>
+                        <div className="absolute top-2.5 right-2.5 rounded-full bg-black/60 p-1.5 text-white opacity-0 group-hover:opacity-100 transition-opacity">
+                          <Maximize2 className="h-4 w-4" />
+                        </div>
                       </div>
-                      <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                        <div className="rounded-full bg-white/90 p-2 text-neutral-900"><Maximize2 className="h-5 w-5" /></div>
-                      </div>
-                    </div>
+                      <figcaption className="flex flex-1 flex-col justify-between gap-2 border-t border-neutral-100 p-3.5 dark:border-neutral-800">
+                        <h3 className="text-xs font-bold text-neutral-900 dark:text-white leading-snug">{item.title}</h3>
+                        <div className="flex items-center justify-between text-[11px] text-neutral-500 dark:text-neutral-400">
+                          <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-1.5 py-0.5 font-mono font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
+                            <FileImage className="h-3 w-3 text-blue-600" />
+                            <span>{item.fileName}</span>
+                          </span>
+                          <span className="font-mono">{item.size} · {item.modified}</span>
+                        </div>
+                      </figcaption>
+                    </figure>
                   ))}
                 </div>
               </div>
 
               {/* Description & Features */}
               <div className="mt-12 rounded-2xl border border-neutral-200 bg-white p-8 dark:border-neutral-800 dark:bg-neutral-900">
-                <h3 className="text-base font-bold text-neutral-900 dark:text-white">Unit Details & Specifications</h3>
+                <h3 className="text-base font-bold text-neutral-900 dark:text-white">Unit Details &amp; Specifications</h3>
                 <p className="mt-3 text-sm leading-relaxed text-neutral-600 dark:text-neutral-300">{activeApartment.description}</p>
                 <div className="mt-6 border-t border-neutral-100 pt-4 dark:border-neutral-800">
                   <span className="text-xs font-bold uppercase tracking-wider text-neutral-900 dark:text-white">Key Amenities:</span>
@@ -661,7 +749,7 @@ export default function App() {
                       required
                       value={formState.message}
                       onChange={(e) => setFormState({ ...formState, message: e.target.value })}
-                      placeholder={'I am interested in acquiring or renting Aldanmar Apartments (Casa Santana)...'}
+                      placeholder={'I am interested in acquiring Aldanmar Apartments (Casa Santana)...'}
                       className="mt-1 w-full rounded-xl border border-neutral-300 bg-white p-3.5 text-sm text-neutral-900 focus:outline-hidden dark:border-neutral-700 dark:bg-neutral-800 dark:text-white"
                     />
                   </div>
@@ -684,9 +772,10 @@ export default function App() {
           </button>
           <div className="relative max-h-[85vh] max-w-5xl overflow-hidden rounded-2xl bg-neutral-950 flex flex-col items-center" onClick={(e) => e.stopPropagation()}>
             <img src={lightboxImg.src} alt={lightboxImg.title} className="max-h-[70vh] w-auto max-w-full object-contain" />
-            <div className="w-full bg-neutral-900/90 p-4 text-center text-white border-t border-neutral-800">
+            <div className="w-full bg-neutral-900/90 p-4 text-center text-white border-t border-neutral-800 space-y-1">
+              {lightboxImg.meta && <div className="text-xs font-mono text-blue-400">{lightboxImg.meta}</div>}
               <h3 className="text-base font-bold">{lightboxImg.title}</h3>
-              {lightboxImg.subtitle && <p className="mt-1 text-xs text-neutral-400">{lightboxImg.subtitle}</p>}
+              {lightboxImg.subtitle && <p className="text-xs text-neutral-400">{lightboxImg.subtitle}</p>}
             </div>
           </div>
         </div>
@@ -700,8 +789,6 @@ export default function App() {
           </div>
           <p>{siteData.address}, {siteData.barangay}, {siteData.municipality}, {siteData.province}, {siteData.country}</p>
           <div className="flex flex-wrap items-center justify-center gap-6 pt-2 text-xs font-semibold text-neutral-600 dark:text-neutral-400">
-            <a href={siteData.externalMedia?.googleDriveUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Google Drive</a>
-            <a href={siteData.externalMedia?.googlePhotosUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Google Photos</a>
             <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Google Maps</a>
             <a href={siteData.externalMedia?.waybackMachineUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Wayback Machine</a>
           </div>

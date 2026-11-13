@@ -2,22 +2,20 @@
 
 > Direct Beachfront Triplex Property for Sale in Puerto Galera
 
-**Direct Beachfront Property For Sale**  
+**Direct Beachfront Property For Sale — ₱15,000,000 PHP (~$268,000 USD)**  
 📍 **Location:** 164 Dulangan Road, Sitio Centro, Dulangan, Puerto Galera, Oriental Mindoro, Philippines
 
 ## 🏝️ Property Overview
 - **Structure:** Multi-unit coastal triplex villa featuring 3 self-contained, fully furnished apartments:
-  - **The Blue Apartment:** Flagship oceanfront suite with private panoramic veranda
-  - **The Red Apartment:** Warm terracotta tropical suite with sunset balcony
-  - **The Green Apartment:** Serene garden canopy suite with direct beach walkout
-- **Setting:** Direct frontage on Dulangan Beach, calm protected bay, UNESCO biosphere reserve.
-- **Infrastructure:** Reliable electrical connection, dedicated water storage, fiber optic internet readiness, direct vehicle access on 164 Dulangan Road.
+  - **The Blue Apartment:** Owner's 2-bedroom suite with 6KW off-grid solar system, 2.5HP + 1HP split inverter ACs, and private panoramic veranda
+  - **The Red Apartment:** Rented self-contained sunset suite with private entrance, split-type inverter AC, and balcony
+  - **The Green Apartment:** Rented self-contained garden suite with private entrance, split-type inverter AC, and direct beach gate
+- **Utilities & Parking:** Separate electric meters per apartment, shared filtered water supply, 1 medium car garage, and off-road parking for 5 motorcycles.
+- **Title & Permits:** Clean Titled Property · Real estate taxes paid up to date · Original building permits available · Occupancy permit available upon request
 
-## 📁 Property Documents & External Archives
-- **Google Photos Album:** [View High-Res Images](https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link)
-- **Google Drive Dossier:** [View Title & Floor Plans](https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link)
+## 📍 Verification & Location
 - **Google Maps Pin:** [View 164 Dulangan Road on Map](https://maps.google.com/?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines)
-- **Wayback Machine Archives:** [Historical Rental Records](https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com)
+- **Wayback Machine Archives:** [Historical Rental Records (aldanmar.dulangan.com)](https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com)
 
 ## 🚀 Live Website
 - **GitHub Pages:** [https://aldanmar.github.io/aldanmar-site/](https://aldanmar.github.io/aldanmar-site/)

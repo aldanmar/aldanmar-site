@@ -28,49 +28,168 @@
   "ownerPhone": "+63 917 000 0000",
   "githubUsername": "aldanmar",
   "githubRepo": "aldanmar-site",
-  "viewsLocalPath": "G:\\My Drive\\Aldanmar Views",
   "externalViews": [
     {
       "id": "view-hero",
-      "title": "Aldanmar Apartments / Casa Santana — For Sale by Owner & Builder",
+      "title": "Aldanmar Apartments (Casa Santana) — For Sale by Owner & Builder",
+      "fileName": "ForSaleByOwnerIcon_3ec8a888.jpg",
+      "size": "96 KB",
+      "modified": "Featured Photo",
       "category": "exterior",
       "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
-      "caption": "Direct beachfront triplex property at 164 Dulangan Road, Puerto Galera. Solid coastal construction with separate private verandas overlooking the beach."
+      "caption": "Direct beachfront triplex property at 164 Dulangan Road, Puerto Galera with private terraced balconies overlooking Dulangan Beach."
     },
     {
-      "id": "view-1",
-      "title": "Casa Santana Coastal Triplex Facade",
+      "id": "view-beach-facade",
+      "title": "Casa Santana Elevation from Dulangan Beach",
+      "fileName": "BuildingViewFromBeach-2010.jpg",
+      "size": "43 KB",
+      "modified": "1 Feb 2014",
       "category": "exterior",
-      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
-      "caption": "Direct beachfront multi-unit villa architecture on Dulangan Beach with individual sea-facing verandas and balconies."
+      "image": "./assets/drive/red/BuildingViewFromBeach-2010.jpg",
+      "caption": "Three-tier coastal elevation viewed straight from the sandy shoreline showing all three private apartment levels."
     },
     {
-      "id": "view-2",
-      "title": "Golden Sunset over Dulangan Bay",
+      "id": "view-road-front",
+      "title": "164 Dulangan Road Entrance & Villa Frontage",
+      "fileName": "Front3.jpg",
+      "size": "130 KB",
+      "modified": "3 Aug 2014",
+      "category": "exterior",
+      "image": "./assets/drive/blue/Front3.jpg",
+      "caption": "Upper road-level frontage along 164 Dulangan Road with gated vehicle entry and tropical tree canopy."
+    },
+    {
+      "id": "view-terrace-bay",
+      "title": "Panoramic Bay Vista from Upper Veranda",
+      "fileName": "TerraceView.jpg",
+      "size": "79 KB",
+      "modified": "4 Aug 2014",
       "category": "sunset",
-      "image": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80",
-      "caption": "Spectacular sunset illumination over the calm waters of Dulangan Beach, viewed directly from the property frontage."
+      "image": "./assets/drive/blue/TerraceView.jpg",
+      "caption": "Sweeping ocean and mountain vista across Dulangan Bay looking toward Verde Island Passage."
     },
     {
-      "id": "view-3",
-      "title": "Beachfront Walkout & Calm Waters",
+      "id": "view-beach-walkout",
+      "title": "Calm Swimmable Shoreline on Dulangan Beach",
+      "fileName": "BeachView.jpg",
+      "size": "106 KB",
+      "modified": "26 Jul 2014",
       "category": "beach",
-      "image": "https://images.unsplash.com/photo-1540555700478-4be289fbecef?auto=format&fit=crop&w=1200&q=80",
-      "caption": "Footsteps onto swimmable turquoise waters, coral reef snorkeling, and calm protected waters of Puerto Galera."
+      "image": "./assets/drive/green/BeachView.jpg",
+      "caption": "Direct beachfront walkout onto calm turquoise waters ideal for swimming, paddleboarding, and snorkeling."
     },
     {
-      "id": "view-4",
-      "title": "Veranda Ocean Horizons",
-      "category": "exterior",
-      "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=1200&q=80",
-      "caption": "Continuous coastal breezes and unhindered ocean views across the UNESCO biosphere reserve waters."
+      "id": "view-beach-gate",
+      "title": "Private Beachfront Gate & Shoreline Path",
+      "fileName": "BeachGate.jpg",
+      "size": "122 KB",
+      "modified": "26 Jul 2014",
+      "category": "beach",
+      "image": "./assets/drive/green/BeachGate.jpg",
+      "caption": "Secured private gate stepping directly onto Dulangan Beach with coral reef waters steps away."
     },
     {
-      "id": "view-5",
-      "title": "Lush Tropical Grounds & Coconut Canopy",
+      "id": "view-garage",
+      "title": "Enclosed 1-Car Garage & Off-Road Motorcycle Parking",
+      "fileName": "Garage.jpg",
+      "size": "30 KB",
+      "modified": "3 Aug 2014",
       "category": "grounds",
-      "image": "https://images.unsplash.com/photo-1596394516093-501ba68a0ba6?auto=format&fit=crop&w=1200&q=80",
-      "caption": "Mature coconut palms and native tropical flora framing the private boundary along 164 Dulangan Road."
+      "image": "./assets/drive/blue/Garage.jpg",
+      "caption": "Private covered garage accommodating 1 medium car plus off-road space for 5 motorcycles."
+    },
+    {
+      "id": "view-road-access",
+      "title": "Dulangan Road Gate & Exterior Pathway",
+      "fileName": "RoadFront.jpg",
+      "size": "101 KB",
+      "modified": "26 Jul 2014",
+      "category": "grounds",
+      "image": "./assets/drive/green/RoadFront.jpg",
+      "caption": "Concrete road access on 164 Dulangan Road with dedicated exterior steps leading down to the apartments and beach."
+    },
+    {
+      "id": "view-blue-front",
+      "title": "Front Building Facade & Mature Tropical Palms",
+      "fileName": "front.jpg",
+      "size": "117 KB",
+      "modified": "30 Jul 2014",
+      "category": "grounds",
+      "image": "./assets/drive/red/front.jpg",
+      "caption": "Private gated walkways and coastal garden landscaping framing the apartment entrances."
+    }
+  ],
+  "floorPlans": [
+    {
+      "id": "floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+      "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+      "fileName": "AldanmarPlan-CompleteBuilding.png",
+      "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+      "category": "Floor Plans & 3D",
+      "size": "167 KB",
+      "modified": "12 Aug 2024",
+      "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage. (AldanmarPlan-CompleteBuilding.png)"
+    },
+    {
+      "id": "floorplan-1j2Kc4z2BUZ1EYc0-AYTdivMjccpuT9Gx",
+      "src": "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
+      "fileName": "AldanmarFloorPlan-3rdFloor.png",
+      "title": "3rd Floor Dimensioned Plan — Blue Apartment (90 m²), Garage & Front Yard",
+      "category": "Floor Plans & 3D",
+      "size": "28 KB",
+      "modified": "12 Aug 2024",
+      "caption": "Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage. (AldanmarFloorPlan-3rdFloor.png)"
+    },
+    {
+      "id": "floorplan-13DwSn5_vGVfcRHMIM7fSFna300xiF_Yt",
+      "src": "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
+      "fileName": "AldanmarFloorPlan-2ndFloor.png",
+      "title": "2nd Floor Dimensioned Plan — Red & Green Bedrooms & Upper Terraces",
+      "category": "Floor Plans & 3D",
+      "size": "25 KB",
+      "modified": "12 Aug 2024",
+      "caption": "Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach. (AldanmarFloorPlan-2ndFloor.png)"
+    },
+    {
+      "id": "floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
+      "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+      "fileName": "AldanmarFloorPlan-1stFloor.png",
+      "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
+      "category": "Floor Plans & 3D",
+      "size": "33 KB",
+      "modified": "12 Aug 2024",
+      "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²). (AldanmarFloorPlan-1stFloor.png)"
+    },
+    {
+      "id": "floorplan-1quHMS_YL9kRInalzXerwJDx_4aNQdygG",
+      "src": "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+      "fileName": "AldanmarPlan-2ndFloor.png",
+      "title": "2nd Floor 3D Isometric Model — Bedrooms & Upper Terraces",
+      "category": "Floor Plans & 3D",
+      "size": "131 KB",
+      "modified": "12 Aug 2024",
+      "caption": "3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments. (AldanmarPlan-2ndFloor.png)"
+    },
+    {
+      "id": "floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
+      "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+      "fileName": "AldanmarPlan-1stFloor.png",
+      "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+      "category": "Floor Plans & 3D",
+      "size": "105 KB",
+      "modified": "12 Aug 2024",
+      "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach. (AldanmarPlan-1stFloor.png)"
+    },
+    {
+      "id": "floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
+      "src": "./assets/drive/floorplans/Sketch.jpg",
+      "fileName": "Sketch.jpg",
+      "title": "Casa Santana Architectural Ink Elevation Sketch",
+      "category": "Floor Plans & 3D",
+      "size": "118 KB",
+      "modified": "12 Aug 2024",
+      "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach. (Sketch.jpg)"
     }
   ],
   "apartments": [
@@ -81,17 +200,298 @@
       "themeColor": "#0284c7",
       "badgeBg": "bg-sky-50 dark:bg-sky-950/40 border-sky-200 dark:border-sky-800",
       "badgeText": "text-sky-800 dark:text-sky-300",
-      "localDrivePath": "G:\\My Drive\\Aldanmar Blue",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link",
-      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+      "image": "./assets/drive/blue/LivingRoom1.jpg",
       "galleryImages": [
-        "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
-        "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1200&q=80"
+        "./assets/drive/blue/LivingRoom1.jpg",
+        "./assets/drive/blue/LivingRoom2.jpg",
+        "./assets/drive/blue/LivingRoom3.jpg",
+        "./assets/drive/blue/LivingRoom4.jpg",
+        "./assets/drive/blue/Kitchen1.jpg",
+        "./assets/drive/blue/Kitchen2.jpg",
+        "./assets/drive/blue/Bedroom1.jpg",
+        "./assets/drive/blue/Bedroom2.jpg",
+        "./assets/drive/blue/Bedroom3.jpg",
+        "./assets/drive/blue/Bedroom4.jpg",
+        "./assets/drive/blue/Bedroom5.jpg",
+        "./assets/drive/blue/SecondBedroom1.jpg",
+        "./assets/drive/blue/SecondBedroom2.jpg",
+        "./assets/drive/blue/Bathroom.jpg",
+        "./assets/drive/blue/Terrace1.jpg",
+        "./assets/drive/blue/TerraceView.jpg",
+        "./assets/drive/blue/Terrace2.jpg",
+        "./assets/drive/blue/Beach1.jpg",
+        "./assets/drive/blue/Beach2.jpg",
+        "./assets/drive/blue/Garage.jpg",
+        "./assets/drive/blue/Front1.jpg",
+        "./assets/drive/blue/Front2.jpg",
+        "./assets/drive/blue/Front3.jpg",
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
+        "./assets/drive/floorplans/Sketch.jpg"
       ],
-      "floorLevel": "Upper Coastal Level (Private Veranda)",
+      "galleryItems": [
+        {
+          "id": "blue-0B6jVGKAWE-iPNU1Tb19NYmZsUDg",
+          "src": "./assets/drive/blue/LivingRoom1.jpg",
+          "fileName": "LivingRoom1.jpg",
+          "title": "The Blue Apartment — Living Area 1",
+          "category": "Living & Kitchen",
+          "size": "61 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPM1RCZWlLSXRkU28",
+          "src": "./assets/drive/blue/LivingRoom2.jpg",
+          "fileName": "LivingRoom2.jpg",
+          "title": "The Blue Apartment — Living Area 2",
+          "category": "Living & Kitchen",
+          "size": "63 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPdnZ3ZnBPajhLbzA",
+          "src": "./assets/drive/blue/LivingRoom3.jpg",
+          "fileName": "LivingRoom3.jpg",
+          "title": "The Blue Apartment — Living Area 3",
+          "category": "Living & Kitchen",
+          "size": "52 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPNFp5eGdGZEpYU0U",
+          "src": "./assets/drive/blue/LivingRoom4.jpg",
+          "fileName": "LivingRoom4.jpg",
+          "title": "The Blue Apartment — Living Area 4",
+          "category": "Living & Kitchen",
+          "size": "63 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPSFd0c3lMUnpZSzg",
+          "src": "./assets/drive/blue/Kitchen1.jpg",
+          "fileName": "Kitchen1.jpg",
+          "title": "The Blue Apartment — Kitchen & Dining 1",
+          "category": "Living & Kitchen",
+          "size": "58 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware (Kitchen1.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPcUkwNnB6eC1Jd1k",
+          "src": "./assets/drive/blue/Kitchen2.jpg",
+          "fileName": "Kitchen2.jpg",
+          "title": "The Blue Apartment — Kitchen & Dining 2",
+          "category": "Living & Kitchen",
+          "size": "54 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware (Kitchen2.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPMEltaFdqZkNwVzA",
+          "src": "./assets/drive/blue/Bedroom1.jpg",
+          "fileName": "Bedroom1.jpg",
+          "title": "The Blue Apartment — Master Bedroom 1",
+          "category": "Bedrooms",
+          "size": "67 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom1.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPNjdiakFYWEc4NkE",
+          "src": "./assets/drive/blue/Bedroom2.jpg",
+          "fileName": "Bedroom2.jpg",
+          "title": "The Blue Apartment — Master Bedroom 2",
+          "category": "Bedrooms",
+          "size": "59 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom2.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPNXZyR0s4ZjFOX2s",
+          "src": "./assets/drive/blue/Bedroom3.jpg",
+          "fileName": "Bedroom3.jpg",
+          "title": "The Blue Apartment — Master Bedroom 3",
+          "category": "Bedrooms",
+          "size": "56 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom3.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPaVJ4MG8tbzlhZEk",
+          "src": "./assets/drive/blue/Bedroom4.jpg",
+          "fileName": "Bedroom4.jpg",
+          "title": "The Blue Apartment — Master Bedroom 4",
+          "category": "Bedrooms",
+          "size": "41 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom4.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPM3FGb0JfT09qbGM",
+          "src": "./assets/drive/blue/Bedroom5.jpg",
+          "fileName": "Bedroom5.jpg",
+          "title": "The Blue Apartment — Master Bedroom 5",
+          "category": "Bedrooms",
+          "size": "77 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom5.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPVjdRRDk2cmIyNVU",
+          "src": "./assets/drive/blue/SecondBedroom1.jpg",
+          "fileName": "SecondBedroom1.jpg",
+          "title": "The Blue Apartment — Second Bedroom 1",
+          "category": "Bedrooms",
+          "size": "32 KB",
+          "modified": "4 Aug 2014",
+          "caption": "Second bedroom suite in The Blue Apartment with storage and coastal natural light (SecondBedroom1.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPcUdDeUdJUmh5b2s",
+          "src": "./assets/drive/blue/SecondBedroom2.jpg",
+          "fileName": "SecondBedroom2.jpg",
+          "title": "The Blue Apartment — Second Bedroom 2",
+          "category": "Bedrooms",
+          "size": "27 KB",
+          "modified": "4 Aug 2014",
+          "caption": "Second bedroom suite in The Blue Apartment with storage and coastal natural light (SecondBedroom2.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPYXV1U01ycmNQYWc",
+          "src": "./assets/drive/blue/Bathroom.jpg",
+          "fileName": "Bathroom.jpg",
+          "title": "The Blue Apartment — Private Bathroom",
+          "category": "Bedrooms",
+          "size": "38 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Tiled en-suite bathroom served by the shared filtered water supply (Bathroom.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPaEJleWYteC12S0U",
+          "src": "./assets/drive/blue/Terrace1.jpg",
+          "fileName": "Terrace1.jpg",
+          "title": "The Blue Apartment — Private Terrace & Veranda 1",
+          "category": "Terrace & Beach",
+          "size": "89 KB",
+          "modified": "4 Aug 2014",
+          "caption": "Private outdoor terrace overlooking tropical foliage and Dulangan Beach (Terrace1.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPc1h5RDNBNlNCYlk",
+          "src": "./assets/drive/blue/TerraceView.jpg",
+          "fileName": "TerraceView.jpg",
+          "title": "The Blue Apartment — Panoramic Ocean & Bay View",
+          "category": "Terrace & Beach",
+          "size": "79 KB",
+          "modified": "4 Aug 2014",
+          "caption": "Direct coastal outlook over Dulangan Bay captured from The Blue Apartment (TerraceView.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPdV9Md0RHMUlETkE",
+          "src": "./assets/drive/blue/Terrace2.jpg",
+          "fileName": "Terrace2.jpg",
+          "title": "The Blue Apartment — Private Terrace & Veranda 2",
+          "category": "Terrace & Beach",
+          "size": "83 KB",
+          "modified": "4 Aug 2014",
+          "caption": "Private outdoor terrace overlooking tropical foliage and Dulangan Beach (Terrace2.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPRC15d1dGZGVoNUk",
+          "src": "./assets/drive/blue/Beach1.jpg",
+          "fileName": "Beach1.jpg",
+          "title": "The Blue Apartment — Dulangan Beachfront 1",
+          "category": "Terrace & Beach",
+          "size": "93 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Blue Apartment (Beach1.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPMjdOVmF3S3BMeTQ",
+          "src": "./assets/drive/blue/Beach2.jpg",
+          "fileName": "Beach2.jpg",
+          "title": "The Blue Apartment — Dulangan Beachfront 2",
+          "category": "Terrace & Beach",
+          "size": "78 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Blue Apartment (Beach2.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPYWZrRmNoaHQ1Z1E",
+          "src": "./assets/drive/blue/Garage.jpg",
+          "fileName": "Garage.jpg",
+          "title": "The Blue Apartment — Enclosed 1-Car Garage & Access",
+          "category": "Exterior & Access",
+          "size": "30 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Covered single-car garage with off-road motorcycle parking along 164 Dulangan Road (Garage.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPX1Y3S2trdGJPa28",
+          "src": "./assets/drive/blue/Front1.jpg",
+          "fileName": "Front1.jpg",
+          "title": "The Blue Apartment — Building Exterior & Frontage 1",
+          "category": "Exterior & Access",
+          "size": "34 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road (Front1.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPN2ozUnpSSUN2ajg",
+          "src": "./assets/drive/blue/Front2.jpg",
+          "fileName": "Front2.jpg",
+          "title": "The Blue Apartment — Building Exterior & Frontage 2",
+          "category": "Exterior & Access",
+          "size": "34 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road (Front2.jpg)."
+        },
+        {
+          "id": "blue-0B6jVGKAWE-iPbmNJdmVpZDF1eVE",
+          "src": "./assets/drive/blue/Front3.jpg",
+          "fileName": "Front3.jpg",
+          "title": "The Blue Apartment — Building Exterior & Frontage 3",
+          "category": "Exterior & Access",
+          "size": "130 KB",
+          "modified": "3 Aug 2014",
+          "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road (Front3.jpg)."
+        },
+        {
+          "id": "blue-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+          "fileName": "AldanmarPlan-CompleteBuilding.png",
+          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+          "category": "Floor Plans & 3D",
+          "size": "167 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage. (AldanmarPlan-CompleteBuilding.png)"
+        },
+        {
+          "id": "blue-fp-floorplan-1j2Kc4z2BUZ1EYc0-AYTdivMjccpuT9Gx",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
+          "fileName": "AldanmarFloorPlan-3rdFloor.png",
+          "title": "3rd Floor Dimensioned Plan — Blue Apartment (90 m²), Garage & Front Yard",
+          "category": "Floor Plans & 3D",
+          "size": "28 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage. (AldanmarFloorPlan-3rdFloor.png)"
+        },
+        {
+          "id": "blue-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
+          "src": "./assets/drive/floorplans/Sketch.jpg",
+          "fileName": "Sketch.jpg",
+          "title": "Casa Santana Architectural Ink Elevation Sketch",
+          "category": "Floor Plans & 3D",
+          "size": "118 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach. (Sketch.jpg)"
+        }
+      ],
+      "floorLevel": "Upper Road-Level Floor (No Stairs · Private Veranda)",
       "bedrooms": 2,
       "bathrooms": 1,
       "capacity": "Owner Suite (2 - 4 Occupants)",
@@ -100,7 +500,7 @@
       "solarSystem": "6KW Off-Grid Solar System Installed",
       "acEquipment": "2.5HP Split Inverter (Living Room) + 1HP Split Inverter (Main Bedroom)",
       "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
-      "description": "The premier 2-bedroom residence currently inhabited by the owners. It is equipped with a high-capacity 6KW off-grid solar power system providing exceptional energy independence and low utility overhead. Climate control includes a heavy-duty 2.5HP split inverter air conditioner in the open living room and a dedicated 1HP split inverter in the master bedroom. Expansive doors open to a panoramic private veranda overlooking the bay.",
+      "description": "The premier 2-bedroom residence currently inhabited by the owners spanning the upper road-level floor with direct stair-free access. It is equipped with a high-capacity 6KW off-grid solar power system providing exceptional energy independence and low utility overhead. Climate control includes a heavy-duty 2.5HP split inverter air conditioner in the open living room and a dedicated 1HP split inverter in the main bedroom, plus expansive doors opening onto a panoramic private veranda.",
       "keyFeatures": [
         "6KW off-grid solar energy system with battery bank",
         "2 Bedrooms with ample built-in wardrobe storage",
@@ -108,13 +508,13 @@
         "Spacious private veranda with direct panoramic beach and ocean vistas",
         "Full kitchen with dining counter, cookware, and full refrigeration",
         "Separate electric meter and shared filtered water supply",
-        "Direct road access and footsteps to the beachfront sand"
+        "Direct road-level entry near 1-car garage and motorcycle parking"
       ],
       "historicalHighlights": "Continuously maintained to the highest standards as the owners’ personal residence; featured extensively across historical archives (aldanmar.dulangan.com).",
       "seoMeta": {
         "title": "The Blue Apartment — 2-Bedroom Owner Suite with 6KW Solar | Aldanmar Apartments",
         "description": "Owner’s residence featuring 2 bedrooms, 6KW off-grid solar system, 2.5HP living room split inverter AC, 1HP bedroom AC, and private oceanfront veranda on Dulangan Beach.",
-        "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+        "ogImage": "./assets/drive/blue/LivingRoom1.jpg",
         "ogType": "website",
         "twitterCard": "summary_large_image",
         "keywords": "The Blue Apartment, Aldanmar Apartments, 6KW solar Puerto Galera, beachfront 2 bedroom Dulangan"
@@ -127,17 +527,320 @@
       "themeColor": "#dc2626",
       "badgeBg": "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800",
       "badgeText": "text-rose-800 dark:text-rose-300",
-      "localDrivePath": "G:\\My Drive\\Aldanmar Red",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPUXMwQkJQQXFQTG8?resourcekey=0-ClaaJVm2UcryNMhC5aGZ9A&usp=drive_link",
-      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+      "image": "./assets/drive/red/living1.jpg",
       "galleryImages": [
-        "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
-        "https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1507652313519-d4e9174996dd?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1507089947368-19c1da9775ae?auto=format&fit=crop&w=1200&q=80"
+        "./assets/drive/red/living1.jpg",
+        "./assets/drive/red/living2.jpg",
+        "./assets/drive/red/living3.jpg",
+        "./assets/drive/red/kitchen1.jpg",
+        "./assets/drive/red/kitchen2.jpg",
+        "./assets/drive/red/kitchen3.jpg",
+        "./assets/drive/red/bedroom1.jpg",
+        "./assets/drive/red/bedroom2.jpg",
+        "./assets/drive/red/bedroom3.jpg",
+        "./assets/drive/red/bedroom4.jpg",
+        "./assets/drive/red/bedroom5.jpg",
+        "./assets/drive/red/bathroom.jpg",
+        "./assets/drive/red/terrace1.jpg",
+        "./assets/drive/red/terrace2.jpg",
+        "./assets/drive/red/beach.jpg",
+        "./assets/drive/red/beach1.jpg",
+        "./assets/drive/red/beach2.jpg",
+        "./assets/drive/red/beach3.jpg",
+        "./assets/drive/red/RedApt-InternalStairs-Med.jpg",
+        "./assets/drive/red/front.jpg",
+        "./assets/drive/red/Inclusions.jpg",
+        "./assets/drive/red/BuildingViewFromBeach-2010.jpg",
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+        "./assets/drive/floorplans/Sketch.jpg"
       ],
-      "floorLevel": "Middle Level (Private Veranda)",
+      "galleryItems": [
+        {
+          "id": "red-0B6jVGKAWE-iPTXJPNjFzTWNweG8",
+          "src": "./assets/drive/red/living1.jpg",
+          "fileName": "living1.jpg",
+          "title": "The Red Apartment — Living Area 1",
+          "category": "Living & Kitchen",
+          "size": "63 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Red Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPc21UNXNtOGpRZzg",
+          "src": "./assets/drive/red/living2.jpg",
+          "fileName": "living2.jpg",
+          "title": "The Red Apartment — Living Area 2",
+          "category": "Living & Kitchen",
+          "size": "30 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Red Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPSlVJUnk1TW1WUlU",
+          "src": "./assets/drive/red/living3.jpg",
+          "fileName": "living3.jpg",
+          "title": "The Red Apartment — Living Area 3",
+          "category": "Living & Kitchen",
+          "size": "60 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Red Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPR3ZWaU1aNnBtY2c",
+          "src": "./assets/drive/red/kitchen1.jpg",
+          "fileName": "kitchen1.jpg",
+          "title": "The Red Apartment — Kitchen & Dining 1",
+          "category": "Living & Kitchen",
+          "size": "48 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware (kitchen1.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPSzhiaG9oM3hQTVk",
+          "src": "./assets/drive/red/kitchen2.jpg",
+          "fileName": "kitchen2.jpg",
+          "title": "The Red Apartment — Kitchen & Dining 2",
+          "category": "Living & Kitchen",
+          "size": "56 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware (kitchen2.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPWnp6OGswQ1hvd2c",
+          "src": "./assets/drive/red/kitchen3.jpg",
+          "fileName": "kitchen3.jpg",
+          "title": "The Red Apartment — Kitchen & Dining 3",
+          "category": "Living & Kitchen",
+          "size": "43 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware (kitchen3.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPWUFIQ3ZKRVE2M3M",
+          "src": "./assets/drive/red/bedroom1.jpg",
+          "fileName": "bedroom1.jpg",
+          "title": "The Red Apartment — Master Bedroom 1",
+          "category": "Bedrooms",
+          "size": "62 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters (bedroom1.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPWGFDN0VZUnF0R3c",
+          "src": "./assets/drive/red/bedroom2.jpg",
+          "fileName": "bedroom2.jpg",
+          "title": "The Red Apartment — Master Bedroom 2",
+          "category": "Bedrooms",
+          "size": "56 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters (bedroom2.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPbzJhNVdhTE1Ka2c",
+          "src": "./assets/drive/red/bedroom3.jpg",
+          "fileName": "bedroom3.jpg",
+          "title": "The Red Apartment — Master Bedroom 3",
+          "category": "Bedrooms",
+          "size": "59 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters (bedroom3.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPeWhXN1QwLWJDZlk",
+          "src": "./assets/drive/red/bedroom4.jpg",
+          "fileName": "bedroom4.jpg",
+          "title": "The Red Apartment — Master Bedroom 4",
+          "category": "Bedrooms",
+          "size": "64 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters (bedroom4.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPMFBqQWpoSGJQNHM",
+          "src": "./assets/drive/red/bedroom5.jpg",
+          "fileName": "bedroom5.jpg",
+          "title": "The Red Apartment — Master Bedroom 5",
+          "category": "Bedrooms",
+          "size": "58 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters (bedroom5.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPRlh4SVlsbk1Ma0U",
+          "src": "./assets/drive/red/bathroom.jpg",
+          "fileName": "bathroom.jpg",
+          "title": "The Red Apartment — Private Bathroom",
+          "category": "Bedrooms",
+          "size": "42 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Tiled en-suite bathroom served by the shared filtered water supply (bathroom.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPRDdaWGY5SHlHVTQ",
+          "src": "./assets/drive/red/terrace1.jpg",
+          "fileName": "terrace1.jpg",
+          "title": "The Red Apartment — Private Terrace & Veranda 1",
+          "category": "Terrace & Beach",
+          "size": "48 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Private outdoor terrace overlooking tropical foliage and Dulangan Beach (terrace1.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPX2tIX2VHZG9iRVE",
+          "src": "./assets/drive/red/terrace2.jpg",
+          "fileName": "terrace2.jpg",
+          "title": "The Red Apartment — Private Terrace & Veranda 2",
+          "category": "Terrace & Beach",
+          "size": "102 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Private outdoor terrace overlooking tropical foliage and Dulangan Beach (terrace2.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPdXFINXp6a1hJUkE",
+          "src": "./assets/drive/red/beach.jpg",
+          "fileName": "beach.jpg",
+          "title": "The Red Apartment — Dulangan Beachfront",
+          "category": "Terrace & Beach",
+          "size": "108 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Red Apartment (beach.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPME96WnhhM2VMamM",
+          "src": "./assets/drive/red/beach1.jpg",
+          "fileName": "beach1.jpg",
+          "title": "The Red Apartment — Dulangan Beachfront 1",
+          "category": "Terrace & Beach",
+          "size": "78 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Red Apartment (beach1.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPOE1USzdJN2ZRa1U",
+          "src": "./assets/drive/red/beach2.jpg",
+          "fileName": "beach2.jpg",
+          "title": "The Red Apartment — Dulangan Beachfront 2",
+          "category": "Terrace & Beach",
+          "size": "106 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Red Apartment (beach2.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPQzJZUThWb0pMZmc",
+          "src": "./assets/drive/red/beach3.jpg",
+          "fileName": "beach3.jpg",
+          "title": "The Red Apartment — Dulangan Beachfront 3",
+          "category": "Terrace & Beach",
+          "size": "79 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Red Apartment (beach3.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPNUNRSlllWEw3M3c",
+          "src": "./assets/drive/red/RedApt-InternalStairs-Med.jpg",
+          "fileName": "RedApt-InternalStairs-Med.jpg",
+          "title": "The Red Apartment — Internal Staircase",
+          "category": "Exterior & Access",
+          "size": "454 KB",
+          "modified": "24 Mar 2014",
+          "caption": "Internal staircase connecting the living floor to the bedroom & terrace level (RedApt-InternalStairs-Med.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPajNxb3FFai1ITkE",
+          "src": "./assets/drive/red/front.jpg",
+          "fileName": "front.jpg",
+          "title": "The Red Apartment — Building Exterior & Frontage",
+          "category": "Exterior & Access",
+          "size": "117 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road (front.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPLUJyVS1wN1lFdWc",
+          "src": "./assets/drive/red/Inclusions.jpg",
+          "fileName": "Inclusions.jpg",
+          "title": "The Red Apartment — Furnished Inclusions & Amenities Sheet",
+          "category": "Details",
+          "size": "20 KB",
+          "modified": "30 Jul 2014",
+          "caption": "Archive summary of fixtures, appliances, and furnishings included with The Red Apartment (Inclusions.jpg)."
+        },
+        {
+          "id": "red-0B6jVGKAWE-iPcElwZDlfckllLVU",
+          "src": "./assets/drive/red/BuildingViewFromBeach-2010.jpg",
+          "fileName": "BuildingViewFromBeach-2010.jpg",
+          "title": "Casa Santana — Multi-Level Facade from Dulangan Beach",
+          "category": "Exterior & Access",
+          "size": "43 KB",
+          "modified": "1 Feb 2014",
+          "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road (BuildingViewFromBeach-2010.jpg)."
+        },
+        {
+          "id": "red-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+          "fileName": "AldanmarPlan-CompleteBuilding.png",
+          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+          "category": "Floor Plans & 3D",
+          "size": "167 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage. (AldanmarPlan-CompleteBuilding.png)"
+        },
+        {
+          "id": "red-fp-floorplan-13DwSn5_vGVfcRHMIM7fSFna300xiF_Yt",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
+          "fileName": "AldanmarFloorPlan-2ndFloor.png",
+          "title": "2nd Floor Dimensioned Plan — Red & Green Bedrooms & Upper Terraces",
+          "category": "Floor Plans & 3D",
+          "size": "25 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach. (AldanmarFloorPlan-2ndFloor.png)"
+        },
+        {
+          "id": "red-fp-floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+          "fileName": "AldanmarFloorPlan-1stFloor.png",
+          "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
+          "category": "Floor Plans & 3D",
+          "size": "33 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²). (AldanmarFloorPlan-1stFloor.png)"
+        },
+        {
+          "id": "red-fp-floorplan-1quHMS_YL9kRInalzXerwJDx_4aNQdygG",
+          "src": "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+          "fileName": "AldanmarPlan-2ndFloor.png",
+          "title": "2nd Floor 3D Isometric Model — Bedrooms & Upper Terraces",
+          "category": "Floor Plans & 3D",
+          "size": "131 KB",
+          "modified": "12 Aug 2024",
+          "caption": "3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments. (AldanmarPlan-2ndFloor.png)"
+        },
+        {
+          "id": "red-fp-floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
+          "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+          "fileName": "AldanmarPlan-1stFloor.png",
+          "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+          "category": "Floor Plans & 3D",
+          "size": "105 KB",
+          "modified": "12 Aug 2024",
+          "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach. (AldanmarPlan-1stFloor.png)"
+        },
+        {
+          "id": "red-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
+          "src": "./assets/drive/floorplans/Sketch.jpg",
+          "fileName": "Sketch.jpg",
+          "title": "Casa Santana Architectural Ink Elevation Sketch",
+          "category": "Floor Plans & 3D",
+          "size": "118 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach. (Sketch.jpg)"
+        }
+      ],
+      "floorLevel": "Middle Split-Level Residence (Internal Stairs & Private Veranda)",
       "bedrooms": 1,
       "bathrooms": 1,
       "capacity": "2 - 3 Guests",
@@ -145,12 +848,12 @@
       "occupancyStatus": "Currently Rented Out (Turnkey Revenue)",
       "acEquipment": "Split-Type Inverter Air Conditioner Installed",
       "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
-      "description": "A fully self-contained apartment currently rented out and producing immediate rental revenue. Features a completely private entrance, private ocean-view balcony, split-type inverter air conditioning, fully equipped kitchen, independent electric metering, and connection to the shared filtered water supply.",
+      "description": "A fully self-contained split-level apartment currently rented out and producing immediate rental revenue. Features a completely private exterior entrance, internal staircase to an elevated bedroom and private ocean-view veranda, split-type inverter air conditioning, fully equipped kitchen, independent electric metering, and direct connection to the shared filtered water supply.",
       "keyFeatures": [
         "Currently rented out — immediate cash-flow from day one",
         "Private independent entrance from the exterior walkway",
         "Split-type inverter air conditioner for whisper-quiet energy efficiency",
-        "Private balcony with direct sunset views over Dulangan Beach",
+        "Private terrace with direct sunset views over Dulangan Beach",
         "Fully self-contained kitchen, dining setup, and full en-suite bathroom",
         "Dedicated independent electric meter for easy tenant utility accounting",
         "Connected to the shared filtered water system"
@@ -159,7 +862,7 @@
       "seoMeta": {
         "title": "The Red Apartment — Sunset Balcony Suite with Inverter AC | Aldanmar Apartments",
         "description": "Turnkey rental revenue suite on Dulangan Beach. Features private exterior entrance, sunset balcony, split-type inverter AC, dedicated electric meter, and shared filtered water.",
-        "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+        "ogImage": "./assets/drive/red/living1.jpg",
         "ogType": "website",
         "twitterCard": "summary_large_image",
         "keywords": "The Red Apartment, rental income Puerto Galera, beachfront suite Dulangan Beach, turn-key apartment Philippines"
@@ -172,39 +875,364 @@
       "themeColor": "#16a34a",
       "badgeBg": "bg-emerald-50 dark:bg-emerald-950/40 border-emerald-200 dark:border-emerald-800",
       "badgeText": "text-emerald-800 dark:text-emerald-300",
-      "localDrivePath": "G:\\My Drive\\Aldanmar Green",
-      "driveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPR1pLM1VkdDJ0Z2s?resourcekey=0-x2w87HENInMXLR5QIBpdWA&usp=drive_link",
-      "image": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+      "image": "./assets/drive/green/Living1.jpg",
       "galleryImages": [
-        "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
-        "https://images.unsplash.com/photo-1566665797739-1674de7a421a?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1620626011761-996317b8d101?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?auto=format&fit=crop&w=1200&q=80"
+        "./assets/drive/green/Living1.jpg",
+        "./assets/drive/green/Living2.jpg",
+        "./assets/drive/green/Living3.jpg",
+        "./assets/drive/green/Living4.jpg",
+        "./assets/drive/green/Living5.jpg",
+        "./assets/drive/green/LivingEntrance.jpg",
+        "./assets/drive/green/Kitchen.jpg",
+        "./assets/drive/green/Bedroom1.jpg",
+        "./assets/drive/green/Bedroom2.jpg",
+        "./assets/drive/green/Bedroom3.jpg",
+        "./assets/drive/green/Bedroom4.jpg",
+        "./assets/drive/green/Bathroom.jpg",
+        "./assets/drive/green/Terrace1.jpg",
+        "./assets/drive/green/View1.jpg",
+        "./assets/drive/green/Terrace2.jpg",
+        "./assets/drive/green/View2.jpg",
+        "./assets/drive/green/Beach1.jpg",
+        "./assets/drive/green/BeachGate.jpg",
+        "./assets/drive/green/BeachView.jpg",
+        "./assets/drive/green/Beach2.jpg",
+        "./assets/drive/green/OutsideStairs.jpg",
+        "./assets/drive/green/Stairs.jpg",
+        "./assets/drive/green/RoadFront.jpg",
+        "./assets/drive/green/Inclusions.jpg",
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+        "./assets/drive/floorplans/Sketch.jpg"
       ],
-      "floorLevel": "Ground / Garden Walkout Level",
+      "galleryItems": [
+        {
+          "id": "green-0B6jVGKAWE-iPUTZZaTZMVXprZGM",
+          "src": "./assets/drive/green/Living1.jpg",
+          "fileName": "Living1.jpg",
+          "title": "The Green Apartment — Living Area 1",
+          "category": "Living & Kitchen",
+          "size": "76 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Green Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPaFBrVWZQUmZwWjA",
+          "src": "./assets/drive/green/Living2.jpg",
+          "fileName": "Living2.jpg",
+          "title": "The Green Apartment — Living Area 2",
+          "category": "Living & Kitchen",
+          "size": "65 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Green Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPeXZsOEJ3a2ZOdDg",
+          "src": "./assets/drive/green/Living3.jpg",
+          "fileName": "Living3.jpg",
+          "title": "The Green Apartment — Living Area 3",
+          "category": "Living & Kitchen",
+          "size": "58 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Green Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPUFB4V0FyOS1mOUU",
+          "src": "./assets/drive/green/Living4.jpg",
+          "fileName": "Living4.jpg",
+          "title": "The Green Apartment — Living Area 4",
+          "category": "Living & Kitchen",
+          "size": "58 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Green Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPWElIaWdrY2dMQzQ",
+          "src": "./assets/drive/green/Living5.jpg",
+          "fileName": "Living5.jpg",
+          "title": "The Green Apartment — Living Area 5",
+          "category": "Living & Kitchen",
+          "size": "67 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Furnished open-plan living space inside The Green Apartment with natural coastal ventilation."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPNE1pTVFrUms1d2M",
+          "src": "./assets/drive/green/LivingEntrance.jpg",
+          "fileName": "LivingEntrance.jpg",
+          "title": "The Green Apartment — Living Room & Private Entrance",
+          "category": "Living & Kitchen",
+          "size": "66 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Private main entrance opening directly into the furnished living area of The Green Apartment."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPS3h6aHE1M1JyZ28",
+          "src": "./assets/drive/green/Kitchen.jpg",
+          "fileName": "Kitchen.jpg",
+          "title": "The Green Apartment — Kitchen & Dining",
+          "category": "Living & Kitchen",
+          "size": "63 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware (Kitchen.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPR25Pc2hnd0xpZlU",
+          "src": "./assets/drive/green/Bedroom1.jpg",
+          "fileName": "Bedroom1.jpg",
+          "title": "The Green Apartment — Master Bedroom 1",
+          "category": "Bedrooms",
+          "size": "41 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom1.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPd1kwWjl2OHlHbjQ",
+          "src": "./assets/drive/green/Bedroom2.jpg",
+          "fileName": "Bedroom2.jpg",
+          "title": "The Green Apartment — Master Bedroom 2",
+          "category": "Bedrooms",
+          "size": "42 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom2.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPSjBhakdXZFkxWEk",
+          "src": "./assets/drive/green/Bedroom3.jpg",
+          "fileName": "Bedroom3.jpg",
+          "title": "The Green Apartment — Master Bedroom 3",
+          "category": "Bedrooms",
+          "size": "41 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom3.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPcjNPU2V0ZnpnVkU",
+          "src": "./assets/drive/green/Bedroom4.jpg",
+          "fileName": "Bedroom4.jpg",
+          "title": "The Green Apartment — Master Bedroom 4",
+          "category": "Bedrooms",
+          "size": "42 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters (Bedroom4.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPWExTbVBXWUhqNUk",
+          "src": "./assets/drive/green/Bathroom.jpg",
+          "fileName": "Bathroom.jpg",
+          "title": "The Green Apartment — Private Bathroom",
+          "category": "Bedrooms",
+          "size": "43 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Tiled en-suite bathroom served by the shared filtered water supply (Bathroom.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPV0FUQXh2TUloTEE",
+          "src": "./assets/drive/green/Terrace1.jpg",
+          "fileName": "Terrace1.jpg",
+          "title": "The Green Apartment — Private Terrace & Veranda 1",
+          "category": "Terrace & Beach",
+          "size": "92 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Private outdoor terrace overlooking tropical foliage and Dulangan Beach (Terrace1.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPNU03ak9uZ2JyNjA",
+          "src": "./assets/drive/green/View1.jpg",
+          "fileName": "View1.jpg",
+          "title": "The Green Apartment — Panoramic Ocean & Bay View 1",
+          "category": "Terrace & Beach",
+          "size": "79 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Direct coastal outlook over Dulangan Bay captured from The Green Apartment (View1.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPLTVXMndYR1lvNW8",
+          "src": "./assets/drive/green/Terrace2.jpg",
+          "fileName": "Terrace2.jpg",
+          "title": "The Green Apartment — Private Terrace & Veranda 2",
+          "category": "Terrace & Beach",
+          "size": "109 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Private outdoor terrace overlooking tropical foliage and Dulangan Beach (Terrace2.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPZG9qLWRhTWZfT3c",
+          "src": "./assets/drive/green/View2.jpg",
+          "fileName": "View2.jpg",
+          "title": "The Green Apartment — Panoramic Ocean & Bay View 2",
+          "category": "Terrace & Beach",
+          "size": "116 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Direct coastal outlook over Dulangan Bay captured from The Green Apartment (View2.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPZGhXdU40Mm9GR3c",
+          "src": "./assets/drive/green/Beach1.jpg",
+          "fileName": "Beach1.jpg",
+          "title": "The Green Apartment — Dulangan Beachfront 1",
+          "category": "Terrace & Beach",
+          "size": "106 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Green Apartment (Beach1.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPeWNaTXhpbmdWSjQ",
+          "src": "./assets/drive/green/BeachGate.jpg",
+          "fileName": "BeachGate.jpg",
+          "title": "The Green Apartment — Direct Beachfront Gate",
+          "category": "Terrace & Beach",
+          "size": "122 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Private beachfront walkout gate stepping directly onto Dulangan Beach (BeachGate.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPRUxtbEVwYWJpWmc",
+          "src": "./assets/drive/green/BeachView.jpg",
+          "fileName": "BeachView.jpg",
+          "title": "The Green Apartment — Dulangan Beachfront View",
+          "category": "Terrace & Beach",
+          "size": "106 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Green Apartment (BeachView.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPS3JCNW9JbHVhQ1k",
+          "src": "./assets/drive/green/Beach2.jpg",
+          "fileName": "Beach2.jpg",
+          "title": "The Green Apartment — Dulangan Beachfront 2",
+          "category": "Terrace & Beach",
+          "size": "84 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Protected sandy shoreline and turquoise bay steps from The Green Apartment (Beach2.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPUnRfNVBCM3VjM2M",
+          "src": "./assets/drive/green/OutsideStairs.jpg",
+          "fileName": "OutsideStairs.jpg",
+          "title": "The Green Apartment — Private Exterior Stairs",
+          "category": "Exterior & Access",
+          "size": "126 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Dedicated exterior access stairway providing private entry (OutsideStairs.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPZGVRSmw2V09icG8",
+          "src": "./assets/drive/green/Stairs.jpg",
+          "fileName": "Stairs.jpg",
+          "title": "The Green Apartment — Interior Stairway",
+          "category": "Exterior & Access",
+          "size": "46 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Dedicated exterior access stairway providing private entry (Stairs.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPY0FoNWcya2RmZXc",
+          "src": "./assets/drive/green/RoadFront.jpg",
+          "fileName": "RoadFront.jpg",
+          "title": "The Green Apartment — 164 Dulangan Road Frontage",
+          "category": "Exterior & Access",
+          "size": "101 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Concrete road frontage and gated entrance along 164 Dulangan Road (RoadFront.jpg)."
+        },
+        {
+          "id": "green-0B6jVGKAWE-iPRHA4ajdGTDB6STA",
+          "src": "./assets/drive/green/Inclusions.jpg",
+          "fileName": "Inclusions.jpg",
+          "title": "The Green Apartment — Furnished Inclusions & Amenities Sheet",
+          "category": "Details",
+          "size": "20 KB",
+          "modified": "26 Jul 2014",
+          "caption": "Archive summary of fixtures, appliances, and furnishings included with The Green Apartment (Inclusions.jpg)."
+        },
+        {
+          "id": "green-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+          "fileName": "AldanmarPlan-CompleteBuilding.png",
+          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+          "category": "Floor Plans & 3D",
+          "size": "167 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage. (AldanmarPlan-CompleteBuilding.png)"
+        },
+        {
+          "id": "green-fp-floorplan-13DwSn5_vGVfcRHMIM7fSFna300xiF_Yt",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
+          "fileName": "AldanmarFloorPlan-2ndFloor.png",
+          "title": "2nd Floor Dimensioned Plan — Red & Green Bedrooms & Upper Terraces",
+          "category": "Floor Plans & 3D",
+          "size": "25 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach. (AldanmarFloorPlan-2ndFloor.png)"
+        },
+        {
+          "id": "green-fp-floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+          "fileName": "AldanmarFloorPlan-1stFloor.png",
+          "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
+          "category": "Floor Plans & 3D",
+          "size": "33 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²). (AldanmarFloorPlan-1stFloor.png)"
+        },
+        {
+          "id": "green-fp-floorplan-1quHMS_YL9kRInalzXerwJDx_4aNQdygG",
+          "src": "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+          "fileName": "AldanmarPlan-2ndFloor.png",
+          "title": "2nd Floor 3D Isometric Model — Bedrooms & Upper Terraces",
+          "category": "Floor Plans & 3D",
+          "size": "131 KB",
+          "modified": "12 Aug 2024",
+          "caption": "3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments. (AldanmarPlan-2ndFloor.png)"
+        },
+        {
+          "id": "green-fp-floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
+          "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+          "fileName": "AldanmarPlan-1stFloor.png",
+          "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+          "category": "Floor Plans & 3D",
+          "size": "105 KB",
+          "modified": "12 Aug 2024",
+          "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach. (AldanmarPlan-1stFloor.png)"
+        },
+        {
+          "id": "green-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
+          "src": "./assets/drive/floorplans/Sketch.jpg",
+          "fileName": "Sketch.jpg",
+          "title": "Casa Santana Architectural Ink Elevation Sketch",
+          "category": "Floor Plans & 3D",
+          "size": "118 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach. (Sketch.jpg)"
+        }
+      ],
+      "floorLevel": "Lower Split-Level Garden & Direct Beach Walkout",
       "bedrooms": 1,
       "bathrooms": 1,
       "capacity": "2 - 3 Guests",
-      "view": "Tropical Gardens, Mature Palms & Beach Access",
+      "view": "Tropical Gardens, Mature Palms & Direct Beach Gate Access",
       "occupancyStatus": "Currently Rented Out (Turnkey Revenue)",
       "acEquipment": "Split-Type Inverter Air Conditioner Installed",
       "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
-      "description": "A serene ground-level residence currently rented out and generating reliable rental income. Features a separate private entrance, peaceful patio surrounded by tropical flora, split-type inverter air conditioning, independent electric metering, and direct access to Dulangan Beach.",
+      "description": "A serene coastal residence currently rented out and generating reliable rental income. Features a separate private entrance, peaceful lower terrace shaded by tropical palms, split-type inverter air conditioning, independent electric metering, and direct gated walkout steps onto Dulangan Beach.",
       "keyFeatures": [
         "Currently rented out — turnkey passive rental income stream",
-        "Private separate exterior entrance with patio sitting area",
+        "Private separate exterior entrance with shaded terrace",
         "Split-type inverter air conditioning unit installed",
         "Separate electric meter for transparent tenant utility billing",
-        "Full self-contained kitchenette, living area, and en-suite bath",
+        "Full self-contained kitchen, living area, and tiled bath",
         "Connected to the shared filtered water supply system",
-        "Direct level walkout toward the beach and motorcycle parking area"
+        "Direct gated beachfront walkout onto Dulangan Beach"
       ],
       "historicalHighlights": "Consistently occupied by guests seeking serene tropical surroundings; archived on aldanmar.dulangan.com.",
       "seoMeta": {
         "title": "The Green Apartment — Garden Coastal Suite with Private Entrance | Aldanmar Apartments",
-        "description": "Tranquil ground-level apartment with private patio, split-type inverter AC, independent electric meter, and direct sandy beach walkout on Dulangan Beach. Currently rented out.",
-        "ogImage": "./assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg",
+        "description": "Tranquil coastal apartment with private patio, split-type inverter AC, independent electric meter, and direct sandy beach walkout on Dulangan Beach. Currently rented out.",
+        "ogImage": "./assets/drive/green/Living1.jpg",
         "ogType": "website",
         "twitterCard": "summary_large_image",
         "keywords": "The Green Apartment, garden suite Puerto Galera, Dulangan Beach apartment rental, Casa Santana Mindoro"
@@ -251,15 +1279,8 @@
     }
   ],
   "externalMedia": {
-    "googleDriveUrl": "https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link",
-    "googlePhotosUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link",
     "googleMapsUrl": "https://maps.google.com/?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines",
     "waybackMachineUrl": "https://web.archive.org/web/20260000000000*/aldanmar.dulangan.com",
-    "coordinates": "13.5042° N, 120.9856° E",
-    "viewsDriveFolderUrl": "https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link",
-    "blueDriveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPVUxHN1dlN3dSd2M?resourcekey=0-8wgDB4frliNZEd2NVk-mtA&usp=drive_link",
-    "redDriveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPUXMwQkJQQXFQTG8?resourcekey=0-ClaaJVm2UcryNMhC5aGZ9A&usp=drive_link",
-    "greenDriveFolderUrl": "https://drive.google.com/drive/folders/0B6jVGKAWE-iPR1pLM1VkdDJ0Z2s?resourcekey=0-x2w87HENInMXLR5QIBpdWA&usp=drive_link",
-    "floorPlansDriveUrl": "https://drive.google.com/drive/folders/1F2y5eMYt-BmJMjNWsBHZE3TTtT5BXgxN?usp=drive_link"
+    "coordinates": "13.5042° N, 120.9856° E"
   }
 }
