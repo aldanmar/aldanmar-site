@@ -1,6 +1,6 @@
 # Aldanmar Apartments (Casa Santana)
 
-> Direct Beachfront Triplex Property for Sale in Puerto Galera
+> Direct Beachfront Triplex Property for Sale in Puerto Galera, Philippines
 
 **Direct Beachfront Property For Sale — ₱15,000,000 PHP (~$268,000 USD)**  
 📍 **Location:** 164 Dulangan Road, Sitio Centro, Dulangan, Puerto Galera, Oriental Mindoro, Philippines

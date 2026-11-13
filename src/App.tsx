@@ -29,7 +29,7 @@ export default function App() {
   const [submittedInfo, setSubmittedInfo] = useState<{ relayed: boolean; mailto: string } | null>(null);
 
   const updateMetaTags = (page: string) => {
-    let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera';
+    let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera, Philippines';
     let pageDesc = siteData.heroDescription || '';
     let ogImg = (siteData.externalViews && siteData.externalViews[0]?.image) || './assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg';
 
@@ -302,7 +302,7 @@ export default function App() {
                             Dulangan Beachfront
                           </span>
                           <h3 className="mt-1 text-lg font-bold">Casa Santana Villa Triplex</h3>
-                          <p className="text-xs text-neutral-200">164 Dulangan Road · 3 Self-Contained Units</p>
+                          <p className="text-xs text-neutral-200">164 Dulangan Road, Puerto Galera, Philippines · 3 Self-Contained Units</p>
                         </div>
                       </div>
                     </div>
@@ -540,7 +540,7 @@ export default function App() {
                 <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 items-center">
                   <div className="lg:col-span-5 space-y-4">
                     <span className="text-xs font-bold uppercase tracking-wider text-blue-600">Location &amp; Coordinates</span>
-                    <h2 className="text-2xl font-extrabold text-neutral-900 dark:text-white sm:text-3xl">Dulangan Beach, Puerto Galera</h2>
+                    <h2 className="text-2xl font-extrabold text-neutral-900 dark:text-white sm:text-3xl">Dulangan Beach, Puerto Galera, Philippines</h2>
                     <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
                       164 Dulangan Road, Sitio Centro, Dulangan, Puerto Galera, Oriental Mindoro 5203, Philippines. Direct road access, enclosed garage for 1 medium car and off-road space for 5 motorcycles.
                     </p>
@@ -554,7 +554,7 @@ export default function App() {
                   </div>
                   <div className="lg:col-span-7 aspect-16/9 rounded-2xl overflow-hidden border border-neutral-200 shadow-sm dark:border-neutral-800">
                     <iframe
-                      title="Google Maps Location - 164 Dulangan Road"
+                      title="Google Maps Location - 164 Dulangan Road, Puerto Galera, Philippines"
                       width="100%"
                       height="100%"
                       style={{ border: 0 }}
@@ -704,7 +704,7 @@ export default function App() {
                 {siteData.ownerPhone ? (' · ' + siteData.ownerPhone) : ''}
               </p>
               <p className="mt-1 text-[11px] text-neutral-500">
-                {siteData.address}, Sitio Centro, {siteData.barangay}, {siteData.municipality}, {siteData.province} 5203
+                {siteData.address}, Sitio Centro, {siteData.barangay}, {siteData.municipality}, {siteData.province} 5203, {siteData.country || 'Philippines'}
               </p>
             </div>
 
