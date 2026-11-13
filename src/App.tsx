@@ -16,6 +16,9 @@ import {
   X,
   Home,
   Layers,
+  Share2,
+  Mail,
+  Link2,
 } from 'lucide-react';
 import siteData from './siteConfig.json';
 
@@ -27,6 +30,7 @@ export default function App() {
   const [formState, setFormState] = useState({ name: '', email: '', phone: '', message: '' });
   const [isSending, setIsSending] = useState(false);
   const [submittedInfo, setSubmittedInfo] = useState<{ relayed: boolean; mailto: string } | null>(null);
+  const [copiedShareUrl, setCopiedShareUrl] = useState(false);
 
   const updateMetaTags = (page: string) => {
     let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera, Philippines';
@@ -157,6 +161,54 @@ export default function App() {
   const prevApartment = apartmentsList[(apartmentsList.findIndex((a: any) => a.id === currentPage) - 1 + apartmentsList.length) % apartmentsList.length];
   const nextApartment = apartmentsList[(apartmentsList.findIndex((a: any) => a.id === currentPage) + 1) % apartmentsList.length];
 
+  const activeShareTitle = currentPage === 'home'
+    ? (siteData.homeSeoMeta?.title || ((siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera, Philippines'))
+    : (activeApartment?.seoMeta?.title || (activeApartment?.name + ' | ' + (siteData.propertyName || 'Aldanmar Apartments')));
+  const activeShareDesc = currentPage === 'home'
+    ? (siteData.homeSeoMeta?.description || siteData.heroDescription || '')
+    : (activeApartment?.seoMeta?.description || activeApartment?.description || '');
+  const activeShareUrl = typeof window !== 'undefined'
+    ? (window.location.origin + window.location.pathname + '#/' + (currentPage === 'home' ? '' : currentPage))
+    : '';
+
+  const renderShareBar = (label: string, alignBetween?: boolean) => {
+    const u = encodeURIComponent(activeShareUrl);
+    const t = encodeURIComponent(activeShareTitle);
+    const summary = encodeURIComponent(activeShareDesc ? (activeShareTitle + ' — ' + activeShareDesc) : activeShareTitle);
+    const mailBody = encodeURIComponent(activeShareTitle + '\n\n' + (activeShareDesc ? activeShareDesc + '\n\n' : '') + 'View listing: ' + activeShareUrl);
+    return (
+      <div className={'flex flex-wrap items-center gap-2 ' + (alignBetween ? 'justify-between' : 'justify-center')}>
+        <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-neutral-500 dark:text-neutral-400 whitespace-nowrap shrink-0">
+          <Share2 className="h-3.5 w-3.5 text-neutral-400" />
+          <span>{label}</span>
+        </span>
+        <div className="flex flex-wrap items-center gap-1.5">
+          <a href={'https://www.facebook.com/sharer/sharer.php?u=' + u} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-blue-500 hover:text-blue-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">Facebook</a>
+          <a href={'https://twitter.com/intent/tweet?url=' + u + '&text=' + t} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-neutral-900 hover:text-neutral-900 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:text-white">X</a>
+          <a href={'https://api.whatsapp.com/send?text=' + summary + '%20' + u} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-emerald-500 hover:text-emerald-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">WhatsApp</a>
+          <a href={'https://www.linkedin.com/sharing/share-offsite/?url=' + u} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-sky-600 hover:text-sky-700 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">LinkedIn</a>
+          <a href={'https://t.me/share/url?url=' + u + '&text=' + t} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-cyan-500 hover:text-cyan-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">Telegram</a>
+          <a href={'mailto:?subject=' + t + '&body=' + mailBody} className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-blue-500 hover:text-blue-600 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300">
+            <Mail className="h-3.5 w-3.5" />
+            <span>Email</span>
+          </a>
+          <button
+            type="button"
+            onClick={() => {
+              navigator.clipboard?.writeText(activeShareUrl);
+              setCopiedShareUrl(true);
+              setTimeout(() => setCopiedShareUrl(false), 2000);
+            }}
+            className="inline-flex items-center gap-1.5 rounded-lg border border-neutral-200 bg-white px-2.5 py-1.5 text-xs font-medium text-neutral-700 hover:border-neutral-400 hover:text-neutral-900 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300"
+          >
+            {copiedShareUrl ? <Check className="h-3.5 w-3.5 text-emerald-600" /> : <Link2 className="h-3.5 w-3.5" />}
+            <span>{copiedShareUrl ? 'Copied' : 'Copy Link'}</span>
+          </button>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <div className="min-h-screen bg-neutral-50 text-neutral-900 antialiased selection:bg-blue-600 selection:text-white dark:bg-neutral-950 dark:text-neutral-100">
       {/* Top Header */}
@@ -234,8 +286,11 @@ export default function App() {
         {currentPage === 'home' ? (
           <>
             {/* Hero Section */}
-            <section id="hero" className="relative border-b border-neutral-200 bg-white py-16 md:py-20 dark:border-neutral-800 dark:bg-neutral-950">
+            <section id="hero" className="relative border-b border-neutral-200 bg-white pt-6 pb-16 md:pb-20 dark:border-neutral-800 dark:bg-neutral-950">
               <div className="mx-auto max-w-6xl px-6">
+                <div className="mb-8 border-b border-neutral-200/80 pb-4 dark:border-neutral-800/80">
+                  {renderShareBar('Share this listing:', true)}
+                </div>
                 <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 items-center">
                   <div className="lg:col-span-7">
                     <div className="flex flex-wrap items-center gap-2 mb-3">
@@ -591,6 +646,9 @@ export default function App() {
               </div>
 
               {/* Apartment Header */}
+              <div className="mt-6 border-b border-neutral-200 pb-4 dark:border-neutral-800">
+                {renderShareBar('Share ' + activeApartment.name + ':', true)}
+              </div>
               <div className="mt-8">
                 <div className="flex flex-wrap items-center gap-2">
                   <span className={'rounded-md border px-3 py-1 text-xs font-bold ' + (activeApartment.id === 'blue' ? 'bg-sky-50 text-sky-800 border-sky-300' : activeApartment.id === 'red' ? 'bg-rose-50 text-rose-800 border-rose-300' : 'bg-emerald-50 text-emerald-800 border-emerald-300')}>
@@ -816,6 +874,9 @@ export default function App() {
             {siteData.ownerPhone && <span>{siteData.ownerPhone}</span>}
             <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Google Maps</a>
             <a href={siteData.externalMedia?.waybackMachineUrl || '#'} target="_blank" rel="noopener noreferrer" className="hover:text-blue-600">Wayback Machine</a>
+          </div>
+          <div className="pt-4 border-t border-neutral-100 dark:border-neutral-900">
+            {renderShareBar('Share on social media:', false)}
           </div>
           <p className="pt-4 text-[11px] text-neutral-400">&copy; {new Date().getFullYear()} {siteData.propertyName}. Direct Owner Sale. All rights reserved.</p>
         </div>
