@@ -103,23 +103,23 @@ export default function App() {
     setIsSending(true);
     let relayed = false;
     try {
-      const res = await fetch('https://formsubmit.co/ajax/' + encodeURIComponent(recipient), {
+      const payload = new FormData();
+      payload.append('access_key', 'abd08b98-c570-4970-9a39-ff8fe8781e85');
+      payload.append('subject', '[Aldanmar Apartments] ' + subjectText + ' — from ' + formState.name);
+      payload.append('from_name', 'Aldanmar Apartments Website');
+      payload.append('name', formState.name);
+      payload.append('email', formState.email);
+      payload.append('replyto', formState.email);
+      payload.append('phone', formState.phone || 'Not provided');
+      payload.append('unit', currentPage);
+      payload.append('message', formState.message);
+
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          name: formState.name,
-          email: formState.email,
-          _replyto: formState.email,
-          phone: formState.phone || 'Not provided',
-          unit: currentPage,
-          message: formState.message,
-          _subject: '[Aldanmar Apartments] ' + subjectText + ' — from ' + formState.name,
-          _template: 'table',
-          _captcha: 'false',
-        }),
+        body: payload,
       });
       const json = await res.json().catch(() => ({}));
-      relayed = res.ok && (json?.success === 'true' || json?.success === true);
+      relayed = res.ok && json?.success === true;
     } catch {
       relayed = false;
     }
