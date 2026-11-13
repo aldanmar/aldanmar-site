@@ -15,7 +15,6 @@ import {
   Maximize2,
   X,
   Home,
-  FileImage,
   Layers,
 } from 'lucide-react';
 import siteData from './siteConfig.json';
@@ -290,7 +289,6 @@ export default function App() {
                           src: externalViews[0]?.image || './assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg',
                           title: 'Aldanmar Apartments (Casa Santana)',
                           subtitle: 'Dulangan Beachfront Triplex',
-                          meta: externalViews[0]?.fileName || 'ForSaleByOwnerIcon_3ec8a888.jpg',
                         })}
                       >
                         <img
@@ -357,7 +355,6 @@ export default function App() {
                         src: item.image,
                         title: item.title,
                         subtitle: item.caption,
-                        meta: [item.fileName, item.size, item.modified].filter(Boolean).join(' · '),
                       })}
                       className="group flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xs transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
                     >
@@ -368,19 +365,10 @@ export default function App() {
                           <Maximize2 className="h-4 w-4" />
                         </div>
                       </div>
-                      <figcaption className="flex flex-1 flex-col justify-between gap-2 p-4">
+                      <figcaption className="flex flex-1 flex-col justify-between p-4">
                         <div>
                           <h3 className="text-sm font-bold text-neutral-900 dark:text-white leading-tight">{item.title}</h3>
                           <p className="mt-1 line-clamp-2 text-xs text-neutral-600 dark:text-neutral-400">{item.caption}</p>
-                        </div>
-                        <div className="flex items-center justify-between border-t border-neutral-100 pt-2 text-[11px] text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
-                          <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-2 py-0.5 font-mono font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
-                            <FileImage className="h-3 w-3 text-blue-600" />
-                            <span>{item.fileName || 'photo.jpg'}</span>
-                          </span>
-                          {(item.size || item.modified) && (
-                            <span className="font-mono">{[item.size, item.modified].filter(Boolean).join(' · ')}</span>
-                          )}
                         </div>
                       </figcaption>
                     </figure>
@@ -409,7 +397,6 @@ export default function App() {
                           src: fp.src,
                           title: fp.title,
                           subtitle: fp.caption,
-                          meta: [fp.fileName, fp.size, fp.modified].filter(Boolean).join(' · '),
                         })}
                         className="group flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xs transition-all hover:-translate-y-0.5 hover:shadow-lg dark:border-neutral-800 dark:bg-neutral-900"
                       >
@@ -419,17 +406,10 @@ export default function App() {
                             <Maximize2 className="h-4 w-4" />
                           </div>
                         </div>
-                        <figcaption className="flex flex-1 flex-col justify-between gap-2 border-t border-neutral-100 p-4 dark:border-neutral-800">
+                        <figcaption className="flex flex-1 flex-col justify-between border-t border-neutral-100 p-4 dark:border-neutral-800">
                           <div>
                             <h3 className="text-sm font-bold text-neutral-900 dark:text-white leading-snug">{fp.title}</h3>
                             {fp.caption && <p className="mt-1 line-clamp-2 text-xs text-neutral-500 dark:text-neutral-400">{fp.caption}</p>}
-                          </div>
-                          <div className="flex items-center justify-between border-t border-neutral-100 pt-2 text-[11px] text-neutral-500 dark:border-neutral-800 dark:text-neutral-400">
-                            <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-2 py-0.5 font-mono font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
-                              <FileImage className="h-3 w-3 text-indigo-600" />
-                              <span>{fp.fileName}</span>
-                            </span>
-                            <span className="font-mono">{[fp.size, fp.modified].filter(Boolean).join(' · ')}</span>
                           </div>
                         </figcaption>
                       </figure>
@@ -669,7 +649,7 @@ export default function App() {
                         src: item.src,
                         title: item.title,
                         subtitle: item.caption,
-                        meta: [item.category, item.fileName, item.size, item.modified].filter(Boolean).join(' · '),
+                        meta: item.category,
                       })}
                       className="group flex flex-col cursor-pointer overflow-hidden rounded-2xl border border-neutral-200 bg-white shadow-xs dark:border-neutral-800 dark:bg-neutral-900"
                     >
@@ -680,15 +660,8 @@ export default function App() {
                           <Maximize2 className="h-4 w-4" />
                         </div>
                       </div>
-                      <figcaption className="flex flex-1 flex-col justify-between gap-2 border-t border-neutral-100 p-3.5 dark:border-neutral-800">
+                      <figcaption className="flex flex-1 flex-col justify-between border-t border-neutral-100 p-3.5 dark:border-neutral-800">
                         <h3 className="text-xs font-bold text-neutral-900 dark:text-white leading-snug">{item.title}</h3>
-                        <div className="flex items-center justify-between text-[11px] text-neutral-500 dark:text-neutral-400">
-                          <span className="inline-flex items-center gap-1 rounded bg-neutral-100 px-1.5 py-0.5 font-mono font-semibold text-neutral-800 dark:bg-neutral-800 dark:text-neutral-200">
-                            <FileImage className="h-3 w-3 text-blue-600" />
-                            <span>{item.fileName}</span>
-                          </span>
-                          <span className="font-mono">{item.size} · {item.modified}</span>
-                        </div>
                       </figcaption>
                     </figure>
                   ))}
