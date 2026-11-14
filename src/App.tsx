@@ -87,19 +87,24 @@ export default function App() {
   };
 
   useEffect(() => {
-    const handleHash = () => {
+    const handleRoute = () => {
       const h = window.location.hash.toLowerCase().replace(/^#\/?/, '');
+      const unitParam = new URLSearchParams(window.location.search).get('unit')?.toLowerCase() || '';
       let target = 'home';
-      if (h === 'blue') target = 'blue';
-      else if (h === 'red') target = 'red';
-      else if (h === 'green') target = 'green';
+      if (h === 'blue' || (!h && unitParam === 'blue')) target = 'blue';
+      else if (h === 'red' || (!h && unitParam === 'red')) target = 'red';
+      else if (h === 'green' || (!h && unitParam === 'green')) target = 'green';
       setCurrentPage(target as any);
       setAptCategory('All');
       updateMetaTags(target);
     };
-    handleHash();
-    window.addEventListener('hashchange', handleHash);
-    return () => window.removeEventListener('hashchange', handleHash);
+    handleRoute();
+    window.addEventListener('hashchange', handleRoute);
+    window.addEventListener('popstate', handleRoute);
+    return () => {
+      window.removeEventListener('hashchange', handleRoute);
+      window.removeEventListener('popstate', handleRoute);
+    };
   }, []);
 
   const navigateTo = (page: 'home' | 'blue' | 'red' | 'green') => {

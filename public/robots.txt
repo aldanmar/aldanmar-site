@@ -1,0 +1,18 @@
+# robots.txt for Aldanmar Apartments (Casa Santana) — https://deanwestbury.com/
+# Allows all search engine crawlers across all pages and assets.
+
+User-agent: *
+Allow: /
+Allow: /?unit=blue
+Allow: /?unit=red
+Allow: /?unit=green
+Allow: /assets/
+Allow: /sitemap.xml
+
+# Indexed Pages:
+# - Home / Triplex Overview: https://deanwestbury.com/
+# - The Blue Apartment: https://deanwestbury.com/?unit=blue
+# - The Red Apartment: https://deanwestbury.com/?unit=red
+# - The Green Apartment: https://deanwestbury.com/?unit=green
+
+Sitemap: https://deanwestbury.com/sitemap.xml
