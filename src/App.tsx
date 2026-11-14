@@ -40,8 +40,8 @@ export default function App() {
   const CANONICAL_SHARE_IMAGE = 'https://deanwestbury.com/assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg';
 
   const updateMetaTags = (page: string) => {
-    let pageTitle = (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera, Philippines';
-    let pageDesc = siteData.heroDescription || '';
+    let pageTitle = 'Beachfront Triplex Apartments for Sale in Puerto Galera PH';
+    let pageDesc = 'Casa Santana is a 210 sqm beachfront residential triplex for sale on Dulangan Beach, Puerto Galera Philippines, featuring three self-contained apartments.';
     let ogImg = CANONICAL_SHARE_IMAGE;
 
     if (page !== 'home') {
@@ -255,10 +255,10 @@ export default function App() {
   const nextApartment = apartmentsList[(apartmentsList.findIndex((a: any) => a.id === currentPage) + 1) % apartmentsList.length];
 
   const activeShareTitle = currentPage === 'home'
-    ? (siteData.homeSeoMeta?.title || ((siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ') — Beachfront Property For Sale, Puerto Galera, Philippines'))
+    ? (siteData.homeSeoMeta?.title || 'Beachfront Triplex Apartments for Sale in Puerto Galera PH')
     : (activeApartment?.seoMeta?.title || (activeApartment?.name + ' | ' + (siteData.propertyName || 'Aldanmar Apartments')));
   const activeShareDesc = currentPage === 'home'
-    ? (siteData.homeSeoMeta?.description || siteData.heroDescription || '')
+    ? (siteData.homeSeoMeta?.description || 'Casa Santana is a 210 sqm beachfront residential triplex for sale on Dulangan Beach, Puerto Galera Philippines, featuring three self-contained apartments.')
     : (activeApartment?.seoMeta?.description || activeApartment?.description || '');
   const activeShareUrl = typeof window !== 'undefined'
     ? ((window.location.hostname.includes('deanwestbury.com') ? 'https://deanwestbury.com/' : (window.location.origin + window.location.pathname.replace(/index\.html$/, ''))) + (currentPage === 'home' ? '' : ('?unit=' + currentPage)))
