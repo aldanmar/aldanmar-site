@@ -1,7 +1,8 @@
 # robots.txt for Aldanmar Apartments (Casa Santana) — https://deanwestbury.com/
-# Allows all search engine crawlers across all pages and assets.
+# Allows all search engine crawlers across all pages, images, and assets.
 
 User-agent: *
+Disallow:
 Allow: /
 Allow: /?unit=blue
 Allow: /?unit=red
