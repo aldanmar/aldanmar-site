@@ -19,6 +19,11 @@ import {
   Share2,
   Mail,
   Link2,
+  Sun,
+  Anchor,
+  Compass,
+  Mountain,
+  Navigation,
 } from 'lucide-react';
 import siteData from './siteConfig.json';
 
@@ -600,33 +605,142 @@ export default function App() {
               </div>
             </section>
 
-            {/* Google Maps Location Section */}
-            <section id="location" className="border-b border-neutral-200 bg-white py-16 dark:border-neutral-800 dark:bg-neutral-950">
+            {/* Google Maps Location & Strategic Distances Section */}
+            <section id="location" className="border-b border-neutral-200 bg-neutral-50/70 py-20 dark:border-neutral-800 dark:bg-neutral-900/30">
               <div className="mx-auto max-w-6xl px-6">
-                <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 items-center">
-                  <div className="lg:col-span-5 space-y-4">
-                    <span className="text-xs font-bold uppercase tracking-wider text-blue-600">Location &amp; Coordinates</span>
-                    <h2 className="text-2xl font-extrabold text-neutral-900 dark:text-white sm:text-3xl">Dulangan Beach, Puerto Galera, Philippines</h2>
-                    <p className="text-xs text-neutral-600 dark:text-neutral-400 leading-relaxed">
-                      164 Dulangan Road, Sitio Centro, Dulangan, Puerto Galera, Oriental Mindoro 5203, Philippines. Direct road access, enclosed garage for 1 medium car and off-road space for 5 motorcycles.
-                    </p>
-                    <div className="pt-2">
-                      <a href={siteData.externalMedia?.googleMapsUrl || '#'} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-bold text-white hover:bg-blue-700">
-                        <MapPin className="h-3.5 w-3.5" />
-                        <span>Open Exact Pin in Google Maps</span>
-                        <ExternalLink className="h-3 w-3" />
-                      </a>
+                <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+                  {/* Left Text & Map Embed */}
+                  <div className="lg:col-span-5 space-y-6">
+                    <div>
+                      <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400">Coastal Neighborhood &amp; Location</span>
+                      <h2 className="mt-1 text-2xl font-extrabold tracking-tight text-neutral-900 sm:text-3xl dark:text-white">
+                        Dulangan Beach, Puerto Galera, Philippines
+                      </h2>
+                      <p className="mt-2 text-sm leading-relaxed text-neutral-600 dark:text-neutral-400">
+                        Puerto Galera, Philippines is a UNESCO-recognized biosphere reserve and one of the Most Beautiful Bays in the World. Dulangan offers the ideal balance: a tranquil coastal village along Dulangan Road, free from commercial noise yet only a short ride to the town center and ferry ports.
+                      </p>
+                    </div>
+
+                    {/* Exact Location Card */}
+                    <div className="rounded-2xl border border-neutral-200 bg-white p-5 shadow-xs dark:border-neutral-800 dark:bg-neutral-900">
+                      <span className="text-xs font-bold text-neutral-500 dark:text-neutral-400 uppercase tracking-wider">
+                        Exact Property Address
+                      </span>
+                      <p className="mt-1 font-mono text-sm font-bold text-neutral-900 dark:text-white">
+                        {siteData.address}, Sitio Centro, {siteData.barangay}, {siteData.municipality}, {siteData.province} 5203, {siteData.country || 'Philippines'}
+                      </p>
+                      <div className="mt-3 space-y-1 text-xs text-neutral-500 font-mono">
+                        <div>GPS: {siteData.externalMedia?.coordinates || '13.5042° N, 120.9856° E'}</div>
+                        <div>
+                          Email:{' '}
+                          <a href={'mailto:' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com')} className="font-semibold text-blue-600 hover:underline dark:text-blue-400">
+                            {siteData.ownerEmail || 'aldanmar@deanwestbury.com'}
+                          </a>
+                        </div>
+                      </div>
+                      <div className="mt-4 flex flex-wrap items-center gap-3">
+                        <a
+                          href={siteData.externalMedia?.googleMapsUrl || '#'}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-2 rounded-xl bg-blue-600 px-4 py-2.5 text-xs font-bold text-white hover:bg-blue-700 transition-colors shadow-xs"
+                        >
+                          <MapPin className="h-4 w-4" />
+                          <span>Open in Google Maps</span>
+                          <ExternalLink className="h-3 w-3" />
+                        </a>
+                        <a
+                          href={'mailto:' + (siteData.ownerEmail || 'aldanmar@deanwestbury.com')}
+                          className="inline-flex items-center gap-2 rounded-xl border border-neutral-300 bg-white px-3.5 py-2.5 text-xs font-semibold text-neutral-700 hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200"
+                        >
+                          <Mail className="h-4 w-4 text-blue-600" />
+                          <span>Email {siteData.ownerEmail || 'aldanmar@deanwestbury.com'}</span>
+                        </a>
+                      </div>
+                    </div>
+
+                    {/* Interactive Map Frame */}
+                    <div className="overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 dark:border-neutral-800 dark:bg-neutral-950 shadow-xs aspect-16/10 relative">
+                      <iframe
+                        title="Google Maps Location - 164 Dulangan Road, Puerto Galera, Philippines"
+                        width="100%"
+                        height="100%"
+                        style={{ border: 0 }}
+                        loading="lazy"
+                        referrerPolicy="no-referrer-when-downgrade"
+                        src="https://maps.google.com/maps?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines&t=&z=14&ie=UTF8&iwloc=&output=embed"
+                        className="w-full h-full"
+                      />
+                      <div className="absolute bottom-2 right-2 rounded-md bg-white/90 px-2 py-1 text-[10px] font-mono font-bold text-neutral-800 shadow-xs backdrop-blur-xs">
+                        13.5042° N, 120.9856° E
+                      </div>
                     </div>
                   </div>
-                  <div className="lg:col-span-7 aspect-16/9 rounded-2xl overflow-hidden border border-neutral-200 shadow-sm dark:border-neutral-800">
-                    <iframe
-                      title="Google Maps Location - 164 Dulangan Road, Puerto Galera, Philippines"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      loading="lazy"
-                      src="https://maps.google.com/maps?q=164+Dulangan+Road,+Dulangan,+Puerto+Galera,+Oriental+Mindoro,+Philippines&t=&z=14&ie=UTF8&iwloc=&output=embed"
-                    />
+
+                  {/* Right Destination Points */}
+                  <div className="lg:col-span-7">
+                    <div className="space-y-4">
+                      <div className="text-xs font-bold text-neutral-400 uppercase tracking-wider mb-2">
+                        Strategic Distances &amp; Highlights
+                      </div>
+                      {[
+                        {
+                          name: 'Dulangan Beach Frontage',
+                          distance: '0 meters (Direct beachfront)',
+                          desc: 'Calm, protected waters sheltered from heavy open-sea swells. Step straight from the property onto the sand for morning swims and reef snorkeling.',
+                          icon: <Sun className="h-4 w-4 text-amber-500" />,
+                        },
+                        {
+                          name: 'Muelle Cultural Port & Marina',
+                          distance: '10 - 12 minutes drive',
+                          desc: 'Historic Puerto Galera natural harbor, fast craft ferry passenger terminal connecting directly to Batangas and Metro Manila.',
+                          icon: <Anchor className="h-4 w-4 text-blue-600 dark:text-blue-400" />,
+                        },
+                        {
+                          name: 'Sabang Scuba Diving Sanctuary',
+                          distance: '15 minutes drive',
+                          desc: 'World-renowned dive hub in the Coral Triangle with over 30 dive sites, dive shops, international dining, and amenities.',
+                          icon: <Compass className="h-4 w-4 text-sky-500" />,
+                        },
+                        {
+                          name: 'Tamaraw & Tukuran Waterfalls',
+                          distance: '15 - 25 minutes drive',
+                          desc: 'Scenic natural cascade waterfalls and mountain river pools nestled in the lush tropical rainforest of Oriental Mindoro.',
+                          icon: <Mountain className="h-4 w-4 text-emerald-600" />,
+                        },
+                      ].map((spot, i) => (
+                        <div
+                          key={i}
+                          className="flex items-start gap-4 rounded-2xl border border-neutral-200 bg-white p-5 shadow-2xs transition-all hover:border-neutral-300 dark:border-neutral-800 dark:bg-neutral-900"
+                        >
+                          <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-neutral-200 bg-neutral-50 shadow-2xs dark:border-neutral-800 dark:bg-neutral-800">
+                            {spot.icon}
+                          </div>
+                          <div>
+                            <div className="flex flex-wrap items-center justify-between gap-2">
+                              <h4 className="text-sm font-bold text-neutral-900 dark:text-white">{spot.name}</h4>
+                              <span className="font-mono text-xs font-bold text-blue-600 dark:text-blue-400">
+                                {spot.distance}
+                              </span>
+                            </div>
+                            <p className="mt-1.5 text-xs leading-relaxed text-neutral-600 dark:text-neutral-400">
+                              {spot.desc}
+                            </p>
+                          </div>
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Direct Beachfront Access Notice */}
+                    <div className="mt-6 rounded-2xl border border-sky-200 bg-sky-50/70 p-5 dark:border-sky-900/60 dark:bg-sky-950/30 text-xs text-sky-900 dark:text-sky-200">
+                      <div className="flex items-center gap-2 font-bold mb-1">
+                        <Navigation className="h-4 w-4 text-sky-600 dark:text-sky-400" />
+                        <span>Road &amp; Sea Access</span>
+                      </div>
+                      <p className="leading-relaxed">
+                        Direct vehicle access directly on 164 Dulangan Road (Sitio Centro) with private garage and motorcycle parking. The beach frontage allows direct launching of kayaks, paddleboards, and small watercraft straight into the bay.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
