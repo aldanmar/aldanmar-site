@@ -100,6 +100,60 @@ export default function App() {
     setMeta('name', 'twitter:description', pageDesc);
     setMeta('name', 'twitter:image', ogImg);
     setMeta('name', 'twitter:image:alt', pageTitle);
+
+    try {
+      let jsonLdEl = document.getElementById('seo-jsonld') as HTMLScriptElement | null;
+      if (!jsonLdEl) {
+        jsonLdEl = document.createElement('script');
+        jsonLdEl.id = 'seo-jsonld';
+        jsonLdEl.type = 'application/ld+json';
+        document.head.appendChild(jsonLdEl);
+      }
+      const aptObj = page === 'home' ? null : (siteData.apartments || []).find((a: any) => a.id === page);
+      const floorSizes: Record<string, number> = { home: 210, blue: 90, red: 92, green: 114 };
+      const toAbs = (p: string) => (!p ? '' : p.startsWith('http') ? p : ('https://deanwestbury.com/' + p.replace(/^\.\//, '')));
+      const imgList = Array.from(new Set((page === 'home'
+        ? [CANONICAL_SHARE_IMAGE, ...(siteData.externalViews || []).slice(0, 6).map((v: any) => toAbs(v.image)), ...(siteData.floorPlans || []).slice(0, 2).map((fp: any) => toAbs(fp.src))]
+        : [ogImg, ...((aptObj?.galleryItems || []).slice(0, 6).map((it: any) => toAbs(it.src)))]).filter(Boolean)));
+      const addr = {
+        '@type': 'PostalAddress',
+        streetAddress: (siteData.address || '164 Dulangan Road') + ', Sitio Centro, ' + (siteData.barangay || 'Dulangan'),
+        addressLocality: siteData.municipality || 'Puerto Galera',
+        addressRegion: siteData.province || 'Oriental Mindoro',
+        postalCode: '5203',
+        addressCountry: 'PH',
+      };
+      const geo = { '@type': 'GeoCoordinates', latitude: 13.5042, longitude: 120.9856 };
+      jsonLdEl.textContent = JSON.stringify({
+        '@context': 'https://schema.org',
+        '@type': 'RealEstateListing',
+        name: pageTitle,
+        description: pageDesc,
+        url: canonicalUrl,
+        datePosted: '2026-01-01',
+        image: imgList,
+        offers: {
+          '@type': 'Offer',
+          price: '15000000',
+          priceCurrency: 'PHP',
+          availability: 'https://schema.org/InStock',
+          url: canonicalUrl,
+          seller: { '@type': 'Person', name: (siteData.propertyName || 'Aldanmar Apartments') + ' Direct Owner', email: siteData.ownerEmail || 'aldanmar@deanwestbury.com' },
+        },
+        about: {
+          '@type': page === 'home' ? 'ApartmentComplex' : 'Apartment',
+          name: aptObj ? (aptObj.name + ' — ' + (siteData.propertyName || 'Aldanmar Apartments')) : ((siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ')'),
+          description: aptObj ? aptObj.description : (siteData.heroDescription || pageDesc),
+          url: canonicalUrl,
+          floorSize: { '@type': 'QuantitativeValue', value: floorSizes[page] || 210, unitCode: 'MTK', unitText: 'sqm' },
+          numberOfBedrooms: aptObj ? aptObj.bedrooms : 4,
+          numberOfBathroomsTotal: aptObj ? aptObj.bathrooms : 3,
+          address: addr,
+          geo,
+        },
+        contentLocation: { '@type': 'Place', name: (siteData.propertyName || 'Aldanmar Apartments') + ' (' + (siteData.akaName || 'Casa Santana') + ')', address: addr, geo },
+      }, null, 2);
+    } catch {}
   };
 
   useEffect(() => {
