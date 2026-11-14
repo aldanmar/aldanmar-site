@@ -1,27 +1,528 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://deanwestbury.com/</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/aistudio/ForSaleByOwnerIcon_3ec8a888.jpg</image:loc>
+      <image:title>Aldanmar Apartments (Casa Santana) — Beachfront Triplex For Sale, Puerto Galera, Philippines</image:title>
+      <image:caption>Direct beachfront triplex villa for sale by owner at 164 Dulangan Road, Puerto Galera, Philippines.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/BuildingViewFromBeach-2010.jpg</image:loc>
+      <image:title>Casa Santana Elevation from Dulangan Beach</image:title>
+      <image:caption>Three-tier coastal elevation viewed straight from the sandy shoreline showing all three private apartment levels.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Front3.jpg</image:loc>
+      <image:title>164 Dulangan Road Entrance &amp; Villa Frontage</image:title>
+      <image:caption>Upper road-level frontage along 164 Dulangan Road with gated vehicle entry and tropical tree canopy.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/TerraceView.jpg</image:loc>
+      <image:title>Panoramic Bay Vista from Upper Veranda</image:title>
+      <image:caption>Sweeping ocean and mountain vista across Dulangan Bay looking toward Verde Island Passage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/BeachView.jpg</image:loc>
+      <image:title>Calm Swimmable Shoreline on Dulangan Beach</image:title>
+      <image:caption>Direct beachfront walkout onto calm turquoise waters ideal for swimming, paddleboarding, and snorkeling.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/BeachGate.jpg</image:loc>
+      <image:title>Private Beachfront Gate &amp; Shoreline Path</image:title>
+      <image:caption>Secured private gate stepping directly onto Dulangan Beach with coral reef waters steps away.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Garage.jpg</image:loc>
+      <image:title>Enclosed 1-Car Garage &amp; Off-Road Motorcycle Parking</image:title>
+      <image:caption>Private covered garage accommodating 1 medium car plus off-road space for 5 motorcycles.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/RoadFront.jpg</image:loc>
+      <image:title>Dulangan Road Gate &amp; Exterior Pathway</image:title>
+      <image:caption>Concrete road access on 164 Dulangan Road with dedicated exterior steps leading down to the apartments and beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/front.jpg</image:loc>
+      <image:title>Front Building Facade &amp; Mature Tropical Palms</image:title>
+      <image:caption>Private gated walkways and coastal garden landscaping framing the apartment entrances.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png</image:loc>
+      <image:title>Complete 3-Story 3D Cutaway Model — Aldanmar Apartments</image:title>
+      <image:caption>Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png</image:loc>
+      <image:title>3rd Floor Dimensioned Plan — Blue Apartment (90 m²), Garage &amp; Front Yard</image:title>
+      <image:caption>Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png</image:loc>
+      <image:title>2nd Floor Dimensioned Plan — Red &amp; Green Bedrooms &amp; Upper Terraces</image:title>
+      <image:caption>Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png</image:loc>
+      <image:title>1st Floor Dimensioned Plan — Green (114 m²) &amp; Red (92 m²)</image:title>
+      <image:caption>Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) &amp; Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-2ndFloor.png</image:loc>
+      <image:title>2nd Floor 3D Isometric Model — Bedrooms &amp; Upper Terraces</image:title>
+      <image:caption>3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-1stFloor.png</image:loc>
+      <image:title>1st Floor 3D Isometric Model — Living Levels &amp; Beach Stairs</image:title>
+      <image:caption>3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/Sketch.jpg</image:loc>
+      <image:title>Casa Santana Architectural Ink Elevation Sketch</image:title>
+      <image:caption>Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://deanwestbury.com/?unit=blue</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/LivingRoom1.jpg</image:loc>
+      <image:title>The Blue Apartment — Living Area 1</image:title>
+      <image:caption>Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/LivingRoom2.jpg</image:loc>
+      <image:title>The Blue Apartment — Living Area 2</image:title>
+      <image:caption>Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/LivingRoom3.jpg</image:loc>
+      <image:title>The Blue Apartment — Living Area 3</image:title>
+      <image:caption>Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/LivingRoom4.jpg</image:loc>
+      <image:title>The Blue Apartment — Living Area 4</image:title>
+      <image:caption>Furnished open-plan living space inside The Blue Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Kitchen1.jpg</image:loc>
+      <image:title>The Blue Apartment — Kitchen &amp; Dining 1</image:title>
+      <image:caption>Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Kitchen2.jpg</image:loc>
+      <image:title>The Blue Apartment — Kitchen &amp; Dining 2</image:title>
+      <image:caption>Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Bedroom1.jpg</image:loc>
+      <image:title>The Blue Apartment — Master Bedroom 1</image:title>
+      <image:caption>Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Bedroom2.jpg</image:loc>
+      <image:title>The Blue Apartment — Master Bedroom 2</image:title>
+      <image:caption>Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Bedroom3.jpg</image:loc>
+      <image:title>The Blue Apartment — Master Bedroom 3</image:title>
+      <image:caption>Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Bedroom4.jpg</image:loc>
+      <image:title>The Blue Apartment — Master Bedroom 4</image:title>
+      <image:caption>Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Bedroom5.jpg</image:loc>
+      <image:title>The Blue Apartment — Master Bedroom 5</image:title>
+      <image:caption>Air-conditioned bedroom in The Blue Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/SecondBedroom1.jpg</image:loc>
+      <image:title>The Blue Apartment — Second Bedroom 1</image:title>
+      <image:caption>Second bedroom suite in The Blue Apartment with storage and coastal natural light.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/SecondBedroom2.jpg</image:loc>
+      <image:title>The Blue Apartment — Second Bedroom 2</image:title>
+      <image:caption>Second bedroom suite in The Blue Apartment with storage and coastal natural light.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Bathroom.jpg</image:loc>
+      <image:title>The Blue Apartment — Private Bathroom</image:title>
+      <image:caption>Tiled en-suite bathroom served by the shared filtered water supply.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Terrace1.jpg</image:loc>
+      <image:title>The Blue Apartment — Private Terrace &amp; Veranda 1</image:title>
+      <image:caption>Private outdoor terrace overlooking tropical foliage and Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/TerraceView.jpg</image:loc>
+      <image:title>The Blue Apartment — Panoramic Ocean &amp; Bay View</image:title>
+      <image:caption>Direct coastal outlook over Dulangan Bay captured from The Blue Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Terrace2.jpg</image:loc>
+      <image:title>The Blue Apartment — Private Terrace &amp; Veranda 2</image:title>
+      <image:caption>Private outdoor terrace overlooking tropical foliage and Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Beach1.jpg</image:loc>
+      <image:title>The Blue Apartment — Dulangan Beachfront 1</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Blue Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Beach2.jpg</image:loc>
+      <image:title>The Blue Apartment — Dulangan Beachfront 2</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Blue Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Garage.jpg</image:loc>
+      <image:title>The Blue Apartment — Enclosed 1-Car Garage &amp; Access</image:title>
+      <image:caption>Covered single-car garage with off-road motorcycle parking along 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Front1.jpg</image:loc>
+      <image:title>The Blue Apartment — Building Exterior &amp; Frontage 1</image:title>
+      <image:caption>Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Front2.jpg</image:loc>
+      <image:title>The Blue Apartment — Building Exterior &amp; Frontage 2</image:title>
+      <image:caption>Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/blue/Front3.jpg</image:loc>
+      <image:title>The Blue Apartment — Building Exterior &amp; Frontage 3</image:title>
+      <image:caption>Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png</image:loc>
+      <image:title>Complete 3-Story 3D Cutaway Model — Aldanmar Apartments</image:title>
+      <image:caption>Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png</image:loc>
+      <image:title>3rd Floor Dimensioned Plan — Blue Apartment (90 m²), Garage &amp; Front Yard</image:title>
+      <image:caption>Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/Sketch.jpg</image:loc>
+      <image:title>Casa Santana Architectural Ink Elevation Sketch</image:title>
+      <image:caption>Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://deanwestbury.com/?unit=red</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/living1.jpg</image:loc>
+      <image:title>The Red Apartment — Living Area 1</image:title>
+      <image:caption>Furnished open-plan living space inside The Red Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/living2.jpg</image:loc>
+      <image:title>The Red Apartment — Living Area 2</image:title>
+      <image:caption>Furnished open-plan living space inside The Red Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/living3.jpg</image:loc>
+      <image:title>The Red Apartment — Living Area 3</image:title>
+      <image:caption>Furnished open-plan living space inside The Red Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/kitchen1.jpg</image:loc>
+      <image:title>The Red Apartment — Kitchen &amp; Dining 1</image:title>
+      <image:caption>Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/kitchen2.jpg</image:loc>
+      <image:title>The Red Apartment — Kitchen &amp; Dining 2</image:title>
+      <image:caption>Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/kitchen3.jpg</image:loc>
+      <image:title>The Red Apartment — Kitchen &amp; Dining 3</image:title>
+      <image:caption>Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/bedroom1.jpg</image:loc>
+      <image:title>The Red Apartment — Master Bedroom 1</image:title>
+      <image:caption>Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/bedroom2.jpg</image:loc>
+      <image:title>The Red Apartment — Master Bedroom 2</image:title>
+      <image:caption>Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/bedroom3.jpg</image:loc>
+      <image:title>The Red Apartment — Master Bedroom 3</image:title>
+      <image:caption>Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/bedroom4.jpg</image:loc>
+      <image:title>The Red Apartment — Master Bedroom 4</image:title>
+      <image:caption>Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/bedroom5.jpg</image:loc>
+      <image:title>The Red Apartment — Master Bedroom 5</image:title>
+      <image:caption>Air-conditioned bedroom in The Red Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/bathroom.jpg</image:loc>
+      <image:title>The Red Apartment — Private Bathroom</image:title>
+      <image:caption>Tiled en-suite bathroom served by the shared filtered water supply.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/terrace1.jpg</image:loc>
+      <image:title>The Red Apartment — Private Terrace &amp; Veranda 1</image:title>
+      <image:caption>Private outdoor terrace overlooking tropical foliage and Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/terrace2.jpg</image:loc>
+      <image:title>The Red Apartment — Private Terrace &amp; Veranda 2</image:title>
+      <image:caption>Private outdoor terrace overlooking tropical foliage and Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/beach.jpg</image:loc>
+      <image:title>The Red Apartment — Dulangan Beachfront</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Red Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/beach1.jpg</image:loc>
+      <image:title>The Red Apartment — Dulangan Beachfront 1</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Red Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/beach2.jpg</image:loc>
+      <image:title>The Red Apartment — Dulangan Beachfront 2</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Red Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/beach3.jpg</image:loc>
+      <image:title>The Red Apartment — Dulangan Beachfront 3</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Red Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/RedApt-InternalStairs-Med.jpg</image:loc>
+      <image:title>The Red Apartment — Internal Staircase</image:title>
+      <image:caption>Internal staircase connecting the living floor to the bedroom &amp; terrace level.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/front.jpg</image:loc>
+      <image:title>The Red Apartment — Building Exterior &amp; Frontage</image:title>
+      <image:caption>Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/Inclusions.jpg</image:loc>
+      <image:title>The Red Apartment — Furnished Inclusions &amp; Amenities Sheet</image:title>
+      <image:caption>Archive summary of fixtures, appliances, and furnishings included with The Red Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/red/BuildingViewFromBeach-2010.jpg</image:loc>
+      <image:title>Casa Santana — Multi-Level Facade from Dulangan Beach</image:title>
+      <image:caption>Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png</image:loc>
+      <image:title>Complete 3-Story 3D Cutaway Model — Aldanmar Apartments</image:title>
+      <image:caption>Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png</image:loc>
+      <image:title>2nd Floor Dimensioned Plan — Red &amp; Green Bedrooms &amp; Upper Terraces</image:title>
+      <image:caption>Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png</image:loc>
+      <image:title>1st Floor Dimensioned Plan — Green (114 m²) &amp; Red (92 m²)</image:title>
+      <image:caption>Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) &amp; Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-2ndFloor.png</image:loc>
+      <image:title>2nd Floor 3D Isometric Model — Bedrooms &amp; Upper Terraces</image:title>
+      <image:caption>3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-1stFloor.png</image:loc>
+      <image:title>1st Floor 3D Isometric Model — Living Levels &amp; Beach Stairs</image:title>
+      <image:caption>3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/Sketch.jpg</image:loc>
+      <image:title>Casa Santana Architectural Ink Elevation Sketch</image:title>
+      <image:caption>Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://deanwestbury.com/?unit=green</loc>
     <lastmod>2026-11-14</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Living1.jpg</image:loc>
+      <image:title>The Green Apartment — Living Area 1</image:title>
+      <image:caption>Furnished open-plan living space inside The Green Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Living2.jpg</image:loc>
+      <image:title>The Green Apartment — Living Area 2</image:title>
+      <image:caption>Furnished open-plan living space inside The Green Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Living3.jpg</image:loc>
+      <image:title>The Green Apartment — Living Area 3</image:title>
+      <image:caption>Furnished open-plan living space inside The Green Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Living4.jpg</image:loc>
+      <image:title>The Green Apartment — Living Area 4</image:title>
+      <image:caption>Furnished open-plan living space inside The Green Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Living5.jpg</image:loc>
+      <image:title>The Green Apartment — Living Area 5</image:title>
+      <image:caption>Furnished open-plan living space inside The Green Apartment with natural coastal ventilation.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/LivingEntrance.jpg</image:loc>
+      <image:title>The Green Apartment — Living Room &amp; Private Entrance</image:title>
+      <image:caption>Private main entrance opening directly into the furnished living area of The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Kitchen.jpg</image:loc>
+      <image:title>The Green Apartment — Kitchen &amp; Dining</image:title>
+      <image:caption>Self-contained kitchen equipped with refrigerator, stovetop, cabinetry, and dining ware.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Bedroom1.jpg</image:loc>
+      <image:title>The Green Apartment — Master Bedroom 1</image:title>
+      <image:caption>Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Bedroom2.jpg</image:loc>
+      <image:title>The Green Apartment — Master Bedroom 2</image:title>
+      <image:caption>Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Bedroom3.jpg</image:loc>
+      <image:title>The Green Apartment — Master Bedroom 3</image:title>
+      <image:caption>Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Bedroom4.jpg</image:loc>
+      <image:title>The Green Apartment — Master Bedroom 4</image:title>
+      <image:caption>Air-conditioned bedroom in The Green Apartment with built-in wardrobes and comfortable sleeping quarters.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Bathroom.jpg</image:loc>
+      <image:title>The Green Apartment — Private Bathroom</image:title>
+      <image:caption>Tiled en-suite bathroom served by the shared filtered water supply.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Terrace1.jpg</image:loc>
+      <image:title>The Green Apartment — Private Terrace &amp; Veranda 1</image:title>
+      <image:caption>Private outdoor terrace overlooking tropical foliage and Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/View1.jpg</image:loc>
+      <image:title>The Green Apartment — Panoramic Ocean &amp; Bay View 1</image:title>
+      <image:caption>Direct coastal outlook over Dulangan Bay captured from The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Terrace2.jpg</image:loc>
+      <image:title>The Green Apartment — Private Terrace &amp; Veranda 2</image:title>
+      <image:caption>Private outdoor terrace overlooking tropical foliage and Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/View2.jpg</image:loc>
+      <image:title>The Green Apartment — Panoramic Ocean &amp; Bay View 2</image:title>
+      <image:caption>Direct coastal outlook over Dulangan Bay captured from The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Beach1.jpg</image:loc>
+      <image:title>The Green Apartment — Dulangan Beachfront 1</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/BeachGate.jpg</image:loc>
+      <image:title>The Green Apartment — Direct Beachfront Gate</image:title>
+      <image:caption>Private beachfront walkout gate stepping directly onto Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/BeachView.jpg</image:loc>
+      <image:title>The Green Apartment — Dulangan Beachfront View</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Beach2.jpg</image:loc>
+      <image:title>The Green Apartment — Dulangan Beachfront 2</image:title>
+      <image:caption>Protected sandy shoreline and turquoise bay steps from The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/OutsideStairs.jpg</image:loc>
+      <image:title>The Green Apartment — Private Exterior Stairs</image:title>
+      <image:caption>Dedicated exterior access stairway providing private entry.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Stairs.jpg</image:loc>
+      <image:title>The Green Apartment — Interior Stairway</image:title>
+      <image:caption>Dedicated exterior access stairway providing private entry.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/RoadFront.jpg</image:loc>
+      <image:title>The Green Apartment — 164 Dulangan Road Frontage</image:title>
+      <image:caption>Concrete road frontage and gated entrance along 164 Dulangan Road.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/green/Inclusions.jpg</image:loc>
+      <image:title>The Green Apartment — Furnished Inclusions &amp; Amenities Sheet</image:title>
+      <image:caption>Archive summary of fixtures, appliances, and furnishings included with The Green Apartment.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png</image:loc>
+      <image:title>Complete 3-Story 3D Cutaway Model — Aldanmar Apartments</image:title>
+      <image:caption>Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png</image:loc>
+      <image:title>2nd Floor Dimensioned Plan — Red &amp; Green Bedrooms &amp; Upper Terraces</image:title>
+      <image:caption>Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png</image:loc>
+      <image:title>1st Floor Dimensioned Plan — Green (114 m²) &amp; Red (92 m²)</image:title>
+      <image:caption>Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) &amp; Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²).</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-2ndFloor.png</image:loc>
+      <image:title>2nd Floor 3D Isometric Model — Bedrooms &amp; Upper Terraces</image:title>
+      <image:caption>3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/AldanmarPlan-1stFloor.png</image:loc>
+      <image:title>1st Floor 3D Isometric Model — Living Levels &amp; Beach Stairs</image:title>
+      <image:caption>3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://deanwestbury.com/assets/drive/floorplans/Sketch.jpg</image:loc>
+      <image:title>Casa Santana Architectural Ink Elevation Sketch</image:title>
+      <image:caption>Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach.</image:caption>
+    </image:image>
   </url>
 </urlset>

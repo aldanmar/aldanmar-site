@@ -63,7 +63,22 @@ export default function App() {
       }
     }
 
+    const canonicalUrl = (() => {
+      const q = page === 'home' ? '' : ('?unit=' + page);
+      if (typeof window === 'undefined') return 'https://deanwestbury.com/' + q;
+      if (window.location.hostname.includes('deanwestbury.com')) return 'https://deanwestbury.com/' + q;
+      return window.location.origin + window.location.pathname.replace(/index\.html$/, '') + q;
+    })();
+
     document.title = pageTitle;
+    let canonicalEl = document.querySelector('link[rel="canonical"]');
+    if (!canonicalEl) {
+      canonicalEl = document.createElement('link');
+      canonicalEl.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonicalEl);
+    }
+    canonicalEl.setAttribute('href', canonicalUrl);
+
     const setMeta = (attr: string, key: string, val: string) => {
       let el = document.querySelector('meta[' + attr + '="' + key + '"]');
       if (!el) {
@@ -76,6 +91,7 @@ export default function App() {
     setMeta('name', 'description', pageDesc);
     setMeta('property', 'og:title', pageTitle);
     setMeta('property', 'og:description', pageDesc);
+    setMeta('property', 'og:url', canonicalUrl);
     setMeta('property', 'og:image', ogImg);
     setMeta('property', 'og:image:secure_url', ogImg);
     setMeta('property', 'og:image:type', 'image/jpeg');
@@ -111,7 +127,11 @@ export default function App() {
     setCurrentPage(page);
     setAptCategory('All');
     updateMetaTags(page);
-    window.location.hash = page === 'home' ? '#/' : '#/' + page;
+    const cleanPath = window.location.pathname.endsWith('/index.html')
+      ? window.location.pathname.replace(/index\.html$/, '')
+      : window.location.pathname;
+    const targetUrl = page === 'home' ? cleanPath : (cleanPath + '?unit=' + page);
+    window.history.pushState({ page }, '', targetUrl);
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
@@ -187,7 +207,7 @@ export default function App() {
     ? (siteData.homeSeoMeta?.description || siteData.heroDescription || '')
     : (activeApartment?.seoMeta?.description || activeApartment?.description || '');
   const activeShareUrl = typeof window !== 'undefined'
-    ? (window.location.origin + window.location.pathname + (currentPage === 'home' ? '' : ('#/' + currentPage)))
+    ? ((window.location.hostname.includes('deanwestbury.com') ? 'https://deanwestbury.com/' : (window.location.origin + window.location.pathname.replace(/index\.html$/, ''))) + (currentPage === 'home' ? '' : ('?unit=' + currentPage)))
     : '';
 
   const renderShareBar = (label: string, alignBetween?: boolean) => {
@@ -787,8 +807,12 @@ export default function App() {
                   <span className="rounded-md bg-neutral-100 px-2.5 py-1 text-xs font-medium text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">{activeApartment.floorLevel}</span>
                   <span className="rounded-md bg-emerald-100 px-2.5 py-1 text-xs font-bold text-emerald-800">{activeApartment.occupancyStatus}</span>
                 </div>
-                <h1 className="mt-3 text-3xl font-extrabold sm:text-5xl text-neutral-900 dark:text-white">{activeApartment.name}</h1>
-                <p className="mt-2 text-base text-neutral-600 dark:text-neutral-300">{activeApartment.tagline}</p>
+                <h1 className="mt-3 text-3xl font-extrabold sm:text-5xl text-neutral-900 dark:text-white">
+                  {activeApartment.name}
+                  <span className="mt-2 block text-base sm:text-xl font-bold text-neutral-600 dark:text-neutral-300">
+                    {activeApartment.tagline} — Puerto Galera, Philippines
+                  </span>
+                </h1>
               </div>
 
               {/* Specs Pills */}
