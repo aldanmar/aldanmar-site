@@ -27,6 +27,59 @@ import {
 } from 'lucide-react';
 import siteData from './siteConfig.json';
 
+function captureLandingTracking() {
+  if (typeof window === 'undefined') return;
+  try {
+    const href = window.location.href;
+    const pathQuery = window.location.pathname + window.location.search;
+    const search = window.location.search || '';
+    const existing = window.sessionStorage.getItem('aldanmar_landing_url');
+    if (search || !existing) {
+      window.sessionStorage.setItem('aldanmar_landing_url', href);
+      window.sessionStorage.setItem('aldanmar_landing_path_query', pathQuery);
+      window.sessionStorage.setItem('aldanmar_landing_query', search);
+    }
+    const existingRef = window.sessionStorage.getItem('aldanmar_http_referrer');
+    if (document.referrer) {
+      const isExternal = !document.referrer.startsWith(window.location.origin);
+      if (isExternal || !existingRef) {
+        window.sessionStorage.setItem('aldanmar_http_referrer', document.referrer);
+      }
+    }
+  } catch {}
+}
+
+captureLandingTracking();
+
+function getLandingTracking() {
+  if (typeof window === 'undefined') {
+    return {
+      landingUrl: 'https://deanwestbury.com/',
+      landingPathAndQuery: '/',
+      queryString: '(none)',
+      currentUrl: 'https://deanwestbury.com/',
+      httpReferrer: '(direct / none)',
+    };
+  }
+  let landingUrl = window.location.href;
+  let landingPathAndQuery = window.location.pathname + window.location.search;
+  let queryString = window.location.search || '';
+  let httpReferrer = document.referrer || '';
+  try {
+    landingUrl = window.sessionStorage.getItem('aldanmar_landing_url') || landingUrl;
+    landingPathAndQuery = window.sessionStorage.getItem('aldanmar_landing_path_query') || landingPathAndQuery;
+    queryString = window.sessionStorage.getItem('aldanmar_landing_query') ?? queryString;
+    httpReferrer = window.sessionStorage.getItem('aldanmar_http_referrer') || httpReferrer;
+  } catch {}
+  return {
+    landingUrl,
+    landingPathAndQuery,
+    queryString: queryString || '(none)',
+    currentUrl: window.location.href,
+    httpReferrer: httpReferrer || '(direct / none)',
+  };
+}
+
 export default function App() {
   const [currentPage, setCurrentPage] = useState<'home' | 'blue' | 'red' | 'green'>('home');
   const [viewsCategory, setViewsCategory] = useState<'all' | 'exterior' | 'sunset' | 'beach' | 'grounds'>('all');
@@ -192,11 +245,21 @@ export default function App() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!formState.name || !formState.email || isSending) return;
+    const tracking = getLandingTracking();
     const recipient = siteData.ownerEmail || 'aldanmar@deanwestbury.com';
     const subjectText = currentPage !== 'home' ? ('Inquiry on ' + (activeApartment?.name || currentPage)) : 'Property Inquiry';
     const mailto = 'mailto:' + encodeURIComponent(recipient)
       + '?subject=' + encodeURIComponent('[Aldanmar Apartments] ' + subjectText)
-      + '&body=' + encodeURIComponent('From: ' + formState.name + '\nEmail: ' + formState.email + (formState.phone ? '\nPhone: ' + formState.phone : '') + '\n\n' + formState.message);
+      + '&body=' + encodeURIComponent(
+        'From: ' + formState.name
+        + '\nEmail: ' + formState.email
+        + (formState.phone ? '\nPhone: ' + formState.phone : '')
+        + '\nLanding Page + Query String: ' + tracking.landingUrl
+        + '\nQuery String: ' + tracking.queryString
+        + '\nSubmitted From: ' + tracking.currentUrl
+        + (tracking.httpReferrer !== '(direct / none)' ? '\nReferrer: ' + tracking.httpReferrer : '')
+        + '\n\n' + formState.message
+      );
     setIsSending(true);
     let relayed = false;
     try {
@@ -209,6 +272,11 @@ export default function App() {
       payload.append('replyto', formState.email);
       payload.append('phone', formState.phone || 'Not provided');
       payload.append('unit', currentPage);
+      payload.append('landing_page', tracking.landingUrl);
+      payload.append('landing_path_query', tracking.landingPathAndQuery);
+      payload.append('query_string', tracking.queryString);
+      payload.append('submitted_from_page', tracking.currentUrl);
+      payload.append('http_referrer', tracking.httpReferrer);
       payload.append('message', formState.message);
 
       const res = await fetch('https://api.web3forms.com/submit', {
@@ -997,6 +1065,8 @@ export default function App() {
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 text-xs">
+                  <input type="hidden" name="landing_page" value={getLandingTracking().landingUrl} />
+                  <input type="hidden" name="query_string" value={getLandingTracking().queryString} />
                   <div>
                     <label className="font-bold text-neutral-700 dark:text-neutral-300">Your Full Name</label>
                     <input
