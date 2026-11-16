@@ -9,6 +9,7 @@ Allow: /?unit=red
 Allow: /?unit=green
 Allow: /assets/
 Allow: /sitemap.xml
+Allow: /llms.txt
 
 # Indexed Pages:
 # - Home / Triplex Overview: https://deanwestbury.com/
