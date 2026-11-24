@@ -122,24 +122,14 @@
   ],
   "floorPlans": [
     {
-      "id": "floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
-      "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-      "fileName": "AldanmarPlan-CompleteBuilding.png",
-      "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+      "id": "floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
+      "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+      "fileName": "AldanmarFloorPlan-1stFloor.png",
+      "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
       "category": "Floor Plans & 3D",
-      "size": "167 KB",
+      "size": "33 KB",
       "modified": "12 Aug 2024",
-      "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
-    },
-    {
-      "id": "floorplan-1j2Kc4z2BUZ1EYc0-AYTdivMjccpuT9Gx",
-      "src": "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
-      "fileName": "AldanmarFloorPlan-3rdFloor.png",
-      "title": "3rd Floor Dimensioned Plan — Blue Apartment (90 m²), Garage & Front Yard",
-      "category": "Floor Plans & 3D",
-      "size": "28 KB",
-      "modified": "12 Aug 2024",
-      "caption": "Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage."
+      "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²)."
     },
     {
       "id": "floorplan-13DwSn5_vGVfcRHMIM7fSFna300xiF_Yt",
@@ -152,14 +142,24 @@
       "caption": "Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach."
     },
     {
-      "id": "floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
-      "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
-      "fileName": "AldanmarFloorPlan-1stFloor.png",
-      "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
+      "id": "floorplan-1j2Kc4z2BUZ1EYc0-AYTdivMjccpuT9Gx",
+      "src": "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
+      "fileName": "AldanmarFloorPlan-3rdFloor.png",
+      "title": "3rd Floor Dimensioned Plan — Blue Apartment (90 m²), Garage & Front Yard",
       "category": "Floor Plans & 3D",
-      "size": "33 KB",
+      "size": "28 KB",
       "modified": "12 Aug 2024",
-      "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²)."
+      "caption": "Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage."
+    },
+    {
+      "id": "floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
+      "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+      "fileName": "AldanmarPlan-1stFloor.png",
+      "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+      "category": "Floor Plans & 3D",
+      "size": "105 KB",
+      "modified": "12 Aug 2024",
+      "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach."
     },
     {
       "id": "floorplan-1quHMS_YL9kRInalzXerwJDx_4aNQdygG",
@@ -172,14 +172,14 @@
       "caption": "3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments."
     },
     {
-      "id": "floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
-      "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
-      "fileName": "AldanmarPlan-1stFloor.png",
-      "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+      "id": "floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+      "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+      "fileName": "AldanmarPlan-CompleteBuilding.png",
+      "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
       "category": "Floor Plans & 3D",
-      "size": "105 KB",
+      "size": "167 KB",
       "modified": "12 Aug 2024",
-      "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach."
+      "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
     },
     {
       "id": "floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
@@ -225,8 +225,8 @@
         "./assets/drive/blue/Front1.jpg",
         "./assets/drive/blue/Front2.jpg",
         "./assets/drive/blue/Front3.jpg",
-        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
         "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
         "./assets/drive/floorplans/Sketch.jpg"
       ],
       "galleryItems": [
@@ -461,16 +461,6 @@
           "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road."
         },
         {
-          "id": "blue-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
-          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-          "fileName": "AldanmarPlan-CompleteBuilding.png",
-          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
-          "category": "Floor Plans & 3D",
-          "size": "167 KB",
-          "modified": "12 Aug 2024",
-          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
-        },
-        {
           "id": "blue-fp-floorplan-1j2Kc4z2BUZ1EYc0-AYTdivMjccpuT9Gx",
           "src": "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
           "fileName": "AldanmarFloorPlan-3rdFloor.png",
@@ -479,6 +469,16 @@
           "size": "28 KB",
           "modified": "12 Aug 2024",
           "caption": "Dimensioned 3rd Floor off 164 Dulangan Road: Blue interior 90 m² (Living/Dining/Kitchenette 22.12 m², Master Bedroom 16.28 m², 2nd Bedroom 5.76 m², Bath 2.63 m², Passage 2.09 m²), Part-Covered Terrace 29.25 m², Garage 12.21 m², Front Yard 18.06 m², Water Storage."
+        },
+        {
+          "id": "blue-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+          "fileName": "AldanmarPlan-CompleteBuilding.png",
+          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+          "category": "Floor Plans & 3D",
+          "size": "167 KB",
+          "modified": "12 Aug 2024",
+          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
         },
         {
           "id": "blue-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
@@ -551,11 +551,11 @@
         "./assets/drive/red/front.jpg",
         "./assets/drive/red/Inclusions.jpg",
         "./assets/drive/red/BuildingViewFromBeach-2010.jpg",
-        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-        "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
         "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
-        "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
         "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
         "./assets/drive/floorplans/Sketch.jpg"
       ],
       "galleryItems": [
@@ -780,14 +780,14 @@
           "caption": "Exterior structural elevation of Aldanmar Apartments at 164 Dulangan Road."
         },
         {
-          "id": "red-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
-          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-          "fileName": "AldanmarPlan-CompleteBuilding.png",
-          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+          "id": "red-fp-floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+          "fileName": "AldanmarFloorPlan-1stFloor.png",
+          "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
           "category": "Floor Plans & 3D",
-          "size": "167 KB",
+          "size": "33 KB",
           "modified": "12 Aug 2024",
-          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
+          "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²)."
         },
         {
           "id": "red-fp-floorplan-13DwSn5_vGVfcRHMIM7fSFna300xiF_Yt",
@@ -800,14 +800,14 @@
           "caption": "Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach."
         },
         {
-          "id": "red-fp-floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
-          "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
-          "fileName": "AldanmarFloorPlan-1stFloor.png",
-          "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
+          "id": "red-fp-floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
+          "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+          "fileName": "AldanmarPlan-1stFloor.png",
+          "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
           "category": "Floor Plans & 3D",
-          "size": "33 KB",
+          "size": "105 KB",
           "modified": "12 Aug 2024",
-          "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²)."
+          "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach."
         },
         {
           "id": "red-fp-floorplan-1quHMS_YL9kRInalzXerwJDx_4aNQdygG",
@@ -820,14 +820,14 @@
           "caption": "3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments."
         },
         {
-          "id": "red-fp-floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
-          "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
-          "fileName": "AldanmarPlan-1stFloor.png",
-          "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+          "id": "red-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+          "fileName": "AldanmarPlan-CompleteBuilding.png",
+          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
           "category": "Floor Plans & 3D",
-          "size": "105 KB",
+          "size": "167 KB",
           "modified": "12 Aug 2024",
-          "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach."
+          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
         },
         {
           "id": "red-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
@@ -901,11 +901,11 @@
         "./assets/drive/green/Stairs.jpg",
         "./assets/drive/green/RoadFront.jpg",
         "./assets/drive/green/Inclusions.jpg",
-        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-        "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
         "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
-        "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
         "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
         "./assets/drive/floorplans/Sketch.jpg"
       ],
       "galleryItems": [
@@ -1150,14 +1150,14 @@
           "caption": "Archive summary of fixtures, appliances, and furnishings included with The Green Apartment."
         },
         {
-          "id": "green-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
-          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-          "fileName": "AldanmarPlan-CompleteBuilding.png",
-          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
+          "id": "green-fp-floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
+          "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
+          "fileName": "AldanmarFloorPlan-1stFloor.png",
+          "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
           "category": "Floor Plans & 3D",
-          "size": "167 KB",
+          "size": "33 KB",
           "modified": "12 Aug 2024",
-          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
+          "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²)."
         },
         {
           "id": "green-fp-floorplan-13DwSn5_vGVfcRHMIM7fSFna300xiF_Yt",
@@ -1170,14 +1170,14 @@
           "caption": "Dimensioned 2nd Floor layout: Green Bedroom (20.54 m²) + Green Terrace (37.06 m²) and Red Bedroom (22.07 m²) + Red Terrace (37.15 m²) overlooking Dulangan Beach."
         },
         {
-          "id": "green-fp-floorplan-1VvqH_xu_Ji0Nz1miNFzEPUU5orocKGnb",
-          "src": "./assets/drive/floorplans/AldanmarFloorPlan-1stFloor.png",
-          "fileName": "AldanmarFloorPlan-1stFloor.png",
-          "title": "1st Floor Dimensioned Plan — Green (114 m²) & Red (92 m²)",
+          "id": "green-fp-floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
+          "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
+          "fileName": "AldanmarPlan-1stFloor.png",
+          "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
           "category": "Floor Plans & 3D",
-          "size": "33 KB",
+          "size": "105 KB",
           "modified": "12 Aug 2024",
-          "caption": "Dimensioned 1st Floor layout: Green Apartment (114 m² total: Lower Terrace 31.22 m², Living/Dining 22.3 m², Bath 2.44 m², Laundry) & Red Apartment (92 m² total: Terrace 6.74 m², Living/Dining 23.23 m², Bath 2.41 m²)."
+          "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach."
         },
         {
           "id": "green-fp-floorplan-1quHMS_YL9kRInalzXerwJDx_4aNQdygG",
@@ -1190,14 +1190,14 @@
           "caption": "3D isometric render of the 2nd Floor sleeping suites and ocean-facing upper terraces for the Red and Green Apartments."
         },
         {
-          "id": "green-fp-floorplan-1rs7x8VNlzsPogOJVAqkFWlCIJOnXDorj",
-          "src": "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
-          "fileName": "AldanmarPlan-1stFloor.png",
-          "title": "1st Floor 3D Isometric Model — Living Levels & Beach Stairs",
+          "id": "green-fp-floorplan-1X46Okg47_IoKQ5kfWOAMqc4DIjNmZQ8b",
+          "src": "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
+          "fileName": "AldanmarPlan-CompleteBuilding.png",
+          "title": "Complete 3-Story 3D Cutaway Model — Aldanmar Apartments",
           "category": "Floor Plans & 3D",
-          "size": "105 KB",
+          "size": "167 KB",
           "modified": "12 Aug 2024",
-          "caption": "3D isometric render of the 1st Floor living rooms, kitchens, bathrooms, and steps leading onto Dulangan Beach."
+          "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
         },
         {
           "id": "green-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
