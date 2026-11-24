@@ -226,8 +226,7 @@
         "./assets/drive/blue/Front2.jpg",
         "./assets/drive/blue/Front3.jpg",
         "./assets/drive/floorplans/AldanmarFloorPlan-3rdFloor.png",
-        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-        "./assets/drive/floorplans/Sketch.jpg"
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png"
       ],
       "galleryItems": [
         {
@@ -479,16 +478,6 @@
           "size": "167 KB",
           "modified": "12 Aug 2024",
           "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
-        },
-        {
-          "id": "blue-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
-          "src": "./assets/drive/floorplans/Sketch.jpg",
-          "fileName": "Sketch.jpg",
-          "title": "Casa Santana Architectural Ink Elevation Sketch",
-          "category": "Floor Plans & 3D",
-          "size": "118 KB",
-          "modified": "12 Aug 2024",
-          "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach."
         }
       ],
       "floorLevel": "Upper Road-Level Floor (No Stairs · Private Veranda)",
@@ -523,7 +512,7 @@
     {
       "id": "red",
       "name": "The Red Apartment",
-      "tagline": "Self-Contained Sunset Residence with Private Entrance & Inverter AC",
+      "tagline": "Self-Contained Sunrise Residence with Private Entrance & Inverter AC",
       "themeColor": "#dc2626",
       "badgeBg": "bg-rose-50 dark:bg-rose-950/40 border-rose-200 dark:border-rose-800",
       "badgeText": "text-rose-800 dark:text-rose-300",
@@ -555,8 +544,7 @@
         "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
         "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
         "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
-        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-        "./assets/drive/floorplans/Sketch.jpg"
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png"
       ],
       "galleryItems": [
         {
@@ -828,23 +816,13 @@
           "size": "167 KB",
           "modified": "12 Aug 2024",
           "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
-        },
-        {
-          "id": "red-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
-          "src": "./assets/drive/floorplans/Sketch.jpg",
-          "fileName": "Sketch.jpg",
-          "title": "Casa Santana Architectural Ink Elevation Sketch",
-          "category": "Floor Plans & 3D",
-          "size": "118 KB",
-          "modified": "12 Aug 2024",
-          "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach."
         }
       ],
       "floorLevel": "Middle Split-Level Residence (Internal Stairs & Private Veranda)",
       "bedrooms": 1,
       "bathrooms": 1,
       "capacity": "2 - 3 Guests",
-      "view": "Beachfront Water View & Golden Sunset Panorama",
+      "view": "Beachfront Water View & Golden Sunrise Panorama",
       "occupancyStatus": "Currently Rented Out (Turnkey Revenue)",
       "acEquipment": "Split-Type Inverter Air Conditioner Installed",
       "meterAndWater": "Separate Electric Meter · Shared Filtered Water Supply",
@@ -853,15 +831,15 @@
         "Currently rented out — immediate cash-flow from day one",
         "Private independent entrance from the exterior walkway",
         "Split-type inverter air conditioner for whisper-quiet energy efficiency",
-        "Private terrace with direct sunset views over Dulangan Beach",
+        "Private terrace with direct sunrise views over Dulangan Beach",
         "Fully self-contained kitchen, dining setup, and full en-suite bathroom",
         "Dedicated independent electric meter for easy tenant utility accounting",
         "Connected to the shared filtered water system"
       ],
       "historicalHighlights": "Popular long-term and vacation rental unit recorded in the Wayback Machine archives at aldanmar.dulangan.com with outstanding guest loyalty.",
       "seoMeta": {
-        "title": "The Red Apartment — Sunset Balcony Suite with Inverter AC | Aldanmar Apartments",
-        "description": "Turnkey rental revenue suite on Dulangan Beach. Features private exterior entrance, sunset balcony, split-type inverter AC, dedicated electric meter, and shared filtered water.",
+        "title": "The Red Apartment — Sunrise Balcony Suite with Inverter AC | Aldanmar Apartments",
+        "description": "Turnkey rental revenue suite on Dulangan Beach. Features private exterior entrance, sunrise balcony, split-type inverter AC, dedicated electric meter, and shared filtered water.",
         "ogImage": "./assets/drive/red/living1.jpg",
         "ogType": "website",
         "twitterCard": "summary_large_image",
@@ -905,8 +883,7 @@
         "./assets/drive/floorplans/AldanmarFloorPlan-2ndFloor.png",
         "./assets/drive/floorplans/AldanmarPlan-1stFloor.png",
         "./assets/drive/floorplans/AldanmarPlan-2ndFloor.png",
-        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png",
-        "./assets/drive/floorplans/Sketch.jpg"
+        "./assets/drive/floorplans/AldanmarPlan-CompleteBuilding.png"
       ],
       "galleryItems": [
         {
@@ -1198,16 +1175,6 @@
           "size": "167 KB",
           "modified": "12 Aug 2024",
           "caption": "Full 3D isometric cutaway showing all three apartment levels, external stairs, internal stairs, Dulangan Beach access, and upper car garage."
-        },
-        {
-          "id": "green-fp-floorplan-1zP-25qhH2az2gL-7_1sFvw8yGAFemA3R",
-          "src": "./assets/drive/floorplans/Sketch.jpg",
-          "fileName": "Sketch.jpg",
-          "title": "Casa Santana Architectural Ink Elevation Sketch",
-          "category": "Floor Plans & 3D",
-          "size": "118 KB",
-          "modified": "12 Aug 2024",
-          "caption": "Architectural elevation drawing depicting the three-tier coastal triplex nestled between 164 Dulangan Road and Dulangan Beach."
         }
       ],
       "floorLevel": "Lower Split-Level Garden & Direct Beach Walkout",

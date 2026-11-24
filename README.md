@@ -8,7 +8,7 @@
 ## 🏝️ Property Overview
 - **Structure:** Multi-unit coastal triplex villa featuring 3 self-contained, fully furnished apartments:
   - **The Blue Apartment:** Owner's 2-bedroom suite with 6KW off-grid solar system, 2.5HP + 1HP split inverter ACs, and private panoramic veranda
-  - **The Red Apartment:** Rented self-contained sunset suite with private entrance, split-type inverter AC, and balcony
+  - **The Red Apartment:** Rented self-contained sunrise suite with private entrance, split-type inverter AC, and balcony
   - **The Green Apartment:** Rented self-contained garden suite with private entrance, split-type inverter AC, and direct beach gate
 - **Utilities & Parking:** Separate electric meters per apartment, shared filtered water supply, 1 medium car garage, and off-road parking for 5 motorcycles.
 - **Title & Permits:** Clean Titled Property · Real estate taxes paid up to date · Original building permits available · Occupancy permit available upon request
